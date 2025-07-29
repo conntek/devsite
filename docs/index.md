@@ -4,8 +4,8 @@ navbar: true
 
 hero:
   name: "昆泰芯微电子"
-  text: "智能感知世界，传递美好生活"
-  tagline: 专注于智能传感器芯片研发、生产及销售的高新技术企业，最新产品信息基于《070201昆泰芯手册0228矩阵版.pdf》
+  text: 智能运动位置感知芯片
+  tagline: 能感知世界，传递美好生活
   image:
     src: /slogan.png
     alt: 昆泰芯微电子
@@ -34,18 +34,11 @@ features:
     title: 超高速磁性电流传感器
     details: 世界领先的超高速磁性电流传感器ASIC，适用于新能源及智能汽车，支持多种应用场景
     link: /other-sensors/
-  - icon: 🔬
-    title: 多技术方案
-    details: 涵盖3D霍尔、AMR、TMR、磁通门等多种磁传感技术方案
-    link: /technical/
   - icon: 📖
     title: 完整技术参考
     details: 包含所有产品完整PDF内容和高质量技术图片的详细参考文档，提供最全面的技术信息
     link: /enhanced-products/
-  - icon: 🏆
-    title: 专利技术
-    details: 拥有超过100项核心专利，国家级高新技术企业
-    link: #
+
 ---
 
 ## 关于昆泰芯微电子
