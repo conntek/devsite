@@ -1,0 +1,65 @@
+# 3D霍尔传感器系列文档 (070501-BU1)
+
+## 📋 文档总览
+
+本页面提供3D霍尔传感器系列的完整技术文档，包括数据手册、产品说明书等PDF文档下载。
+
+---
+
+## 📁 01-3D Hall 57系列
+
+### 🎯 手表应用
+
+| 产品型号 | 中文版 | 英文版 |
+|---------|--------|--------|
+| KTH5761AQ3 | [数据手册 (中文)](/pdfs/KTH5761AQ3_Datasheet_DS_CN.pdf) | - |
+| KTH5762AQ3 | [数据手册 (中文)](/pdfs/KTH5762AQ3_Datasheet_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5762AQ3_Datasheet_DS_EN.pdf) |
+| KTH5763AQ3 | [数据手册 (中文)](/pdfs/KTH5763AQ3_Datasheet_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5763AQ3_Datasheet_DS_EN.pdf) |
+
+### 🚗 汽车应用
+
+| 产品型号 | 中文版 | 英文版 |
+|---------|--------|--------|
+| KTH5701AQ1 | [数据手册 (中文)](/pdfs/KTH5701AQ1_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5701AQ1_DS_EN.pdf) |
+| KTH5702AQ1 | [数据手册 (中文)](/pdfs/KTH5702AQ1_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5702AQ1_DS_EN.pdf) |
+
+### 🏭 消费&工业应用
+
+| 产品型号 | 中文版 | 英文版 |
+|---------|--------|--------|
+| KTH5701AQ2AQ3 | [数据手册 (中文)](/pdfs/KTH5701AQ2AQ3_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5701AQ2AQ3_DS_EN.pdf) |
+| KTH5702AQ2AQ3 | [数据手册 (中文)](/pdfs/KTH5702AQ2AQ3_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5702AQ2AQ3_DS_EN.pdf) |
+| KTH5772 | [产品说明书](/pdfs/KTH5772产品说明书V1.0.pdf) | - |
+| KTH5774 | [产品说明书](/pdfs/KTH5774产品说明书V1.3.pdf) | - |
+| KTH5791AQ3QNS | [产品说明书](/pdfs/KTH5791AQ3QNS产品说明书.pdf) | - |
+
+---
+
+## 📁 02-线性Hall（3XXX系列）
+
+### 📄 可用文档
+
+- KTH31xx Series 数据手册
+- KTH31xx Series 产品手册
+
+*注：该系列文档正在整理中，如需获取请联系技术支持。*
+
+---
+
+## 📞 技术支持
+
+如果您需要其他技术文档或在使用过程中遇到问题，请联系我们：
+
+- 📧 **技术支持邮箱**: tech-support@kuntai-tech.com
+- 📞 **技术热线**: 400-123-4567
+- 🌐 **官方网站**: [www.kuntai-tech.com](https://www.kuntai-tech.com)
+
+---
+
+## 🔙 返回
+
+[← 返回技术资源总览](../)
+
+---
+
+*最后更新: 2024年7月*

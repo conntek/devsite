@@ -1,0 +1,2160 @@
+# KTH5762AQ3 - 完整技术参考
+
+[返回产品目录](../index.md) | [返回3d-hall分类](../3d-hall/index.md)
+
+
+## 🧭 页面导航
+
+- 🔙 [返回产品摘要页面](../3d-hall/KTH5762AQ3.md)
+- 📂 [返回3D霍尔传感器分类](../3d-hall/)
+- 🏠 [返回主页](../index.md)
+- 📚 [所有增强版技术参考](./index.md)
+
+---
+
+## 产品概述
+
+**KTH5762AQ3** 完整技术参考文档，包含所有PDF数据手册的详细内容和技术图片。
+
+---
+
+## 产品图片
+
+![KTH5762AQ3 图片 1](./images/kth5762aq3/page_1_img_1_c0e99414.png)
+
+![KTH5762AQ3 图片 2](./images/kth5762aq3/page_1_img_3_7e07597a.png)
+
+![KTH5762AQ3 图片 3](./images/kth5762aq3/page_2_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 4](./images/kth5762aq3/page_3_img_2_7e07597a.png)
+
+![KTH5762AQ3 图片 5](./images/kth5762aq3/page_4_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 6](./images/kth5762aq3/page_5_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 7](./images/kth5762aq3/page_6_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 8](./images/kth5762aq3/page_7_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 9](./images/kth5762aq3/page_8_img_2_7e07597a.png)
+
+![KTH5762AQ3 图片 10](./images/kth5762aq3/page_9_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 11](./images/kth5762aq3/page_10_img_1_7e07597a.png)
+
+![KTH5762AQ3 图片 12](./images/kth5762aq3/page_11_img_1_7e07597a.png)
+
+---
+
+## 📄 KTH5762AQ3_Datasheet_DS_CN.pdf
+
+<details>
+<summary>点击展开 KTH5762AQ3_Datasheet_DS_CN.pdf 完整内容</summary>
+
+ 集成高度匹配霍尔元件的3D (XY、XZ、YZ平
+
+
+面)霍尔角度传感器
+
+
+ 集成多级低功耗，高精度零漂运放，集成高精
+
+
+度16Bit ADC
+
+
+ 集成CORDIC算法模块，16bit绝对角度位置输
+
+
+出
+
+
+ 支持绝对位置检测，角度输出范围高达360度
+
+
+ 磁感应强度工作范围，XY平面±65mT，XZ/YZ
+
+
+平面±40mT注1
+
+
+ 支持标准I2C通信接口
+
+
+ 支持系统中断唤醒功能
+
+
+ 工作电压 2.8V ~ 5.5V
+
+
+ IO供电电压可低至1.8V
+
+
+ 工作温度 -40℃ ~ +85℃
+
+
+**2** 典型应用
+
+ 电子手表旋钮
+
+
+**3** 概述
+
+
+KTH5762 是一款集成了高度匹配霍尔元件的
+
+
+3D (XY、XZ、YZ 平面)霍尔角度传感器，集成低功
+
+
+耗，低噪声，高精度零漂运放，高性能，低阻抗 MUX，
+
+
+采用高精度 16-bit ADC，转化输出 16Bit 绝对角度数
+
+
+据。芯片提供 I2C 通信接口。
+
+
+KTH5762 支持周期循环测量模式和单次测量模
+
+
+式等多种工作模式，适用于不同的应用场景。
+
+
+KTH5762 集成了高效，低功耗 CORDIC 算法模
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+块支持平面的角度输出，支持角度阈值检测。具有
+
+
+高集成度和运用灵活的特点，广泛适用于各种应用
+
+
+场景。
+
+
+**4** 功能框图
+
+
+器件信息
+
+|器件型号|封装|封装尺寸（标称值）|
+|---|---|---|
+|KTH5762|DFN2*2.5-8L|2.00mm * 2.50mm|
+
+
+
+注 1：建议该平面磁感应强度大于 10mT。
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+1 产品特点 ....................................................1
+
+
+2 典型应用 ....................................................1
+
+
+3 概述 ............................................................1
+
+
+4 功能框图 ....................................................1
+
+
+5 引脚定义 ....................................................3
+
+
+6 规格 ............................................................4
+
+
+6.1 绝对参数 .......................................4
+
+
+6.2 推荐工作条件 ...............................4
+
+
+6.3 电气特性 .......................................4
+
+
+6.4 磁性能 ...........................................5
+
+
+6.5 时间参数 .......................................5
+
+
+7 测量模式说明 ............................................6
+
+
+7.1 周期循环测量模式（Duty Cycle
+
+
+Mode） ......................................................6
+
+
+7.2 单次测量模式（Single Conversion
+
+
+Mode） ......................................................6
+
+
+7.3 空闲模式（Idle Mode） .............. 6
+
+
+8 芯片运行状态（status）说明 ..................7
+
+
+9 I2C 通信 ..................................................... 8
+
+
+9.1 I2C 通信时序 .................................8
+
+
+9.2 通信命令 .......................................9
+
+
+9.2.1 模式设置 ................................... 9
+
+
+9.2.2 重置芯片（Reset） ................10
+
+
+9.2.3 测量数据回读帧（Data Read
+
+
+Frame） .................................................10
+
+
+9.2.4 读写寄存器 .............................11
+
+
+10 Register map 说明 ................................... 12
+
+
+11 DFN2x2.5-8L 封装尺寸图 ........................14
+
+
+12 参考电路 ..................................................14
+
+
+13 订货信息 ..................................................16
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+14 载带和卷盘信息 ......................................16
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+图 5- 1 DFN2x2.5-8L 顶视图
+
+
+表 5- 1 引脚定义
+
+
+
+
+
+
+
+
+
+
+|引脚号|名称|描述|类型|
+|---|---|---|---|
+|1|SCL/SCLK|I2C 时钟信号|输入|
+|2|SDA/MOSI|I2C 数据输入输出口|输入/输出|
+|3|MISO|SPI 数据输出端口|输出|
+|4|VDD_IO|IO 的供电端口|供电|
+|5|VSS|地|地|
+|6|VDD|电源|供电|
+|7|CS|片选使能信号|输入|
+|8|INT|中断信号<br>主机向芯片发送周期循环测量模式命令后，当芯片检测到的<br>XY 平面角度值大于对应寄存器中设定的值时，INT 脚会置<br>1，并且在芯片发送读取命令，读回测量数据以前，都保持<br>为1。芯片回读后，如果当前芯片检测到的角度值仍大于寄<br>存器中设定的角度值，INT 脚会继续置1。|输出|
+
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+**6.1** 绝对参数
+
+|参数|说明|最小值|最大值|单位|
+|---|---|---|---|---|
+|VDD_MAX|芯片供电限制|-0.3|6|V|
+|VDD_IO_MAX|数字IO 供电限制|-0.3|6|V|
+|TSTORAGE|存储温度|-50|150|℃|
+|VESD|ESD（HBM）||±5K|V|
+
+
+
+**6.2** 推荐工作条件
+
+|参数|说明|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|
+|VDD|芯片供电电压|2.8|3.3|5.5|V|
+|VDD_IO|数字IO 供电电压|1.8||VDD|V|
+|VIH|输入高电平电压|0.75|||VDD_IO|
+|VIL|输入低电平电压|||0.25|VDD_IO|
+|TOPERATION|工作温度|-40|25|85|℃|
+
+
+
+**6.3** 电气特性
+
+|参数|说明|测试条件|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|---|
+|VDD|芯片供电电压||2.8|3.3|5.5|V|
+|VDD_IO|数字IO 供电电压||1.8||VDD|V|
+|IDD,CONVXY|X 轴或者Y 轴测量电流|VDD=3.3V||4.89||mA|
+|IDD,CONVZ|Z 轴测量电流|Z 轴测量电流||3.87||mA|
+|IDD,CONVT|温度测量电流|温度测量电流||2.58||mA|
+|IDD, STBY|周期循环测量模式待机电流|周期循环测量模式待机电流||2.4||μA|
+|IDD,IDLE|空闲状态电流|空闲状态电流||1.4||μA|
+
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+
+
+
+
+|参数|说明|测试条件|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|---|
+|Mxy|磁场线性范围||-65||65|mT|
+|Mxz/ Myz|磁场线性范围||-40||40|mT|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=0<br>digCtrl=0||0.98||Degree|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=1<br>digCtrl=0||0.28||Degree|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=3<br>digCtrl=0||0.128||Degree|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=3<br>digCtrl=3||0.065||Degree|
+
+
+**6.5** 时间参数
+
+
+
+
+
+
+
+
+
+|参数|说明|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|
+|Tstart|芯片启动时间||4||ms|
+|TCONVM|单轴磁场测量时间（可编程）|165||33349|μs|
+|TCONVM|单轴磁场测量时间（可编程）|69+32*2magnOsr*（2+2digCtrl）|69+32*2magnOsr*（2+2digCtrl）|69+32*2magnOsr*（2+2digCtrl）|μs|
+|TCONVT|温度测量时间（可编程）|165||837|μs|
+|TCONVT|温度测量时间（可编程）|69+96*2tempOsr|69+96*2tempOsr|69+96*2tempOsr|μs|
+|TCONV_END|测量结束后到关闭模拟使能时间||108||μs|
+|Tactive|从空闲模式到测量开始||220||μs|
+|T meas|当measTime=0，芯片处于测量模<br>式时，完成一次测量的时间|m*TCONVM + TCONVT + TCONV_END|m*TCONVM + TCONVT + TCONV_END|m*TCONVM + TCONVT + TCONV_END|μs|
+|Tsingle|芯片开启单次测量模式，完成一<br>次测量的时间|Tactive + m*TCONVM + TCONVT + TCONV_END|Tactive + m*TCONVM + TCONVT + TCONV_END|Tactive + m*TCONVM + TCONVT + TCONV_END|μs|
+
+
+注：
+
+
+
+
+
+
+- 上表中默认 m=2。
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+KTH5762 支持多种工作模式，本产品可以在周期循环测量模式，单次测量模式，两种模式下使用。
+
+
+表 7- 1 测量模式介绍
+
+|测量功能|功能简介|
+|---|---|
+|周期循环测量模式（**Duty Cycle Mode**）|芯片周期性对选中的XYZ 通道进行测量,当芯<br>片测得的XY 平面角超出寄存器中设定的绝对<br>阈值时，INT 脚会置1|
+|单次测量模式（**Single Conversion Mode**）|芯片对BA 通道进行一次测量|
+|空闲模式（**Idle Mode**）|芯片退出周期循环测量模式，进入空闲状态|
+|注：**B** 为平面磁感应强度，**A** 为绝对旋转角度||
+
+
+
+**7.1** 周期循环测量模式（ **Duty Cycle Mode** ）
+
+
+主机向芯片发送周期循环测量模式命令后，芯片会处于一种低功耗测量模式，以一定的频率对选中的 XYZ
+
+
+通道进行测量，直到主机向芯片发送空闲模式命令为止。
+
+
+当芯片检测到的角度值大于对应寄存器中设定的值时，INT 脚会置 1。，并且在芯片发送读取命令，读回测
+
+
+量数据以前，都保持为 1。芯片回读后，如果当前芯片检测到的角度值仍大于寄存器中设定的角度值，INT 脚会
+
+
+继续置 1。该功能只适用于 XY 平面角度测量。在主机通过测量数据回读帧（data Read Frame），一次性将测量
+
+
+数据读回后，INT 脚拉低，否则保持为高电平。芯片 INT 脚不会主动拉低，即某一时刻芯片测量到的角度值超
+
+
+出寄存器中设定的角度值，INT 脚拉高后，如果下一时刻，芯片测量到的角度值减小，低于设定的角度值，但
+
+
+主机没有读回测量数据，INT 脚并不会主动拉低。芯片回读数据后，如果当前芯片检测到的角度值仍大于寄存
+
+
+器中设定的角度值，INT 脚会继续置 1。
+
+
+**7.2** 单次测量模式（ **Single Conversion Mode** ）
+
+
+主机向芯片发送单次测量模式的命令后，芯片会对测量项（BA）进行一次测量，并且自动回到空闲状态。
+
+
+**7.3** 空闲模式（ **Idle Mode** ）
+
+
+主机向芯片发送空闲模式的命令后，芯片会进入空闲状态。当芯片处于周期循环测量模式（Duty Cycle Mode）
+
+
+时，芯片无法进行测量数据回读帧以外的其他操作，如读写寄存器等。
+
+
+如需要对芯片进行其他操作，需要先发送空闲模式命令，使芯片进入空闲状态。但发送空闲模式命令后，
+
+
+若当前有执行中的测量操作，芯片不会立即进入空闲模式，需要等当前的测量完成后，才能从当前的周期循环
+
+
+测量模式进入空闲状态。如果需要进行其他操作的话，需要等待一次测量时间延时后再进行操作。
+
+
+注：空闲（Idle）状态指的是芯片不处于任何测量模式下的状态。待机（Standby）状态指的是芯片处于测
+
+
+量模式下，在测量间歇的状态。
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+|Bit|7|6|5|4|3|2|1|0|
+|---|---|---|---|---|---|---|---|---|
+|Status|RESERVED|Cycle|Single|Failing|RESERVED|RESERVED|softRst|DRDY|
+
+
+
+除了重置芯片，发送其他命令芯片均会返回芯片运行状态（status）说明。
+
+
+ Cycle
+
+
+该位为 1 时表示当前处于周期循环测量模式，当主机向芯片发送该模式命令，返回的 status 中该 bit 置 1，或芯
+
+
+片处于该模式时，使用测量数据回读帧（Data Read Frame），一次性读回测量数据时，该位也置 1。
+
+
+ Single
+
+
+该位为 1 时表示当前处于单次测量模式。当主机向芯片发送单次测量模式命令后，该命令返回的对应 status 中
+
+
+该 bit 置 1。在完成单次测量后，芯片回到空闲状态，如后续再发送其他命令，返回的对应 status 中该 bit 为 0。
+
+
+ Failing
+
+
+当前发送的命令无效时，Failing =1。当处于任意一个测量状态期间，再次发送其他测量命令，Failing
+
+
+位会置 1，例如在周期循环测量模式的同时发送单次测量命令，Failing 位会置 1。同时如果在周期循环测量模式
+
+
+时，进行读写寄存器的操作，Failing 位也会置 1，代表命令错误。
+
+
+ softRst
+
+
+主机向 IC 发送重置芯片（Reset）命令后，IC 并不会立即返回 status。因此需要根据芯片被重置后，第一次接收
+
+
+到任意命令时，第一次返回的 status 判断是否重置成功。芯片成功重置后该位置 1，并且在返回一次 status 后，
+
+
+该位清 0，即芯片重置后第二次接收到任意命令时，status 的该位为 0。
+
+
+ DRDY
+
+
+当主机向芯片发送周期循环测量模式（Duty Cycle Mode）后，芯片检测到的对应磁场变化量，超出设定阈值时，
+
+
+该位置 1，完成一次数据读取后该位清 0。当主机向芯片发送单次测量模式（Single Conversion Mode）后，完成
+
+
+该次测量后该位置 1，完成一次数据读取后该位清 0。
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+
+
+**9.1** **I2C** 通信时序
+
+
+注：以下参数均为室温 25℃，VDD = 3.3V 下的测量结果。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|电气参数|符号|标准模式|Col4|快速模式|Col6|单<br>位|
+|---|---|---|---|---|---|---|
+|电气参数|符号|最小<br>值|最大<br>值|最小<br>值|最大<br>值|最大<br>值|
+|SCL Clock Frequency|f (SCL)||100||400|kHz|
+|SCL Clock Low Time|tw (SCLL)|4.7||1.3||μs|
+|SCL Clock High Time|tw (SCLH)|4||0.6||μs|
+|SDA Setup Time|tsu (SDA)|250||100||ns|
+|SDA Data Hold Time|th (SDA)||3.45||0.9|μs|
+|SDA and SCL Rise Time|tr (SDA)<br>tr (SCL)||1000||300|ns|
+|SDA and SCL Fall Time|tf (SDA)<br>tf (SCL)||300||300|ns|
+|START Condition Hold Time|th (ST)|4||0.6||μs|
+|REPEATED START Condition Setup Time|tsu (SR)|4.7||0.6||μs|
+|STOP Condition Setup Time|tsu (SP)|4||0.6||μs|
+|Bus Free Time Between STOP and START<br>Condition|tw(SP:ST)|4.7||1.3||μs|
+
+
+表 9- 1 I2C 通信参数
+
+
+图 9- 1 I2C 时序图
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+KTH5762 支持如下表所示的命令:
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+表 9- 2 命令表
+
+
+
+
+
+
+
+
+
+
+
+
+
+|命令名|Byte1|Byte2|Byte3|Byte4|注|
+|---|---|---|---|---|---|
+|开启周期循环测量<br>模式|0010 #|N/A|N/A|N/A|#：<br>XY 平面：0110<br>XZ 平面：1010<br>YZ 平面：1100|
+|开启单次测量模式|0011 #|N/A|N/A|N/A|N/A|
+|空闲模式|1000 0000|N/A|N/A|N/A||
+|重置芯片|1111 0000|N/A|N/A|N/A||
+|测量数据回读|0100 0110|N/A|N/A|N/A||
+|读寄存器|0101 0000|Address[7:0] <<<br>2|N/A|N/A||
+|写寄存器|0110 0000|Data[15:8]|Data[7:0]|Address[7:0] <<<br>2||
+
+
+KTH5762 的 I2C 器件地址为 7’b 1111000。
+
+
+下面列出各指令通信示意图，在接下来的通信示意图中，采用如下图所示图例进行表示：
+
+|S|IIC Start|
+|---|---|
+|RS|IIC Restart|
+|P|IIC Stop|
+|A|Slave Ack|
+|Nack|Master Nack|
+|A|Master Ack|
+
+
+
+图 9- 2 I2C 通信图例
+
+
+**10** 模式设置
+
+
+芯片上电后，进行内部初始化，当电源稳定后4ms内不允许进行通信，当初始化完成后芯片进入空闲状态，
+
+
+允许通信测量。
+
+
+KTH5762 支持多种工作模式，测量模式具体说明请参见第 7 章。本产品可以在周期循环测量模式，单次测
+
+
+量模式，两种模式下使用。
+
+
+**10.1** 周期循环测量模式（ **Duty Cycle Mode** ）
+
+|S|IIC Address[W]|Col3|A|Command|A|RS|IIC Address[R]|Col9|A|Status|NACK|P|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|1111 000|0(W)|A|0010 #|A|RS|1111 000|1(R)|A|0100 XXXX|NACK|P|
+
+
+
+图 10- 1 周期循环测量模式 I2C 通信图
+
+
+#：XY 平面：0110 XZ 平面：1010 YZ 平面：1100
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+**10.2** 单次测量模式（ **Single Conversion Mode** ）
+
+|S|IIC Address[W]|Col3|A|Command|A|RS|IIC Address[R]|Col9|A|Status|NACK|P|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0011 #|A|RS|111 1000|1(R)|A|0010 XXXX|NACK|P|
+
+
+
+图 10- 2 单次测量模式 I2C 通信图
+
+
+#：XY 平面：0110 XZ 平面：1010 YZ 平面：1100
+
+
+**10.3** 空闲模式（ **Idle Mode** ）
+
+|S|IIC Address[W]|Col3|A|Command|A|RS|IIC Address[R]|Col9|A|Status|NACK|P|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|1000 0000|A|RS|111 1000|1(R)|A|0000 XXXX|NACK|P|
+
+
+
+图 10- 3 空闲模式 I2C 通信图
+
+
+**11** 重置芯片（ **Reset** ）
+
+
+重置芯片（Reset）命令用于进行芯片的重置工作，在发送该命令后芯片内部寄存器配置被重置到复位状态，
+
+
+如果芯片处于周期循环测量模式，在重置芯片前，需要先发送空闲模式命令，使芯片回到空闲状态。
+
+
+重置芯片 I2C 通信图如下图所示：
+
+|S|IIC Address[W]|Col3|A|Command|A|P|
+|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|1111 0000|A|P|
+
+
+
+图 10- 4 重置芯片 I2C 通信图
+
+
+**12** 测量数据回读帧（ **Data Read Frame** ）
+
+
+在芯片完成一次测量后，也可以使用测量数据回读帧（Data Read Frame），一次性将芯片运行状态（status）
+
+
+及所有测量数据读回。
+
+
+主机向芯片发送一次性数据读回命令，可以读回 AB 数据。
+
+
+
+360 
+
+=
+，即所选平面磁场角度 A[15:0]* 2 16
+
+
+
+。
+
+
+，实际应
+
+
+
+360
+返回 16bit 角度值，每一个 LSB 对应的角度为 2 16
+
+
+
+
+
+
+
+_B_ [15:0]*0.60725
+
+由于磁场值为 CORDIC 算法计算得出，实际磁感应强度对应的值应该为：
+
+
+
+_B_ [15:0]
+
+
+_S_ ensitivity
+
+
+
+_S_
+
+
+
+用中该 B 值可用于预估当前平面下的磁场大小，Sensitivity 在不同平面下的值有差异，具体可咨询技术支持。
+
+
+芯片测量数据时，data 按照 Status、A、B 的顺序全部返回，如下为回读数据回读帧。
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+
+
+
+|Col1|S|IIC Address[W]|Col4|A|Command|A|R<br>S|IIC Address[R]|Col10|A|Status|……|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+||S|111 1000|0(W)|A|0100 0110|A|R<br>S|111 1000|1(R)|A|XXX0 XXXX|XXX0 XXXX|
+
+
+
+……
+
+
+**12.1** 读写寄存器
+
+
+
+|A|Data A[15:8]|A|Data A[7:0]|A|Data B[15:8]|A|Data B[7:0]|Nack|P|
+|---|---|---|---|---|---|---|---|---|---|
+|A|0xXX|A|0xXX|A|0xXX|A|0xXX|Nack|P|
+
+
+图 12- 1 数据回读 I2C 通信图
+
+
+
+进行读写寄存器时，寄存器地址应左移两位，如图所示。
+
+|S|IIC Address[W]|Col3|A|Command|A|Register << 2|A|RS|IIC Address[R]|Col11|A|Status|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0101 0000|A|XXXX XXXX|A|RS|111 1000|1(R)|A|0000 XXXX|
+
+
+|A|Data [15:8]|A|Data [7:0]|Nack|P|
+|---|---|---|---|---|---|
+|A|0xXX|A|0xXX|Nack|P|
+
+
+
+图 12- 2 读寄存器 I2C 通信图
+
+
+
+
+
+
+
+…
+
+
+
+
+|S|IIC Address[W]|Col3|A|Comman<br>d|A|Data [15:8]|A|Data [7:0]|A|Register << 2|A|
+|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0110<br>0000|A|0xXX|A|0xXX|A|XXXX XXXX|A|
+
+
+
+…
+
+
+…
+
+
+
+|RS|IIC Address[R]|Col3|A|Status|Nack|P|
+|---|---|---|---|---|---|---|
+|RS|111 1000|1(R)|A|0000 XXXX|Nack|P|
+
+
+图 12- 3 写寄存器 I2C 时序图
+
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+
+
+
+
+
+
+
+|地址|默认值|位|位名|R/W|说明|
+|---|---|---|---|---|---|
+|0x06|0x00|7|RESERVED|R|此地址寄存器为状态寄存器，Status 说明可参见章节8 芯片<br>运行状态（status）说明。|
+|0x06|0x00|6|Cycle|R|R|
+|0x06|0x00|5|Single|R|R|
+|0x06|0x00|4|Failing|R|R|
+|0x06|0x00|3 : 2|RESERVED|R|R|
+|0x06|0x00|1|softRst|R|R|
+|0x06|0x00|0|DRDY|R|R|
+|0x19|0x00|15 : 0|wxyTh|RW|当芯片检测到的XY 平面角度大于wxyTh 中的配置值时，INT<br>脚拉高，wxyTh 中写入角度的计算方式与读取芯片角度输<br>出时计算方式一致。|
+|0x1B|0x00|15:14|gainSel|RW|由于组装公差或离轴应用等情况会出现两轴磁场幅值不同<br>的情况，可以通过该寄存器对选择的磁场幅值进行修正：<br>gainSel = 0 时，不进行幅值修正<br>gainSel = 1 时，对X 轴进行幅值修正<br>gainSel = 2 时，对Y 轴进行幅值修正<br>gainSel = 3 时，对Z 轴进行幅值修正<br>根据相应的应用场景，选择需要进行幅值校准的轴，配置<br>好gainSel 后，芯片内部计算当前平面角度的算法，会根据<br>gainValue 的设定值，对被选中轴检测到的磁场值进行调<br>整，进而达到用于进行角度计算的两轴磁场幅值相等的目<br>的。|
+|0x1B|0x00|13:0|gainValue|RW|gainValue 对gainSel 中被选择的轴进行幅值修正。<br>gainValue = k*8192<br>k 为当前用于计算平面角度的两轴的幅值比例。<br>如：<br>·需要得到YZ 平面角度，存在YZ 轴测量sensitivity 不相同，<br>组装公差等因素，导致YZ 两轴磁场幅值不同如果希望对Z<br>轴进行幅值修正，使得旋钮旋转一周时YZ 幅值一致，则<br>gainSel 设为3<br>则k =<br>(<br>ymax<br>ymin ) / 2<br>~~(~~<br>~~max~~<br>~~min ) / 2~~<br>_B_<br>_B_<br>_Bz_<br>_Bz_<br><br><br>gainValue =<br>(<br>max<br>min ) / 2*8192<br>~~(~~<br>~~max~~<br>~~min ) / 2~~<br>_By_<br>_By_<br>_Bz_<br>_Bz_<br><br><br>·如果希望对Y 轴进行幅值修正，使得旋钮旋转一周时YZ<br>幅值一致，则gainSel 设为2|
+
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH5762 系列**
+
+
+|AplaneSel|功能|
+|---|---|
+|0|芯片输出XY 平面磁场角度值|
+|1|芯片输出YZ 平面磁场角度值|
+|2|芯片输出XZ 平面磁场角度值|
+|3|芯片输出XY 平面磁场角度值|
+
+
+|magnOsr|0x03|0x02|0x01|0x00|
+|---|---|---|---|---|
+|采样点个数|256|128<br>|64<br>|32<br>|
+
+
+
+
+
+
+
+
+|measSel|0xC|0xA|0x6|
+|---|---|---|---|
+|选通平面|YZ 平面|XZ 平面|XY 平面|
+
+
+
+
+
+
+
+
+|Col1|Col2|Col3|Col4|Col5|低功耗、高精度3D 霍尔角度传感器|
+|---|---|---|---|---|---|
+||||||则k= (<br>max<br>min ) / 2<br>~~(~~<br>~~max~~<br>~~min ) / 2~~<br>_Bz_<br>_Bz_<br>_By_<br>_By_<br><br><br>gainValue = (<br>max<br>min ) / 2*8192<br>~~(~~<br>~~max~~<br>~~min ) / 2~~<br>_Bz_<br>_Bz_<br>_By_<br>_By_<br><br><br>注：推荐使用k<1 的配置<br>需要对哪一个轴的数据进行修改则gainSel 选择哪一个轴，<br>k 即为该轴需要修改的倍数，gainValue 为k*8192|
+|0x1C|0x1470|15 : 14|AplaneSel|RW|角度输出平面选择。<br>AplaneSel<br>功能<br>0<br>芯片输出XY 平面磁场角度值<br>1<br>芯片输出YZ 平面磁场角度值<br>2<br>芯片输出XZ 平面磁场角度值<br>3<br>芯片输出XY 平面磁场角度值|
+|0x1C|0x1470|13 : 11|RESERVED|R|保留位|
+|0x1C|0x1470|10 : 9|magnOsr|RW|磁场测量的ADC 过采样率，对应两个bit 从低至高分别代表<br>一次性32、64、128、256 个采样点。<br>magnOsr<br>0x03<br>0x02<br>0x01<br>0x00<br>采样点个数<br>256<br>128<br>64<br>32<br>ADC 的总取点数=32x 2<br>magnOsr x (2^digCtrl + 2)，完成一次<br>角度测量的时间= (ADC 的取点数+ 69) * 2μs|
+|0x1C|0x1470|8 : 3|RESERVED|R|保留位|
+|0x1C|0x1470|2 : 0|digCtrl|RW|数字滤波控制参数。|
+|0x1D|0x00|15 : 10|RESERVED|R|保留位|
+|0x1D|0x00|9 : 6|measSel|RW|测量选通信号，当主机向芯片发送三个测量模式命令中没有<br>选通，可以由measSel 选通对应的BA 的位。<br>measSel<br>0xC<br>0xA<br>0x6<br>选通平面<br>YZ 平面<br>XZ 平面<br>XY 平面|
+|0x1D|0x00|5 : 0|maesTime|RW|在周期循环测量模式时，控制每两次测量之间的间歇等待时<br>长（待机状态时长）。measTime 中设定的值对延时次数进行控<br>制，1 个lsb 对应20ms 的等待延时。measTime 中的数值对应<br>十进制设定为多少，就进行多少次延时。<br>如measTime = 0x05，则在芯片两次测量之间的等待时长为5<br>次20ms 的延时，5*20ms=100ms。|
+|0x1E|0x80|15|RESERVED|R|保留位|
+|0x1E|0x80|14 : 0|Zero[14:0<br>]|RW|设定角度输出的零点值的前15bit。<br>将需要设置为零点的值取反加1，并且取前15bit 写入zero<br>寄存器中。例如需要将角度0x01AA 设置为零点，则zero 的<br>值为0x7F2B。|
+
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+**14 DFN2x2.5-8L** 封装尺寸图
+
+
+**15** 参考电路
+
+
+昆泰芯微电子科技有限公司 **14**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+昆泰芯微电子科技有限公司 **15**
+
+
+# **KTH5762 系列**
+
+### 低功耗、高精度 3D 霍尔角度传感器
+
+|型号|封装形式|工作温度|应用场景|引脚数量|
+|---|---|---|---|---|
+|KTH5762AQ3DNE|DFN2x2.5-8L|-40℃~ +85℃|消费级|8|
+
+
+
+**17** 载带和卷盘信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Package Type|Pins|SPQ|卷盘<br>直径|卷盘<br>内宽|A0<br>(mm)|B0<br>(mm)|K0<br>(mm)|P1<br>(mm)|P2<br>(mm)|P3<br>(mm)|C 直径<br>(mm)|W<br>(mm)|Pin1<br>方向|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|DFN2*2.5-8L|8|4000|180|9.5|2.25|2.75|0.7|4.00|2.00|4.00|1.5|8.00|Q2|
+
+
+昆泰芯微电子科技有限公司 **16**
+
+
+
+
+</details>
+
+---
+
+## 📄 KTH5762AQ3_Datasheet_DS_EN.pdf
+
+<details>
+<summary>点击展开 KTH5762AQ3_Datasheet_DS_EN.pdf 完整内容</summary>
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+
+
+sensor with highly matched Hall elements
+
+
+ Integrated multi-level low power consumption,
+
+
+high-precision zero-drift op amp, and
+
+
+high-precision 16Bits ADC
+
+
+ Integrated CORDIC algorithm module, 16bits
+
+
+absolute angular position output
+
+
+ Support absolute position detection, angular
+
+
+output range up to 360 degrees
+
+
+ Magnetic Flux Density working range, XY plane
+
+
+±65mT, XZ/YZ plane±40mT Note 1
+
+
+ Support standard I2C communication interface
+
+
+ Support system interrupt wake-up function
+
+
+ Working Voltage 2.8V ~ 5.5V
+
+
+ IO supply voltage as low as 1.8V
+
+
+ Working Temperature -40℃ ~ +85℃
+
+
+**2 Typical Application**
+
+ Electronic watch knob
+
+
+**3 Overview**
+
+
+KTH5762 is a 3D (XY, XZ, YZ plane) Hall angle
+
+
+sensor with a highly matched Hall element, integrating
+
+
+low power consumption, low noise, high precision
+
+
+zero-drift op amp, high performance, low impedance
+
+
+MUX, using a high-precision 16-bit ADC, converting
+
+
+and outputting 16Bit absolute angle data. The chip
+
+
+provides an I2C communication interface.
+
+
+
+KTH5762 supports a variety of working modes
+
+
+such as Duty Cycle Mode and Single Conversion
+
+
+Mode.
+
+
+KTH5762 integrates a high-efficiency, low-power
+
+
+CORDIC algorithm module that supports the angle
+
+
+output of the plane and supports angle threshold
+
+
+detection. It has the characteristics of high integration
+
+
+and flexible application, and is widely used in various
+
+
+application scenarios.
+
+
+**4 Functional Diagram**
+
+
+Device Information
+
+|Model|Package|Package Size (Nominal)|
+|---|---|---|
+|KTH5762|DFN2*2.5-8L|2.00mm * 2.50mm|
+
+
+
+Note 1: It is recommended that the magnetic flux
+
+
+density of this plane is greater than 10mT.
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+9.2.2 Reset........................................11
+
+
+9.2.3 Data Read Frame..................... 11
+
+
+
+1 Features ................. 错误！未定义书签。
+
+
+2 Typical Application 错误！未定义书签。
+
+
+3 Overview ................ 错误！未定义书签。
+
+
+4 Functional Diagram 错误！未定义书签。
+
+
+5 Pin Definition ....... 错误！未定义书签。
+
+
+6 Specifications ....... 错误！未定义书签。
+
+
+6.1 Absolute Parameters .......................4
+
+
+6.2 Recommend Operating Conditions4
+
+
+6.3 Electrical Characteristics ................. 4
+
+
+6.4 Magnetic Properties ........................5
+
+
+6.5 Timing Parameter..........................5
+
+
+7 Measurement Mode Description 错误！
+
+
+未定义书签。
+
+
+7.1 Duty Cycle Mode........................... 6
+
+
+7.2 Single Conversion Mode................6
+
+
+7.3 Idle Mode...................................... 6
+
+
+8 Operating Status Description 错误！未
+
+
+定义书签。
+
+
+9 I2C Communication ............................9
+
+
+9.1 I2C Communication Timing 错误！未
+
+
+定义书签。
+
+
+9.2 C ommunication Commands 错误！
+
+
+未定义书签。
+
+
+9.2.1 Mode Settings 错误！未定义书签。
+
+
+
+9.2.4 Read and Write Registers........12
+
+
+10 Register Map Description .................13
+
+
+11 DFN2x2.5-8L Package Dimensions 16
+
+
+12 Reference Circuit .................................16
+
+
+13 Order Information ...............................18
+
+
+14 Tape and Reel Information 错误！未定
+
+
+义书签。
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+Figure 5-1 DFN2x2.5-8L Top view
+
+
+Table 5-1 Pin Definition
+
+
+
+
+
+
+
+
+
+
+|Pin No.|Name|Description|Type|
+|---|---|---|---|
+|1|SCL/SCLK|I2C Clock Signal|Input|
+|2|SDA/MOSI|I2C Data,Master Output Slave Input|Input/Output|
+|3|MISO|SPI Data, Master Input Slave Output|Output|
+|4|VDD_IO|IO Power Supply|Power Supply|
+|5|VSS|Ground|Ground|
+|6|VDD|Power Supply|Power Supply|
+|7|CS|Chip Selection Enable Signal|Input|
+|8|INT|Interrupt Signal<br>After the host sends a Duty Cycle Mode command to the chip,<br>when the XY plane angle value detected by the chip is greater<br>than the value set in the corresponding register, the INT pin<br>will be set to 1, and it will remain at 1 until the chip sends a<br>read command to read back the measurement data. After the<br>chip reads back, if the angle value detected by the current chip<br>is still greater than the angle value set in the register, the INT<br>pin will continue to be set to 1.|Output|
+
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+**6.1 Absolute Parameters**
+
+
+
+
+
+
+
+
+
+|Parameter|Description|Min.|Max.|Unit|
+|---|---|---|---|---|
+|VDD_MAX|Maximum Supply Voltage|-0.3|6|V|
+|VDD_IO_MAX|Maximum<br>Digital<br>IO<br>Supply Voltage|-0.3|6|V|
+|TSTORAGE|Storage Temperature|-50|150|℃|
+|VESD|ESD（HBM）||±5K|V|
+
+
+**6.2 Recommend Operating Conditions**
+
+|Parameter|Description|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|
+|VDD|Supply Voltage|2.8|3.3|5.5|V|
+|VDD_IO|Digital IO Supply Voltage|1.8||VDD|V|
+|VIH|Input High Level Voltage|0.75|||VDD_IO|
+|VIL|Input Low Level Voltage|||0.25|VDD_IO|
+|TOPERATION|Operating Temperature|-40|25|85|℃|
+
+
+
+**6.3 Electrical Characteristics**
+
+
+
+
+|Parameter|Description|Condition|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|---|
+|VDD|Supply Voltage||2.8|3.3|5.5|V|
+|VDD_IO|Digital IO Supply Voltage||1.8||VDD|V|
+|IDD,CONVXY|Conversion Current X-axis or Y-axis|VDD=3.3V||4.89||mA|
+|IDD,CONVZ|Conversion Current Z-axis|Conversion Current Z-axis||3.87||mA|
+|IDD,CONVT|Conversion Current Temperature|Conversion Current Temperature||2.58||mA|
+|IDD, STBY|Duty Cycle Mode Standby Current|Duty Cycle Mode Standby Current||2.4||μA|
+|IDD,IDLE|Idle State Current|Idle State Current||1.4||μA|
+
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+
+
+
+
+
+
+
+
+
+
+|Parameter|Description|Condition|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|---|
+|Mxy|Magnetic<br>Flux<br>Density<br>Linear<br>Range||-65||65|mT|
+|Mxz/ Myz|Magnetic<br>Flux<br>Density<br>Linear<br>Range||-40||40|mT|
+|NRMSAngle|Angle<br>Output<br>Noise|@B=20mT<br>magnOsr=0<br>digCtrl=0||0.98||Degree|
+|NRMSAngle|Angle<br>Output<br>Noise|@B=20mT<br>magnOsr=1<br>digCtrl=0||0.28||Degree|
+|NRMSAngle|Angle<br>Output<br>Noise|@B=20mT<br>magnOsr=3<br>digCtrl=0||0.128||Degree|
+|NRMSAngle|Angle<br>Output<br>Noise|@B=20mT<br>magnOsr=3<br>digCtrl=3||0.065||Degree|
+
+
+**6.5 Timing Parameter**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Parameter|Description|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|
+|Tstart|Start Up Time||4||ms|
+|TCONVM|Single<br>Axis<br>Magnetic<br>Filed<br>Conversion Time (Programmable)|165||33349|μs|
+|TCONVM|Single<br>Axis<br>Magnetic<br>Filed<br>Conversion Time (Programmable)|69+32*2magnOsr*（2+2digCtrl）|69+32*2magnOsr*（2+2digCtrl）|69+32*2magnOsr*（2+2digCtrl）|μs|
+|TCONVT|Temperature Conversion Time<br>(Programmable)|165||837|μs|
+|TCONVT|Temperature Conversion Time<br>(Programmable)|69+96*2tempOsr|69+96*2tempOsr|69+96*2tempOsr|μs|
+|TCONV_END|Time<br>from<br>the<br>end<br>of<br>the<br>measurement to the turn off of<br>simulation enablement||108||μs|
+|Tactive|Time from IDLE to ACTIVE||220||μs|
+|T meas|When measTime=0, the time to<br>complete a measurement when the<br>chip is in measurement mode|m*TCONVM + TCONVT + TCONV_END|m*TCONVM + TCONVT + TCONV_END|m*TCONVM + TCONVT + TCONV_END|μs|
+|Tsingle|Time<br>from<br>Single<br>Convertion<br>Mode<br>to<br>finish<br>one<br>single<br>measurement|Tactive + m*TCONVM + TCONVT + TCONV_END|Tactive + m*TCONVM + TCONVT + TCONV_END|Tactive + m*TCONVM + TCONVT + TCONV_END|μs|
+
+
+Note：
+
+
+
+
+
+
+
+
+- The default in the table above is m=2
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+KTH5762 supports a variety of working modes, it can be used in Duty Cycle Mode and Single Conversion Mode .
+
+
+Table 7-1 Measurement Mode Introduction
+
+|Measurement Function|Function Introduction|
+|---|---|
+|**Duty Cycle Mode**|The chip periodically measures the selected XYZ<br>channel, and when the XY plane angle measured<br>by the chip exceeds the absolute threshold set in<br>the register, the INT pin will be set to 1|
+|**Single Conversion Mode**|The chip takes a single measurement of the BA<br>channel|
+|**Idle Mode**|Exit the Duty Cycle Mode and enter the idle state|
+|**Note: B is the plane magnetic flux density, and**<br>**A is the absolute rotation angle**||
+
+
+
+**7.1 Duty Cycle Mode**
+
+
+After the host sends a Duty Cycle Mode command to the chip, the chip is in a low-power measurement mode and
+
+
+measures the selected XYZ channel at a certain frequency until the host sends an Idle Mode command to the chip.
+
+
+When the angle value detected by the chip is greater than the value set in the corresponding register, the INT pin is
+
+
+set to 1. And until the chip sends a read command to read back the measurement data, it remains at 1. After the chip
+
+
+reads back, if the angle value detected by the current chip is still greater than the angle value set in the register, the INT
+
+
+pin will continue to be set to 1. This function is only available for XY plane angle measurements. After the host reads
+
+
+back the measurement data through the Data Read Frame at one time, the INT pin is pulled low and otherwise remains
+
+
+high. The INT pin of the chip will not be actively pulled down, that is, the angle value measured by the chip at a certain
+
+
+time exceeds the angle value set in the register, after the INT pin is pulled up, if the angle value measured by the chip
+
+
+decreases at the next moment, it is lower than the set angle value, but the host does not read back the measurement data,
+
+
+and the INT pin will not actively pull down. After the chip reads back the data, if the angle value detected by the current
+
+
+chip is still greater than the angle value set in the register, the INT pin will continue to be set to 1.
+
+
+**7.2 Single Conversion Mode**
+
+
+After the host sends a command to the chip for a Single Conversion Mode, the chip will take a measurement of the
+
+
+measurement item (BA) and automatically return to the idle state.
+
+
+**7.3 Idle Mode**
+
+
+After the host sends an Idle Mode command to the chip, the chip enters the idle state. When the chip is in Duty
+
+
+Cycle Mode, the chip cannot perform operations other than the reading back frame of the measurement data, such as
+
+
+read and write registers.
+
+
+If you need to perform other operations on the chip, you need to send an Idle Mode command to make the chip
+
+
+enter the idle state. However, after sending the Idle Mode command, if there is a measurement operation currently in
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+progress, the chip will not immediately enter the Idle Mode, and it needs to wait for the current measurement to be
+
+
+completed before entering the idle state from the current Duty Cycle Mode. If other operations are required, wait for a
+
+
+measurement time delay before proceeding.
+
+
+Note: Idle state refers to the chip not being in any measurement mode. Standby state refers to the chip is in a
+
+
+measurement intermittent state.
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+|Bit|7|6|5|4|3|2|1|0|
+|---|---|---|---|---|---|---|---|---|
+|Status|RESERVED|Cycle|Single|Failing|RESERVED|RESERVED|softRst|DRDY|
+
+
+
+Except for resetting the chip, sending other commands to the chip will return the chip operating status description.
+
+
+ Cycle
+
+
+When the bit is set to 1, it indicates that the chip is currently in Duty Cycle Mode. When the host sends this mode
+
+
+command to the chip, the bit is set to 1 in the returned status, or when the chip is in this mode and the Data Read Frame
+
+
+is used to read back the measurement data at once, this bit is also set to 1.
+
+
+ Single
+
+
+When this bit is 1, it indicates that it is currently in Single Conversion Mode. When the host sends a Single Conversion
+
+
+Mode command to the chip, the corresponding bit in the status returned by the command is set to 1. After completing a
+
+
+single measurement, the chip returns to an idle state. If other commands are sent later, the corresponding bit in the
+
+
+returned status will be 0.
+
+
+ Failing
+
+
+When the current command sent is invalid, Failing=1. When in any measurement state, send other measurement
+
+
+commands again, Failing bit will be set to 1, for example, when sending a single measurement command while in Duty
+
+
+Cycle Mode, the Failing bit will be set to 1. At the same time, if reading and writing registers is performed in Duty
+
+
+Cycle Mode, the Failing bit will also be set to 1, indicating a command error.
+
+
+ softRst
+
+
+After the host sends a Reset command to the IC, the IC does not immediately return status. Therefore, it is necessary to
+
+
+determine whether the reset is successful based on the status returned for the first time when any command is received
+
+
+after the chip is reset. After the chip is successfully reset, the bit will be set to 1, and after returning the status once, this
+
+
+bit is cleared to 0. That is, when the chip receives any command for the second time after resetting, this bit of the status
+
+
+is 0.
+
+
+ DRDY
+
+
+When the host sends the Duty Cycle Mode to the chip, the corresponding magnetic field change detected by the chip
+
+
+exceeds the set threshold, this bit will be set to 1. After completing a data read, this bit is cleared to 0. When the host
+
+
+sends a Single Conversion Mode to the chip, the bit is set to 1 after completing the measurement and cleared to 0 after
+
+
+completing a data read.
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+**9.1** **I2C Communication Timing**
+
+
+Note: The following parameters are all measurement results at room temperature of 25 ℃ and VDD=3.3V.
+
+
+
+
+
+
+
+
+
+
+
+|Parameter|Symbol|Standard Mode|Col4|Quick Mode|Col6|Unit|
+|---|---|---|---|---|---|---|
+|Parameter|Symbol|Min.|Max.|Min.|Max.|Max.|
+|SCL Clock Frequency|f (SCL)||100||400|kHz|
+|SCL Clock Low Time|tw (SCLL)|4.7||1.3||μs|
+|SCL Clock High Time|tw (SCLH)|4||0.6||μs|
+|SDA Setup Time|tsu (SDA)|250||100||ns|
+|SDA Data Hold Time|th (SDA)||3.45||0.9|μs|
+|SDA and SCL Rise Time|tr (SDA)<br>tr (SCL)||1000||300|ns|
+|SDA and SCL Fall Time|tf (SDA)<br>tf (SCL)||300||300|ns|
+|START Condition Hold Time|th (ST)|4||0.6||μs|
+|REPEATED START Condition Setup Time|tsu (SR)|4.7||0.6||μs|
+|STOP Condition Setup Time|tsu (SP)|4||0.6||μs|
+|Bus Free Time Between STOP and START<br>Condition|tw(SP:ST)|4.7||1.3||μs|
+
+
+Table 9- 1 I2C Communication Parameters
+
+
+Figure 9- 1 I2C Timing Diagram
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+Table 9- 2 Command Table
+
+
+
+
+
+
+
+|Command Name|Byte1|Byte2|Byte3|Byte4|Note|
+|---|---|---|---|---|---|
+|Start Duty Cycle Mode|0010 #|N/A|N/A|N/A|#：<br>XY Plane：0110<br>XZ Plane：1010<br>YZ Plane：1100|
+|Start Single Conversion Mode|0011 #|N/A|N/A|N/A|N/A|
+|Idle Mode|1000 0000|N/A|N/A|N/A||
+|Reset|1111 0000|N/A|N/A|N/A||
+|Measurement Data Readback|0100 0110|N/A|N/A|N/A||
+|Read Register|0101 0000|Address[7:0]<br><< 2|N/A|N/A||
+|Write Register|0110 0000|Data[15:8]|Data[7:0]|Address[7:0] <<<br>2||
+
+
+The I2C device address of KTH5762 is 7’b 1111000.
+
+
+This is a list of the communication diagrams of each command, which is represented by the legend shown in the figure
+
+
+below:
+
+|S|IIC Start|
+|---|---|
+|RS|IIC Restart|
+|P|IIC Stop|
+|A|Slave Ack|
+|Nack|Master Nack|
+|A|Master Ack|
+
+
+
+Figure 9- 2 I2C Communication Diagram
+
+
+**10 Mode Settings**
+
+
+After the chip is powered on, internal initialization is performed, communication is not allowed within 4ms after
+
+
+the power supply is stable, and communication measurement is allowed when the chip enters the idle state after the
+
+
+initialization is completed.
+
+
+KTH5762 supports a variety of working modes, see Chapter 7 for details of measurement modes description. This
+
+
+product can be used in Duty Cycle Mode and Single Conversion Mode.
+
+
+**10.1 Duty Cycle Mode**
+
+|S|IIC Address[W]|Col3|A|Command|A|RS|IIC Address[R]|Col9|A|Status|NACK|P|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0010 #|A|RS|111 1000|1(R)|A|0100 XXXX|NACK|P|
+
+
+
+Figure 10- 1 Duty Cycle Mode I2C Communication Diagram
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+**10.2 Single Conversion Mode**
+
+|S|IIC Address[W]|Col3|A|Command|A|RS|IIC Address[R]|Col9|A|Status|NACK|P|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0011 #|A|RS|111 1000|1(R)|A|0010 XXXX|NACK|P|
+
+
+
+Figure 10- 2 Single Conversion Mode I2C Communication Diagram
+
+
+#：XY Plane：0110 XZ Plane：1010 YZ Plane：1100
+
+
+**10.3 Idle Mode**
+
+|S|IIC Address[W]|Col3|A|Command|A|RS|IIC Address[R]|Col9|A|Status|NACK|P|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|1000 0000|A|RS|111 1000|1(R)|A|0000 XXXX|NACK|P|
+
+
+
+Figure 10- 3 Idle Mode I2C Communication Diagram
+
+
+**11 Reset**
+
+
+The Reset command is used to reset the chip, after sending the command, the internal register configuration of the
+
+
+chip is reset to the reset state, if the chip is in Duty Cycle Mode, before resetting the chip, you need to send the Idle
+
+
+Mode command to make the chip return to the idle state.
+
+
+Reset I2C Communication Diagram is shown in the following figure:
+
+|S|IIC Address[W]|Col3|A|Command|A|P|
+|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|1111 0000|A|P|
+
+
+
+Figure 10- 3 Reset I2C Communication Diagram
+
+
+**12 Data Read Frame**
+
+
+After the chip has completed a measurement, the Data Read Frame can also be used to read back the chip operating
+
+
+status and all measurement data at once.
+
+
+The host sends a one-time data readback command to the chip, which can read back the AB data.
+
+
+
+360
+Returns a 16-bit angle value, and the angle corresponding to each LSB is 2 16
+
+
+
+
+
+
+
+, that is, the angle of the magnetic
+
+
+
+360 
+field in the selected plane= A[15:0]* 2 16 .
+
+
+Since the magnetic field value is calculated by the CORDIC algorithm, the corresponding value of the actual
+
+
+
+_B_ [15:0]*0.60725
+
+magnetic flux density should be:
+
+
+
+_B_ [15:0]
+
+
+_S_ ensitivity
+
+
+
+_S_
+
+
+
+，in practical application, the B value can be used to estimate
+
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+the magnitude of the magnetic field under the current plane, and Sensitivity values vary in different planes, so please
+
+
+When the chip measures the data, the data is returned in the order of Status, A, B, and the following is the
+
+
+readback frame of the readback data.
+
+
+
+
+
+
+
+
+|S|IIC Address[W]|Col3|A|Command|A|R<br>S|IIC Address[R]|Col9|A|Status|
+|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0100 0110|A|R<br>S|111 1000|1(R)|A|XXX0 XXXX|
+
+
+
+……
+
+
+
+|A|Data A[15:8]|A|Data A[7:0]|A|Data B[15:8]|A|Data B[7:0]|Nack|P|
+|---|---|---|---|---|---|---|---|---|---|
+|A|0xXX|A|0xXX|A|0xXX|A|0xXX|Nack|P|
+
+
+Figure 12- 1 Data Readback I2C Communication Diagram
+
+
+
+**12.1 Read and Write Registers**
+
+
+When running read and write registers, the register address should be shifted two places to the left, as shown in the
+
+
+figure below.
+
+|S|IIC Address[W]|Col3|A|Command|A|Register << 2|A|RS|IIC Address[R]|Col11|A|Status|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0101 0000|A|XXXX XXXX|A|RS|111 1000|1(R)|A|0000 XXXX|
+
+
+|A|Data [15:8]|A|Data [7:0]|Nack|P|
+|---|---|---|---|---|---|
+|A|0xXX|A|0xXX|Nack|P|
+
+
+
+Figure 12- 2 Read Register I2C Communication Diagram
+
+
+
+
+
+
+
+…
+
+
+
+
+|S|IIC Address[W]|Col3|A|Comman<br>d|A|Data [15:8]|A|Data [7:0]|A|Register << 2|A|
+|---|---|---|---|---|---|---|---|---|---|---|---|
+|S|111 1000|0(W)|A|0110<br>0000|A|0xXX|A|0xXX|A|XXXX XXXX|A|
+
+
+
+…
+
+
+…
+
+
+
+|RS|IIC Address[R]|Col3|A|Status|Nack|P|
+|---|---|---|---|---|---|---|
+|RS|111 1000|1(R)|A|0000 XXXX|Nack|P|
+
+
+Figure 12- 3 Write Register I2C Timing Diagram
+
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+
+
+
+
+
+
+
+|Address|Default|Bit|Name|R/W|Description|
+|---|---|---|---|---|---|
+|0x06|0x00|7|RESERVED|R|This address register is a status register, please refer to<br>Chapter 8 for operating status description.|
+|0x06|0x00|6|Cycle|R|R|
+|0x06|0x00|5|Single|R|R|
+|0x06|0x00|4|Failing|R|R|
+|0x06|0x00|3 : 2|RESERVED|R|R|
+|0x06|0x00|1|softRst|R|R|
+|0x06|0x00|0|DRDY|R|R|
+|0x19|0x00|15 : 0|wxyTh|RW|When the XY plane angle detected by the chip is greater than<br>the configured value in wxyTh, the INT pin is pulled up, and<br>the calculation method for writing the angle in wxyTh is<br>consistent with the calculation method for reading the chip<br>angle output.|
+|0x1B|0x00|15:14|gainSel|RW|In cases where the magnetic field amplitude of the two axes<br>is<br>different<br>due<br>to<br>assembly<br>tolerances<br>or<br>off-axis<br>applications, the selected magnetic field amplitude can be<br>corrected by this register:<br>When gainSel = 0, no amplitude correction is performed<br>When gainSel = 1, amplitude correction is made on the<br>X-axis<br>When gainSel = 2, amplitude correction is made on the<br>Y-axis<br>When gainSel = 3, amplitude correction is made on the<br>Z-axis<br>According to the corresponding application scenario, select<br>the axis that needs to be calibrated by amplitude, and after<br>the gainSel is configured, the algorithm for calculating the<br>current plane angle inside the chip will adjust the magnetic<br>field value detected by the selected axis based on the set<br>value of the gainValue, thereby achieving the goal of equal<br>amplitude of the two axis magnetic fields used for angle<br>calculation.|
+|0x1B|0x00|13:0|gainValue|RW|gainValue corrects the amplitude of the selected axis in the<br>gainSel.<br>gainValue = k*8192<br>k is the amplitude ratio of the two axes currently used to<br>calculate the plane angle.<br>·If it is necessary to obtain the angle of the YZ plane, there<br>may be differences in the sensitivity of the YZ axis<br>measurement, assembly tolerances, and other factors that<br>result in different magnetic field amplitudes between YZ|
+
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+
+|AplaneSel|Function|
+|---|---|
+|0|The chip outputs the angle value<br>of the magnetic field in the XY<br>plane|
+|1|The chip outputs the angle value<br>of the magnetic field in the YZ<br>plane|
+|2|The chip outputs the angle value<br>of the magnetic field in the XZ<br>plane|
+|3|The chip outputs the angle value<br>of the magnetic field in the XY<br>plane|
+
+
+
+|Col1|Col2|Col3|Col4|Col5|axes; If you want to adjust the amplitude of the Z-axis so that<br>the YZ amplitude is consistent when the knob is rotated for<br>one turn, GainSel is set to 3<br>(Bymax  Bymin ) / 2<br>Then k =<br>(Bzmax  Bzmin ) / 2<br>(Bymax  Bymin ) / 2<br>gainValue = *8192<br>(Bzmax  Bzmin ) / 2<br>·If you want to correct the amplitude of the Y axis so that the<br>YZ amplitude is the same when the knob is rotated for one<br>turn, gainSel is set to 2<br>(Bzmax  Bzmin ) / 2<br>Then k=<br>(Bymax  Bymin ) / 2<br>(Bzmax  Bzmin ) / 2<br>gainValue = *8192<br>(Bymax  Bymin ) / 2<br>Note: The k<1 configuration is recommended<br>GainSel selects the axis where data needs to be modified, K<br>is the multiple, and the gainValue is k*8192|
+|---|---|---|---|---|---|
+|0x1C|0x1470|15 : 14|AplaneSel|RW|Angular output plane selection<br>AplaneSel<br>Function<br>0<br>The chip outputs the angle value<br>of the magnetic field in the XY<br>plane<br>1<br>The chip outputs the angle value<br>of the magnetic field in the YZ<br>plane<br>2<br>The chip outputs the angle value<br>of the magnetic field in the XZ<br>plane<br>3<br>The chip outputs the angle value<br>of the magnetic field in the XY<br>plane|
+|0x1C|0x1470|13 : 11|RESERVED|R|Reserved bits|
+|0x1C|0x1470|10 : 9|magnOsr|RW|The ADC oversampling rate measured by the magnetic field<br>corresponds to two bits, from low to high, representing 32,<br>64, 128, and 256 sampling points at one time, respectively.<br>magnOsr<br>0x03<br>0x02<br>0x0<br>1<br>0x00|
+
+
+昆泰芯微电子科技有限公司 **14**
+
+
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+
+
+
+
+
+
+
+|measSel|0xC|0xA|0x6|
+|---|---|---|---|
+|Selected Plane|YZ Plane|XZ Plane|XY Plane|
+
+
+
+
+
+
+
+
+|Col1|Col2|Col3|Col4|Col5|The number of 256 128 64 32<br>sampling points<br>The total number of points taken by the ADC =32x 2<br>magnOsr x (2^digCtrl + 2)，The time to complete an angle<br>measurement= (The number of points taken from the ADC +<br>69) * 2μs|
+|---|---|---|---|---|---|
+|||8 : 3|RESERVED|R|Reserved bits|
+|||2 : 0|digCtrl|RW|Digital filtering control parameters.|
+|0x1D|0x00|15 : 10|RESERVED|R|Reserved bits|
+|0x1D|0x00|9 : 6|measSel|RW|Measure the select signal. When the host sends three<br>measurement mode commands to the chip without any<br>gating, the corresponding BA bit can be selected by measSel.<br>measSel<br>0xC<br>0xA<br>0x6<br>Selected Plane<br>YZ Plane<br>XZ Plane<br>XY Plane|
+|0x1D|0x00|5 : 0|maesTime|RW|In Duty Cycle Mode, the intermittent wait time between<br>measurements (standby time) is controlled. The number of<br>delays is controlled by the value set in measTime, and one<br>lsb corresponds to a waiting delay of 20ms. Delay as many<br>times as the decimal value in measTime is set.<br>For example, if measTime = 0x05, the waiting time between<br>two measurements of the chip is 5 times of 20ms delay,<br>5*20ms=100ms.|
+|0x1E|0x80|15|RESERVED|R|Reserved bits|
+|0x1E|0x80|14 : 0|Zero[14:0<br>]|RW|Set the first 15 bits of the zero value for angle output.<br>Take the opposite value that needs to be set to zero and add<br>1,and write the first 15 bits to the zero register.<br>For example, if angle 0x01AA needs to be set to zero, then<br>the value of zero is 0x7F2B.|
+
+
+
+昆泰芯微电子科技有限公司 **15**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+**14 DFN2x2.5-8L Package Dimensions**
+
+
+昆泰芯微电子科技有限公司 **16**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+**15 Reference Circuit**
+
+Note: When PCB layout, capacitors should be placed as close as possible to the chip.
+
+
+昆泰芯微电子科技有限公司 **17**
+
+
+# **KTH5762 Series**
+
+### **Low Power, High-precision 3D Hall Angle Sensor**
+
+|Part Number|Package|Temperature|Application|Number of Pins|
+|---|---|---|---|---|
+|KTH5762AQ3DNE|DFN2x2.5-8L|-40℃~ +85℃|Consumer Grade|8|
+
+
+
+**17 Tape and Reel Information**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Package Type|Pins|SPQ|Reel<br>Diameter|Reel Inside<br>Width|A0<br>(mm)|B0<br>(mm)|K0<br>(mm)|P1<br>(mm)|P2<br>(mm)|P3<br>(mm)|C<br>Diameter<br>(mm)|W<br>(mm)|Pin1<br>Direction|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|DFN2*2.5-8L|8|4000|180|9.5|2.25|2.75|0.7|4.00|2.00|4.00|1.5|8.00|Q2|
+
+
+昆泰芯微电子科技有限公司 **18**
+
+
+
+
+</details>
+
+---
+
+## 相关资源
+
+### PDF文档
+- [📋 KTH5762AQ3_Datasheet_DS_CN.pdf](/pdfs/KTH5762AQ3_Datasheet_DS_CN.pdf)
+- [📋 KTH5762AQ3_Datasheet_DS_EN.pdf](/pdfs/KTH5762AQ3_Datasheet_DS_EN.pdf)
+
+### 其他资源
+- [产品选型指南](../technical/)
+- [应用案例](../technical/)
+- [技术支持](../technical/)
+
+---
+
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们：
+
+- 📧 邮箱: support@ktsense.com
+- 📞 技术热线: 400-xxx-xxxx
+- 🌐 在线支持: [技术论坛](../technical/)
+
+---
+
+*最后更新: 2024年*
+*版本: Enhanced v1.0*
+*包含完整PDF内容和技术图片*
+
+
+## 🔗 相关产品推荐
+
+### 3D霍尔传感器
+
+- [KTH5702AQ2 增强版](./KTH5702AQ2.md) - 同系列产品
+- [KTH5701AQ1 增强版](./KTH5701AQ1.md) - 同系列产品
+- [KTH31xx 增强版](./KTH31xx.md) - 同系列产品
+### 磁编码器
+
+- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+### 霍尔开关
+
+- [KTH1201 增强版](./KTH1201.md) - 推荐霍尔开关
+### 其他传感器
+
+- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+
+---

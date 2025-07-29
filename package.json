@@ -1,0 +1,27 @@
+{
+  "name": "kuntai-product-catalog",
+  "version": "1.0.0",
+  "description": "昆泰芯片产品目录网站",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "vitepress",
+    "documentation",
+    "kuntai",
+    "sensors",
+    "hall",
+    "magnetic"
+  ],
+  "author": "昆泰芯片技术团队",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2"
+  }
+}

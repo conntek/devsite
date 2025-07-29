@@ -1,0 +1,1329 @@
+# KTH31XX系列 - 比例线性霍尔效应传感器
+
+## 📋 PDF资料下载
+
+- **[📄 KTH31xx Series datasheet.pdf](/pdfs/KTH31xx Series datasheet.pdf)** - 完整技术规格书
+
+---
+
+## 🧭 页面导航
+
+- 🔙 [返回产品摘要页面](../3d-hall/KTH31XX.md)
+- 📂 [返回3D霍尔传感器分类](../3d-hall/)
+- 🏠 [返回主页](../index.md)
+- 📚 [所有增强版技术参考](./index.md)
+
+---
+
+## 🔍 产品概述
+
+KTH31XX系列是一款高性能比例线性霍尔效应传感器，采用先进的霍尔元件和信号处理技术。该系列产品提供与磁通密度成正比的模拟电压输出，具有轨到轨输出、低噪声、高速响应等特点，广泛应用于电流检测、位置检测、振动传感等领域。
+
+### 核心特性
+- **比例线性输出**：输出电压与磁通密度成正比
+- **轨到轨模拟输出**：充分利用电源电压范围
+- **低噪声设计**：确保信号质量
+- **宽工作电压**：3.0V~5.5V
+- **高速响应**：30KHz带宽
+- **多种灵敏度选项**：1.00mV/Gs到13.50mV/Gs
+- **VDD/2静态输出**：可检测南北极磁场
+
+---
+
+## 📸 产品图片与结构
+
+### 产品外观与封装
+![KTH31XX 产品外观](./images/kth31xx/page_1_img_1_311876bb.png)
+
+### 引脚配置图
+![KTH31XX 引脚配置](./images/kth31xx/page_1_img_2_448c2310.png)
+
+### 典型应用电路
+![KTH31XX 应用电路](./images/kth31xx/page_1_img_3_68383c6d.png)
+
+### 封装尺寸图
+![KTH31XX 封装尺寸](./images/kth31xx/page_1_img_5_d2b4a381.png)
+
+### 功能框图
+![KTH31XX 功能框图](./images/kth31xx/page_2_img_4_d2b4a381.png)
+
+### 磁场检测方向
+![KTH31XX 磁场检测](./images/kth31xx/page_3_img_4_d2b4a381.png)
+
+### 性能特性曲线
+![KTH31XX 性能曲线1](./images/kth31xx/page_4_img_1_a882946a.png)
+
+![KTH31XX 性能曲线2](./images/kth31xx/page_4_img_2_9120a068.png)
+
+### 温度特性
+![KTH31XX 温度特性](./images/kth31xx/page_4_img_4_d2b4a381.png)
+
+### 灵敏度对比
+![KTH31XX 灵敏度对比](./images/kth31xx/page_5_img_1_d2b4a381.png)
+
+### 频率响应
+![KTH31XX 频率响应](./images/kth31xx/page_6_img_1_d2b4a381.png)
+
+### 线性度特性
+![KTH31XX 线性度](./images/kth31xx/page_7_img_1_d2b4a381.png)
+
+---
+
+## ⚡ 主要技术特性
+
+### 电气特性
+- **工作电压范围**：3.0V ~ 5.5V
+- **功耗**：
+  - 4.5mA @ 3.3V
+  - 5.4mA @ 5.0V
+- **输出类型**：轨到轨模拟电压输出
+- **静态输出**：VDD/2（无磁场时）
+- **带宽**：30KHz（高速响应）
+- **噪声**：低噪声输出电压
+
+### 磁场特性
+- **检测类型**：比例线性霍尔效应
+- **磁场响应**：可检测南北极磁场
+- **线性范围**：宽线性磁场范围
+- **温度稳定性**：-40℃~125℃宽温度范围
+
+### 灵敏度选项
+
+#### @VDD=3.3V条件下
+- **KTH3101系列**：1.00mV/Gs
+- **KTH3102系列**：1.65mV/Gs
+- **KTH3103系列**：2.25mV/Gs
+- **KTH3105系列**：3.30mV/Gs
+- **KTH3110系列**：6.60mV/Gs
+- **KTH3113系列**：8.90mV/Gs
+
+#### @VDD=5.0V条件下
+- **KTH3101系列**：1.50mV/Gs
+- **KTH3102系列**：2.50mV/Gs
+- **KTH3103系列**：3.40mV/Gs
+- **KTH3105系列**：5.00mV/Gs
+- **KTH3110系列**：10.00mV/Gs
+- **KTH3113系列**：13.50mV/Gs
+
+### 封装选项
+- **SOT-23**：表面贴装小型封装
+- **TO-92S**：直插式封装
+- **DFN1616**：超小型无引线封装
+
+---
+
+## 📄 KTH31xx Series datasheet.pdf
+
+<details>
+<summary>点击展开 KTH31xx Series datasheet.pdf 完整内容</summary>
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+**3** **Typical Application Circuit**
+
+
+ Proportional Linear Hall-Effect Magnetic Sensor
+
+
+ Rail-to-Rail Analog Output
+
+
+ Low Noise Output Voltage
+
+
+ Wide Operating Voltage Range: 3.0V~5.5V
+
+
+ [Low Power Consumption:：4.5mA@3.3V V](mailto:3.3mA@5.0V) DD
+
+
+
+[5.4mA@5.0V V](mailto:3.3mA@5.0V) DD
+
+ High-Speed 30KHz Bandwidth
+
+
+ VDD/2 Quiescent Output,Capable of detecting
+
+
+both N and S pole magnetic fields
+
+
+ Multiple Sensitivity Options:
+
+
+1.00mV/Gs KTH3101Series@V DD =3.3V
+
+
+1.65mV/GS KTH3102Series@V DD =3.3V
+
+
+2.25mV/Gs KTH3103Series@V DD =3.3V
+
+
+3.30mV/Gs KTH3105Series@V DD =3.3V
+
+
+6.60mV/Gs KTH3110Series@V DD =3.3V
+
+
+8.90mV/Gs KTH3113Series@V DD =3.3V
+
+
+1.50mV/Gs KTH3101Series@V DD =5V
+
+
+2.50mV/Gs KTH3102Series@V DD =5V
+
+
+3.40mV/Gs KTH3103Series@V DD =5V
+
+
+5.00mV/Gs KTH3105Series@V DD =5V
+
+
+10.00mV/Gs KTH3110Series@V DD =5V
+
+
+13.50mV/Gs KTH3113Series@V DD =5V
+
+
+ Package：SOT-23 TO-92S DFN1616
+
+
+ Operating Temperature：-40℃~125℃
+
+
+ RoHS Compliant
+
+**2** **Application**
+
+ Current Sensor
+
+
+ Current Sensor
+
+
+ Position Detection
+
+
+ Vibration Sensor,Liquid Level Sensor
+
+
+ Proximity Switch
+
+
+ Rotary Encoder
+
+
+Package
+
+
+
+**4** **Descriptions**
+
+KTH31xx is a linear Hall-effect sensor that provides
+
+
+a proportional response to magnetic flux density.
+
+
+The internal circuitry of KTH31xx integrates a Hall
+
+
+sensor, linear amplifier, and push-pull output stage
+
+
+circuit. It features high-speed, low-noise output
+
+
+characteristics and delivers linear performance
+
+
+across a wide temperature range of -40℃to125℃.
+
+
+This sensor is suitable for consumer and industrial
+
+
+applications requiring magnetic field detection.
+
+
+The KTH31xx features high sensitivity, enabling
+
+
+accurate response to changes in weak magnetic
+
+
+fields. In the absence of a magnetic field, the
+
+
+analog output remains at 1/2 VDD. The output
+
+
+varies linearly with the applied magnetic flux density,
+
+
+and multiple sensitivity options are available for
+
+
+selection. The sensor generates distinct voltage
+
+
+outputs for south and north magnetic poles.
+
+
+The KTH31xx detects magnetic flux density
+
+
+perpendicular to the package top surface. It utilizes
+
+
+high-qualitySOT-23,TO-92S,andDFN1616
+
+
+packages to accommodate diverse application
+
+
+requirements.
+
+
+
+**KT-Sense Semiconductor Co. Ltd** **1**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+DFN1616
+
+|Pin Name|Pin Number|Pin Number|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|OUT|2|Output Pin|
+|GND|3|Ground Pin|
+
+
+|Pin Name|Pin Number|Pin Number|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|OUT|2|Output Pin|
+|GND|3|Ground Pin|
+
+
+
+**KT-Sense Semiconductor Co. Ltd** **2**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+**引脚结构（俯视图）**
+
+
+|Pin Name|Pin Number|Pin Number|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|GND|2|Ground Pin|
+|OUT|3|Output Pin|
+
+
+
+**6** **Block Diagram**
+
+
+**KT-Sense Semiconductor Co. Ltd** **3**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+**7** **Output** **Characteristics(TA=-40** ℃ **~125** ℃ **,V** **DD** **=3.0V~5.5V )**
+
+
+The KTH31XX can detect magnetic flux perpendicular to the top surface of the package.As shown in
+
+
+Table 1:When an S-pole magnetic field approaches the top surface of the chip package, the output voltage
+
+
+exceeds VDD/2. When an N-pole magnetic field approaches the top surface of the chip package, the output
+
+
+voltage drops below VDD/2.
+
+|Parameter|Conditions|Output|
+|---|---|---|
+|**South pole**|B>0 Gauss|>VDD/2|
+|**North pole**|B<0 Gauss|<VDD/2|
+
+
+
+Table 1
+
+
+Figure 1. North Pole and South Pole approaching the front side of the chip
+**7.2Typical Application Scenarios2**
+
+
+The KTH31XX can detect magnetic flux perpendicular to the top surface of the package。As shown in
+
+
+Table 2，When the magnet is positioned to the left of the chip, the output voltage of the chip is less than VDD/2.
+
+
+As shown in Fig.3, when the magnet is directly above the chip, the output voltage equals VDD/2. As shown in
+
+
+Fig.4, when the magnet is positioned to the right of the chip, the output voltage exceeds VDD/2.
+
+
+**7.3 Output characteristic curve**
+
+
+**KT-Sense Semiconductor Co. Ltd** **4**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+KTH31 XX-XXX
+
+
+Package abbreviation: ：SS3：SOT-23
+
+
+DF16：DFN1616
+
+
+TO3：TO-92S
+
+
+Sensitivity：01：1.00mV/Gs(@V DD =3.3V) 1.50mV/Gs(@V DD =5V)
+
+
+02：1.65mV/Gs(@V DD =3.3V) 2.50mV/Gs(@V DD =5V)
+
+
+03：2.25mV/Gs(@V DD =3.3V) 3.40mV/Gs(@V DD =5V)
+
+
+05：3.30mV/Gs(@V DD =3.3V) 5.00mV/Gs(@V DD =5V)
+
+
+10：6.60mV/Gs(@V DD =3.3V) 10.00mV/Gs(@V DD =5V)
+
+
+13：8.90mV/Gs(@V DD =3.3V) 13.50mV/Gs(@V DD =5V)
+
+
+**9** **Absolute Maximum Ratings** （ **@TA=+25** ℃ **, unless otherwise specified** ）
+
+|Symbol|Parameter|Value|Unit|
+|---|---|---|---|
+|VDD|Supply Voltage|6.5|V|
+|IOUTPUT|Output Current|1.5|mA|
+|VOUT|Analog Output Voltage|-0.2~VDD + 0.2|V|
+|TA|Operating temperature Range|-40～+125|oC|
+|TSTG|Storage Temperature Range|-65～+150|oC|
+|TJ|Maximum Junction Temperature|+150|oC|
+
+
+
+Note: Exceeding the absolute maximum ratings may cause permanent damage. Exposure to
+
+
+absolute-maximum rated conditions for extended periods may affect device reliability.
+
+
+**10 ESD**
+
+|ESD|Value|Unit|
+|---|---|---|
+|HBM|5K|V|
+
+
+
+**KT-Sense Semiconductor Co. Ltd** **5**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+**11 Electronics Characteristics** （ **@TA=-40** ℃ **~125** ℃ **, VDD=3.0V~5.5V, unless otherwise**
+
+|KTH31XX Series|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|**Symbol**|**Parameter**|**Condition**|**Min.**|**Typ.**|**Max.**|**Unit**|
+|VDD|Supply Voltage|Operating|3.0|3.3|5.5|V|
+|IDD|Supply Current|VDD=3.3V B=0 Gs TA=25℃|—|4.5|5.5|mA|
+|IDD|Supply Current|VDD=5.0V B=0 Gs TA=25℃|—|5.4|6.5|mA|
+|ISC|Sink Current|TA=25℃|-1.5|—|1.5|mA|
+|BW|Bandwidth||—|30|—|KHz|
+|TPO|Power on Time|TA=25℃|—|20|40|μS|
+|NF|Noise|KTH3101, TA=25℃|—|2.4|—|mVRMS|
+|NF|Noise|KTH3102, TA=25℃|—|3.0|—|mVRMS|
+|NF|Noise|KTH3103, TA=25℃|—|3.5|—|mVRMS|
+|NF|Noise|KTH3105, TA=25℃|—|4.8|—|mVRMS|
+|NF|Noise|KTH3110, TA=25℃|—|7.2|—|mVRMS|
+|NF|Noise|KTH3113, TA=25℃|—|8.6|—|mVRMS|
+|CL|Output Loading Capacitance||—|—|10|nF|
+
+
+
+**KT-Sense Semiconductor Co. Ltd** **6**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+**12 Magnetic Characteristics** （ **@TA=-40** ℃ **~125** ℃ **, VDD=3.0V~5.5V, unless otherwise**
+
+
+
+
+
+
+
+
+|KTH31XX Series|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|**Symbol**|**Parameter**|**Condition**|**Min.**|**Typ.**|**Max.**|**Unit**|
+|VQ|Quiescent Voltage|VDD=3.3V, B=0, TA=25℃|1.630|1.65|1.670|V|
+|VQ|Quiescent Voltage|VDD=5.0V, B=0, TA=25℃|2.475|2.5|2.525|V|
+|VQ(T)|VQ Variation Over Temperature|B=0, TA=-40℃~125℃|—|±1%*VDD|—|V|
+|VQRE|Quiescent Voltage Ratio Error||—|±0.5|—|%|
+|VL|Output Voltage Linearity Range||0.25|—|VDD-0.25|V|
+|SENS(T)|SENS Variation Over Temperature||—|0.1|—|%/℃|
+|SLE|Sensitivity Linearity Error||-1.5|—|1.5|%|
+|Sensitivity|Sensitivity<br>（VDD=3.3V，TA=25℃)|KTH3101|0.93|1.00|1.07|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=3.3V，TA=25℃)|KTH3102|1.53|1.65|1.76|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=3.3V，TA=25℃)|KTH3103|2.10|2.25|2.41|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=3.3V，TA=25℃)|KTH3105|3.07|3.30|3.53|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=3.3V，TA=25℃)|KTH3110|6.14|6.60|7.06|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=3.3V，TA=25℃)|KTH3113|8.28|8.90|9.52|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=5.0V，TA=25℃)|KTH3101|1.40|1.50|1.61|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=5.0V，TA=25℃)|KTH3102|2.33|2.50|2.67|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=5.0V，TA=25℃)|KTH3103|3.16|3.40|3.68|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=5.0V，TA=25℃)|KTH3105|4.65|5.00|5.35|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=5.0V，TA=25℃)|KTH3110|9.30|10.00|10.70|mV/Gs|
+|Sensitivity|Sensitivity<br>（VDD=5.0V，TA=25℃)|KTH3113|12.56|13.50|14.45|mV/Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=3.3V)|KTH3101|—|±1400|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=3.3V)|KTH3102|—|±840|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=3.3V)|KTH3103|—|±620|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=3.3V)|KTH3105|—|±420|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=3.3V)|KTH3110|—|±210|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=3.3V)|KTH3113|—|±150|—|Gs|
+
+
+
+**KT-Sense Semiconductor Co. Ltd** **7**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+
+
+
+
+
+
+|Magnetic<br>Range|Magnetic Field Range<br>（V DD=5.0V)|KTH3101|—|±1500|—|Gs|
+|---|---|---|---|---|---|---|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=5.0V)|KTH3102|—|±900|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=5.0V)|KTH3103|—|±660|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=5.0V)|KTH3105|—|±450|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=5.0V)|KTH3110|—|±225|—|Gs|
+|Magnetic<br>Range|Magnetic Field Range<br>（VDD=5.0V)|KTH3113|—|±165|—|Gs|
+
+
+
+**13 Performance Graphs**
+
+
+Supply Voltage VS T emperature @VDD=3.3V Supply Voltage VS T emperature @VDD=5V
+
+
+Quiescent Voltage VS T emperature @VDD=3.3V Quiescent Voltage VS T emperature @VDD=5V
+
+
+**KT-Sense Semiconductor Co. Ltd** **8**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+Sensitivity VS T emperature @VDD=3.3V Sensitivity VS T emperature @VDD=5V
+
+
+Quiescent Voltage VS Supply Voltage @TA=25℃
+
+
+Output VS Magnetic @VDD=3.3V
+
+
+**KT-Sense Semiconductor Co. Ltd** **9**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+Output VS Magnetic @VDD=5V
+
+
+
+**14** **Order Information**
+
+
+
+
+
+
+
+
+
+|Part Numbers|Package|Number<br>of Pins|Operating<br>Temperature|Sensitivity<br>(@V =3.3V)<br>DD|Sensitivity<br>(@V =5V)<br>DD|
+|---|---|---|---|---|---|
+|KTH3101-SS3|SOT-23|3|-40℃～+125℃|1.00mV/Gs|1.50mV/Gs|
+|KTH3101-DF16|DFN1616|3|--40℃～+125℃|1.00mV/Gs|1.50mV/Gs|
+|KTH3101-TO3|TO-92S|3|-40℃～+125℃|1.00mV/Gs|1.50mV/Gs|
+|KTH3102-SS3|SOT-23|3|-40℃～+125℃|1.65mV/Gs|2.50mV/Gs|
+|KTH3102-DF16|DFN1616|3|--40℃～+125℃|1.65mV/Gs|2.50mV/Gs|
+|KTH3102-TO3|TO-92S|3|-40℃～+125℃|1.65mV/Gs|2.50mV/Gs|
+|KTH3103-SS3|SOT-23|3|-40℃～+125℃|2.25mV/Gs|3.40mV/Gs|
+|KTH3103-DF16|DFN1616|3|--40℃～+125℃|2.25mV/Gs|3.40mV/Gs|
+|KTH3103-TO3|TO-92S|3|-40℃～+125℃|2.25mV/Gs|3.40mV/Gs|
+|KTH3105-SS3|SOT-23|3|-40℃～+125℃|3.30mV/Gs|5.00mV/Gs|
+|KTH3105-DF16|DFN1616|3|--40℃～+125℃|3.30mV/Gs|5.00mV/Gs|
+|KTH3105-TO3|TO-92S|3|-40℃～+125℃|3.30mV/Gs|5.00mV/Gs|
+|KTH3110-SS3|SOT-23|3|-40℃～+125℃|6.60mV/Gs|10.00mV/Gs|
+|KTH3110-DF16|DFN1616|3|--40℃～+125℃|6.60mV/Gs|10.00mV/Gs|
+|KTH3110-TO3|TO-92S|3|-40℃～+125℃|6.60mV/Gs|10.00mV/Gs|
+|KTH3113-SS3|SOT-23|3|-40℃～+125℃|8.90mV/Gs|13.50mV/Gs|
+|KTH3113-DF16|DFN1616|3|--40℃～+125℃|8.90mV/Gs|13.50mV/Gs|
+|KTH3113-TO3|TO-92S|3|-40℃～+125℃|8.90mV/Gs|13.50mV/Gs|
+
+
+**KT-Sense Semiconductor Co. Ltd** **10**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+SOT-23
+
+
+
+
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|
+|---|---|---|
+|**Symbol**|**Min.**|**Max.**|
+|A|-|1.15|
+|A1|0.00|0.1|
+|A2|0.9|1.1|
+|b|0.30|0.50|
+|c|0.132|0.202|
+|D|2.8|3.0|
+|E|2.25|2.55|
+|E1|1.2|1.4|
+|e|0.95 TYP|0.95 TYP|
+|e1|1.8|2.0|
+|L|0.30|0.50|
+|θ|0︒|8︒|
+
+
+**KT-Sense Semiconductor Co. Ltd** **11**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+DFN1616
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|0.450|-|0.550|
+|A1|0.000|-|0.050|
+|A2|0.150 REF.|0.150 REF.|0.150 REF.|
+|D|1.550|-|1.650|
+|E|1.550|-|1.650|
+|b|0.200|-|0.300|
+|e|0.950|-|1.050|
+|L|0.175 REF|0.175 REF|0.175 REF|
+|L1|0.200|-|0.300|
+
+
+**KT-Sense Semiconductor Co. Ltd** **12**
+
+
+**KTH31XX Series**
+
+
+**Proportional Linear Hall Effect Sensor，Analog Voltage Output**
+
+
+TO-92S
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|2.90|3.00|3.10|
+|b|0.35|0.39|0.50|
+|b1|0.40|0.44|0.55|
+|C|0.36|0.38|0.45|
+|D|3.90|4.00|4.10|
+|E|1.42|1.52|1.62|
+|E1||0.75||
+|e|1.27 TYP|1.27 TYP|1.27 TYP|
+|L|13.50|14.50|15.50|
+|θ1||6°||
+|θ2||3°||
+|θ3||45°||
+|θ4||3°||
+
+
+**KT-Sense Semiconductor Co. Ltd** **13**
+
+
+
+
+</details>
+
+---
+
+## 📄 KTH31xx Series产品手册.pdf
+
+<details>
+<summary>点击展开 KTH31xx Series产品手册.pdf 完整内容</summary>
+
+ 比例式线性霍尔效应磁传感器
+
+
+ 轨到轨模拟输出
+
+
+ 低噪声输出电压
+
+
+ 宽工作电压范围：3.0V~5.5V
+
+
+ [低功耗：4.5mA@3.3V V](mailto:3.3mA@5.0V) DD
+
+
+[5.4mA@5.0V V](mailto:3.3mA@5.0V) DD
+
+ 高速30KHz带宽
+
+
+ V DD /2 静态输出，可检测N极和S极磁场
+
+
+ 多灵敏度可选:
+
+
+1.00mV/Gs KTH3101系列@V DD =3.3V
+
+
+1.65mV/GS KTH3102系列@V DD =3.3V
+
+
+2.25mV/Gs KTH3103系列@V DD =3.3V
+
+
+3.30mV/Gs KTH3105系列@V DD =3.3V
+
+
+6.60mV/Gs KTH3110系列@V DD =3.3V
+
+
+8.90mV/Gs KTH3113系列@V DD =3.3V
+
+
+1.50mV/Gs KTH3101系列@V DD =5V
+
+
+2.50mV/Gs KTH3102系列@V DD =5V
+
+
+3.40mV/Gs KTH3103系列@V DD =5V
+
+
+5.00mV/Gs KTH3105系列@V DD =5V
+
+
+10.00mV/Gs KTH3110系列@V DD =5V
+
+
+13.50mV/Gs KTH3113系列@V DD =5V
+
+
+ 封装类型：SOT-23 TO-92S DFN1616
+
+
+ 工作温度范围：-40℃~125℃
+
+
+ 符合RoHS标准
+
+**2** 典型应用
+
+ 电流传感器
+
+
+ 电机控制
+
+
+ 位置检测
+
+
+ 震动传感，液位传感，称重传感器
+
+
+ 接近开关
+
+
+ 旋转编码器
+
+
+封装示意图
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+**3** 应用电路原理图
+
+
+**4** 概述
+
+KTH31XX是一款线性霍尔效应传感器，可按比例响
+
+
+应磁通量密度。KTH31XX内部电路包含霍尔传感器、
+
+
+线性放大器和推挽输出级电路。具有高速、低噪声输
+
+
+出特性，在-40℃至125℃的宽温度范围内实现线性
+
+
+性能。可用于消费类、工业类各种磁场检测。
+
+
+KTH31XX具有高灵敏度，可以准确的反应微弱磁场
+
+
+的变化。当不存在磁场时，模拟输出 1/2 V DD 。输出
+
+
+会随施加的磁通量密度呈线性变化。多种灵敏度可供
+
+
+用户选择。南北磁极产生唯一的电压。
+
+
+KTH31XX可检测垂直于封装顶部的磁通量。采用高
+
+
+品质SOT-23,TO-92S,DFN1616 封装以适配各种应
+
+
+用。
+
+
+输出特性曲线图
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+SOT-23
+
+
+DFN1616
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|OUT|2|输出端|
+|GND|3|地|
+
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|GND|2|地|
+|OUT|3|输出端|
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|GND|2|接地端|
+|OUT|3|输出端|
+
+
+**6** 功能框图
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+**引脚结构（俯视图）**
+
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+KTH31XX可检测垂直于封装顶部的磁通量。如表格1所示，当S极磁场靠近芯片封装顶部时，芯片输出端电
+
+
+压大于V DD /2；当N极磁场靠近芯片封装顶部时，芯片输出端电压小于V DD /2。
+
+|项目|工作条件|输出|
+|---|---|---|
+|**South pole**|B>0 Gauss|>VDD/2|
+|**North pole**|B<0 Gauss|<VDD/2|
+
+
+
+表格1
+
+
+图1 磁铁N极或S极靠近芯片正面
+
+
+**7.2** 典型应用场景 **2**
+
+
+KTH31XX可检测垂直于封装顶部的磁通量。如图2所示，当磁铁位于芯片左侧时，芯片输出端电压小于
+
+
+V DD /2；如图3所示，当磁铁位于芯片正上方时，芯片输出端电压等于V DD /2；如图4所示，当磁铁位于芯片右侧
+
+
+时，芯片输出端电压大于V DD /2。
+
+
+图2 磁铁位于芯片左侧 图3 磁铁位于芯片中心 图4 磁铁位于芯片右侧
+
+
+**7.3** 输出特性曲线图
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+KTH31 XX-XXX
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+封装简称：SS3：SOT-23
+
+
+DF16：DFN1616
+
+
+TO3：TO-92S
+
+
+灵敏度型号：01：1.00mV/Gs(@V DD =3.3V) 1.50mV/Gs(@V DD =5V)
+
+
+02：1.65mV/Gs(@V DD =3.3V) 2.50mV/Gs(@V DD =5V)
+
+
+03：2.25mV/Gs(@V DD =3.3V) 3.40mV/Gs(@V DD =5V)
+
+
+05：3.30mV/Gs(@V DD =3.3V) 5.00mV/Gs(@V DD =5V)
+
+
+10：6.60mV/Gs(@V DD =3.3V) 10.00mV/Gs(@V DD =5V)
+
+
+13：8.90mV/Gs(@V DD =3.3V) 13.50mV/Gs(@V DD =5V)
+
+
+
+**9** 绝对最大额定值 **(@TA=+25** ℃，除特别说明外 **)**
+
+|项目|参数说明|数值|单位|
+|---|---|---|---|
+|VDD|供电电压|6.5|V|
+|IOUTPUT|输出驱动电流|1.5|mA|
+|VOUT|模拟输出电压|-0.2~VDD + 0.2|V|
+|TA|工作温度范围|-40～+125|oC|
+|TSTG|存储温度范围|-65～+150|oC|
+|TJ|结点最高耐温|+150|oC|
+
+
+
+注: 超过绝对最大额定值可能造成永久性损坏。长时间工作于绝对最大额定条件下会影响芯片的可靠性。
+
+
+**10 ESD** 额定值
+
+|ESD|值|单位|
+|---|---|---|
+|HBM|5K|V|
+
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+**11** 电参数 **(@T** **A** **=-40** ℃ **~ +125** ℃， **V** **DD** **=3.0V ~ 5.5V** ，除特别说明外 **)**
+
+|KTH31XX系列|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|项目|参数说明|工作条件|最小值**.**|典型值|最大值|单位|
+|VDD|供电电压|工作状态|3.0|3.3|5.5|V|
+|IDD|供电电流|VDD=3.3V B=0 Gs TA=25℃|—|4.5|5.5|mA|
+|IDD|供电电流|VDD=5.0V B=0 Gs TA=25℃|—|5.4|6.5|mA|
+|ISC|短路电流|TA=25℃|-1.5|—|1.5|mA|
+|BW|带宽||—|30|—|KHz|
+|TPO|上电时间|TA=25℃|—|20|40|μS|
+|NF|输出噪声|KTH3101, TA=25℃|—|2.4|—|mVRMS|
+|NF|输出噪声|KTH3102, TA=25℃|—|3.0|—|mVRMS|
+|NF|输出噪声|KTH3103, TA=25℃|—|3.5|—|mVRMS|
+|NF|输出噪声|KTH3105, TA=25℃|—|4.8|—|mVRMS|
+|NF|输出噪声|KTH3110, TA=25℃|—|7.2|—|mVRMS|
+|NF|输出噪声|KTH3113, TA=25℃|—|8.6|—|mVRMS|
+|CL|负载电容||—|—|10|nF|
+
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+**12** 磁参数 **(@T** **A** **=-40** ℃ **~ +125** ℃， **V** **DD** **=3.0V ~ 5.5V** ， 除特别说明外 **)**
+
+
+
+
+
+
+
+
+|KTH31XX系列|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|项目|参数说明|工作条件|最小值**.**|典型值|最大值|单位|
+|VQ|静态电压|VDD=3.3V, B=0, TA=25℃|1.630|1.65|1.670|V|
+|VQ|静态电压|VDD=5.0V, B=0, TA=25℃|2.475|2.5|2.525|V|
+|VQ(T)|静态电压温漂|B=0, TA=-40℃至125℃|—|±1%*VDD|—|V|
+|VQRE|静态电压比例误差||—|±0.5|—|%|
+|VL|输出电压线性范围||0.25|—|VDD-0.25|V|
+|SENS(T)|灵敏度温漂||—|0.1|—|%/℃|
+|SLE|灵敏度线性误差||-1.5|—|1.5|%|
+|Sensitivity|灵敏度<br>（VDD=3.3V，TA=25℃)|KTH3101|0.93|1.00|1.07|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=3.3V，TA=25℃)|KTH3102|1.53|1.65|1.76|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=3.3V，TA=25℃)|KTH3103|2.10|2.25|2.41|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=3.3V，TA=25℃)|KTH3105|3.07|3.30|3.53|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=3.3V，TA=25℃)|KTH3110|6.14|6.60|7.06|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=3.3V，TA=25℃)|KTH3113|8.28|8.90|9.52|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=5.0V，TA=25℃)|KTH3101|1.40|1.50|1.61|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=5.0V，TA=25℃)|KTH3102|2.33|2.50|2.67|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=5.0V，TA=25℃)|KTH3103|3.16|3.40|3.68|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=5.0V，TA=25℃)|KTH3105|4.65|5.00|5.35|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=5.0V，TA=25℃)|KTH3110|9.30|10.00|10.70|mV/Gs|
+|Sensitivity|灵敏度<br>（VDD=5.0V，TA=25℃)|KTH3113|12.56|13.50|14.45|mV/Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=3.3V)|KTH3101|—|±1400|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=3.3V)|KTH3102|—|±840|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=3.3V)|KTH3103|—|±620|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=3.3V)|KTH3105|—|±420|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=3.3V)|KTH3110|—|±210|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=3.3V)|KTH3113|—|±150|—|Gs|
+
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+
+|Magnetic<br>Range|磁场检测范围（V DD=5.0V)|KTH3101|—|±1500|—|Gs|
+|---|---|---|---|---|---|---|
+|Magnetic<br>Range|磁场检测范围（VDD=5.0V)|KTH3102|—|±900|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=5.0V)|KTH3103|—|±660|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=5.0V)|KTH3105|—|±450|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=5.0V)|KTH3110|—|±225|—|Gs|
+|Magnetic<br>Range|磁场检测范围（VDD=5.0V)|KTH3113|—|±165|—|Gs|
+
+
+
+**13** 性能曲线图
+
+
+工作电流VS 工作温度@VDD=3.3V 工作电流VS 工作温度@VDD=5V
+
+
+静态电压 VS 工作温度@VDD=3.3V 静态电压VS 工作温度@VDD=5V
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+灵敏度 VS 工作温度@VDD=3.3V 灵敏度VS 工作温度@VDD=5V
+
+
+静态电压 VS 工作电压@TA=25℃
+
+
+输出电压 VS 磁场@VDD=3.3V
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+输出电压 VS 磁场@VDD=5V
+
+
+**14** 订货信息
+
+|型号|封装形式|引脚数|温度|灵敏度(@V =3.3V)<br>DD|灵敏度(@V =5V)<br>DD|
+|---|---|---|---|---|---|
+|KTH3101-SS3|SOT-23|3|-40℃～+125℃|1.00mV/Gs|1.50mV/Gs|
+|KTH3101-DF16|DFN1616|3|--40℃～+125℃|1.00mV/Gs|1.50mV/Gs|
+|KTH3101-TO3|TO-92S|3|-40℃～+125℃|1.00mV/Gs|1.50mV/Gs|
+|KTH3102-SS3|SOT-23|3|-40℃～+125℃|1.65mV/Gs|2.50mV/Gs|
+|KTH3102-DF16|DFN1616|3|--40℃～+125℃|1.65mV/Gs|2.50mV/Gs|
+|KTH3102-TO3|TO-92S|3|-40℃～+125℃|1.65mV/Gs|2.50mV/Gs|
+|KTH3103-SS3|SOT-23|3|-40℃～+125℃|2.25mV/Gs|3.40mV/Gs|
+|KTH3103-DF16|DFN1616|3|--40℃～+125℃|2.25mV/Gs|3.40mV/Gs|
+|KTH3103-TO3|TO-92S|3|-40℃～+125℃|2.25mV/Gs|3.40mV/Gs|
+|KTH3105-SS3|SOT-23|3|-40℃～+125℃|3.30mV/Gs|5.00mV/Gs|
+|KTH3105-DF16|DFN1616|3|--40℃～+125℃|3.30mV/Gs|5.00mV/Gs|
+|KTH3105-TO3|TO-92S|3|-40℃～+125℃|3.30mV/Gs|5.00mV/Gs|
+|KTH3110-SS3|SOT-23|3|-40℃～+125℃|6.60mV/Gs|10.00mV/Gs|
+|KTH3110-DF16|DFN1616|3|--40℃～+125℃|6.60mV/Gs|10.00mV/Gs|
+|KTH3110-TO3|TO-92S|3|-40℃～+125℃|6.60mV/Gs|10.00mV/Gs|
+|KTH3113-SS3|SOT-23|3|-40℃～+125℃|8.90mV/Gs|13.50mV/Gs|
+|KTH3113-DF16|DFN1616|3|--40℃～+125℃|8.90mV/Gs|13.50mV/Gs|
+|KTH3113-TO3|TO-92S|3|-40℃～+125℃|8.90mV/Gs|13.50mV/Gs|
+
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+SOT-23
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|
+|---|---|---|
+|**Symbol**|**Min.**|**Max.**|
+|A|-|1.15|
+|A1|0.00|0.1|
+|A2|0.9|1.1|
+|b|0.30|0.50|
+|c|0.132|0.202|
+|D|2.8|3.0|
+|E|2.25|2.55|
+|E1|1.2|1.4|
+|e|0.95 TYP|0.95 TYP|
+|e1|1.8|2.0|
+|L|0.30|0.50|
+|θ|0︒|8︒|
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+DFN1616
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|0.450|-|0.550|
+|A1|0.000|-|0.050|
+|A2|0.150 REF.|0.150 REF.|0.150 REF.|
+|D|1.550|-|1.650|
+|E|1.550|-|1.650|
+|b|0.200|-|0.300|
+|e|0.950|-|1.050|
+|L|0.175 REF|0.175 REF|0.175 REF|
+|L1|0.200|-|0.300|
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH31XX 系列**
+
+## **比例式线性霍尔效应传感器，模拟电压输出**
+
+TO-92S
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|2.90|3.00|3.10|
+|b|0.35|0.39|0.50|
+|b1|0.40|0.44|0.55|
+|C|0.36|0.38|0.45|
+|D|3.90|4.00|4.10|
+|E|1.42|1.52|1.62|
+|E1||0.75||
+|e|1.27 TYP|1.27 TYP|1.27 TYP|
+|L|13.50|14.50|15.50|
+|θ1||6°||
+|θ2||3°||
+|θ3||45°||
+|θ4||3°||
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+
+
+</details>
+
+---
+
+## 相关资源
+
+### PDF文档
+- [📋 KTH31xx Series datasheet.pdf](/pdfs/KTH31xx Series datasheet.pdf)
+- [📋 KTH31xx Series产品手册.pdf](/pdfs/KTH31xx Series产品手册.pdf)
+
+### 其他资源
+- [产品选型指南](../technical/)
+- [应用案例](../technical/)
+- [技术支持](../technical/)
+
+---
+
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们：
+
+- 📧 邮箱: support@ktsense.com
+- 📞 技术热线: 400-xxx-xxxx
+- 🌐 在线支持: [技术论坛](../technical/)
+
+---
+
+*最后更新: 2024年*
+*版本: Enhanced v1.0*
+*包含完整PDF内容和技术图片*
+
+
+## 🔗 相关产品推荐
+
+### 3D霍尔传感器
+
+- [KTH5762AQ3 增强版](./KTH5762AQ3.md) - 同系列产品
+- [KTH5761AQ3 增强版](./KTH5761AQ3.md) - 同系列产品
+- [KTH5701AQ2AQ3](../3d-hall/KTH5701AQ2AQ3.md) - 同系列产品
+### 磁编码器
+
+- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+### 霍尔开关
+
+- [KTH1201 增强版](./KTH1201.md) - 推荐霍尔开关
+### 其他传感器
+
+- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+
+---

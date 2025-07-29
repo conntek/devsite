@@ -1,0 +1,432 @@
+# KTH1611 - 南极霍尔开关
+
+[返回KTH16xx系列](./README.md) | [返回霍尔开关目录](../index.md)
+
+## 产品定位
+
+**KTH1611**是[KTH16xx系列](../enhanced-products/KTH16xx/KTH16xx-series.md#kth1611)中的**南极单极霍尔开关**，专门检测南极(S极)磁场，与[KTH1621](./KTH1621.md)形成互补，适合需要极性识别的精密应用。
+
+### 与系列其他产品的主要区别
+
+| 对比项目 | KTH1611 | 主要差异说明 |
+|----------|---------|-------------|
+| **vs KTH1601** | 仅检测南极 | KTH1601为全极检测(南北极都敏感) |
+| **vs KTH1604** | 单输出 | KTH1604为双输出(南北极分别输出) |
+| **vs KTH1605P** | 标准频率 | KTH1605P支持5KHz高频响应 |
+| **vs KTH1621** | 检测南极 | KTH1621检测北极，两者互补 |
+| **vs KTH1631** | 开关型 | KTH1631为双极锁存型 |
+| **vs KTH1642** | 单极检测 | KTH1642为全极检测 |
+
+## 独有特性
+
+### 🎯 南极专用检测
+**专门检测南极(S极)磁场**，与[KTH1621北极检测](./KTH1621.md#北极专用检测)形成完美互补：
+
+| 检测特性 | KTH1611 | 对比说明 |
+|----------|---------|----------|
+| **敏感极性** | 仅南极(S极) | 与KTH1621相反 |
+| **北极响应** | 无响应 | 提供极性识别能力 |
+| **输出逻辑** | S极接近时输出低电平 | 与全极产品不同 |
+| **应用优势** | 方向识别、极性检测 | 配合KTH1621实现双向检测 |
+
+### 📊 三种磁场阈值选择
+提供系列标准的完整阈值选择：
+
+| 阈值类型 | 磁场强度 | 适用场景 | 与KTH1621对比 |
+|----------|----------|----------|----------------|
+| **U系列（超低阈值）** | +22Gauss | 远距离检测 | KTH1621U为-22Gauss |
+| **L系列（低阈值）** | +33Gauss | 标准应用 | KTH1621L为-33Gauss |
+| **H系列（高阈值）** | +46Gauss | 强磁场环境 | KTH1621H为-46Gauss |
+
+### 🔋 功耗特性
+- **5Hz版本**：1.6μA@1.8V，200ms响应时间
+- **20Hz版本**：3.3μA@1.8V，50ms响应时间
+- 详细功耗规格请参考[系列综述](./README.md#技术规格系列通用)
+
+### 📦 封装信息
+- **SOT-23-3L**：与KTH1621完全兼容
+- 详细封装信息请参考[系列综述](./README.md#引脚定义系列通用)
+
+---
+
+## 技术规格详情
+
+### 磁场特性详细参数
+
+#### KTH1611U系列（超低阈值）
+*与KTH1621U极性相反*
+
+| 参数 | 条件 | 最小值 | 典型值 | 最大值 | 单位 | 对比KTH1621U |
+|------|------|--------|--------|--------|------|-------------|
+| BOP | S极工作点 | 18 | 22 | 26 | Gauss | 极性相反(-22G) |
+| BRP | S极释放点 | 12 | 16 | 20 | Gauss | 极性相反(-16G) |
+| BHY | 磁滞 | - | 6 | - | Gauss | 相同 |
+| BOPN | N极工作点 | - | 无响应 | - | - | KTH1621响应 |
+
+#### KTH1611L系列（低阈值）
+*与KTH1621L极性相反*
+
+| 参数 | 条件 | 最小值 | 典型值 | 最大值 | 单位 | 对比KTH1621L |
+|------|------|--------|--------|--------|------|-------------|
+| BOP | S极工作点 | 26 | 33 | 38 | Gauss | 极性相反(-33G) |
+| BRP | S极释放点 | 16 | 23 | 28 | Gauss | 极性相反(-23G) |
+| BHY | 磁滞 | - | 10 | - | Gauss | 相同 |
+| BOPN | N极工作点 | - | 无响应 | - | - | KTH1621响应 |
+
+#### KTH1611H系列（高阈值）
+*与KTH1621H极性相反*
+
+| 参数 | 条件 | 最小值 | 典型值 | 最大值 | 单位 | 对比KTH1621H |
+|------|------|--------|--------|--------|------|-------------|
+| BOP | S极工作点 | 40 | 46 | 52 | Gauss | 极性相反(-46G) |
+| BRP | S极释放点 | 26 | 34 | 38 | Gauss | 极性相反(-34G) |
+| BHY | 磁滞 | - | 12 | - | Gauss | 相同 |
+| BOPN | N极工作点 | - | 无响应 | - | - | KTH1621响应 |
+
+### 完整型号列表
+
+| 完整型号 | 封装 | 引脚数 | 磁场阈值 | 工作频率 | 功耗 | 工作温度 |
+|----------|------|--------|----------|----------|------|----------|
+| KTH1611U-ST3 | SOT-23-3L | 3 | +22Gauss | 5Hz | 1.6μA@1.8V | -40℃~85℃ |
+| KTH1611L-ST3 | SOT-23-3L | 3 | +33Gauss | 5Hz | 1.6μA@1.8V | -40℃~85℃ |
+| KTH1611H-ST3 | SOT-23-3L | 3 | +46Gauss | 5Hz | 1.6μA@1.8V | -40℃~85℃ |
+| KTH1611U2-ST3 | SOT-23-3L | 3 | +22Gauss | 20Hz | 3.3μA@1.8V | -40℃~85℃ |
+| KTH1611L2-ST3 | SOT-23-3L | 3 | +33Gauss | 20Hz | 3.3μA@1.8V | -40℃~85℃ |
+| KTH1611H2-ST3 | SOT-23-3L | 3 | +46Gauss | 20Hz | 3.3μA@1.8V | -40℃~85℃ |
+
+## 应用优势
+
+### 🎯 极性识别能力
+- **方向检测**：配合[KTH1621](./KTH1621.md)实现双向检测
+- **极性判断**：精确识别磁铁的南极方向
+- **位置定位**：通过极性变化确定精确位置
+
+### 🔋 超低功耗
+- **电池友好**：1.6μA的超低功耗延长电池寿命
+- **间歇采样**：采用系列标准的节能技术
+- **功耗可选**：5Hz和20Hz版本平衡功耗和响应速度
+
+### 🛠️ 设计简洁
+- **单输出**：电路设计简单，成本较低
+- **标准封装**：与[KTH1621](./KTH1621.md)引脚兼容
+- **温度稳定**：内置温度补偿确保全温度范围稳定性
+
+---
+
+## 典型应用电路
+
+### 基本南极检测电路
+```
+VDD (1.6V-5.5V)
+    |
+    +-- 1μF --+
+    |         |
+   [1]       [3]
+  KTH1611    GND
+   [2]
+    |
+    +-- 输出到MCU (仅南极触发)
+```
+
+### 双向检测组合电路
+```
+VDD
+ |
+ +-- KTH1611 --+-- MCU_IN1 (南极检测)
+ |
+ +-- KTH1621 --+-- MCU_IN2 (北极检测)
+ |
+GND
+
+// 通过两个输入判断磁铁方向：
+// IN1=LOW, IN2=HIGH: 南极接近
+// IN1=HIGH, IN2=LOW: 北极接近
+// IN1=HIGH, IN2=HIGH: 无磁场
+```
+
+### 与系列其他产品的电路对比
+
+| 应用需求 | KTH1611方案 | 替代方案 | 优势对比 |
+|----------|-------------|----------|----------|
+| **南极检测** | 单芯片 | KTH1601+逻辑 | 成本更低，功耗更小 |
+| **双向检测** | KTH1611+KTH1621 | KTH1604 | 更灵活的阈值选择 |
+| **方向识别** | 极性专用 | KTH1631 | 响应更快，无锁存 |
+
+---
+
+## 应用实例
+
+### 🧭 磁性编码器
+- **应用**：旋转编码器的方向检测
+- **原理**：KTH1611检测南极，[KTH1621](./KTH1621.md)检测北极
+- **优势**：精确的方向识别和位置定位
+
+### 🚗 汽车位置传感器
+- **应用**：油门踏板、刹车踏板位置检测
+- **原理**：通过南极位置判断踏板行程
+- **优势**：高可靠性和精度
+
+### 🏠 智能门锁
+- **应用**：检测钥匙或磁卡的方向
+- **原理**：南极检测确定正确插入方向
+- **优势**：防止反向插入，提高安全性
+
+### 📱 手机翻盖检测
+- **应用**：检测翻盖手机的开合状态
+- **原理**：南极磁铁检测翻盖位置
+- **优势**：精确的状态检测
+
+### 🎮 游戏控制器
+- **应用**：摇杆或按键的位置检测
+- **原理**：南极位置对应特定操作
+- **优势**：精确的操作反馈
+
+---
+
+## 与KTH1621的配合使用
+
+### 🔄 双向检测系统
+**KTH1611 + [KTH1621](./KTH1621.md)** 组合提供完整的双向检测能力：
+
+| 检测状态 | KTH1611输出 | KTH1621输出 | 系统判断 |
+|----------|-------------|-------------|----------|
+| **南极接近** | LOW | HIGH | 南极方向 |
+| **北极接近** | HIGH | LOW | 北极方向 |
+| **无磁场** | HIGH | HIGH | 中性位置 |
+| **异常状态** | LOW | LOW | 系统错误 |
+
+### 🎯 应用优势
+- **完整覆盖**：南北极全方位检测
+- **方向识别**：精确判断磁铁方向
+- **冗余检测**：双芯片提供系统可靠性
+- **灵活配置**：可选择不同阈值组合
+
+---
+
+## 选型建议
+
+### ✅ 推荐使用场景
+1. **方向检测**：需要识别磁铁南极方向的应用
+2. **极性识别**：需要区分磁场极性的精密应用
+3. **双向系统**：配合KTH1621实现双向检测
+4. **位置编码**：通过极性变化进行位置编码
+5. **安全应用**：需要极性验证的安全系统
+
+### ⚠️ 不推荐场景
+1. **简单开关**：考虑KTH1601或KTH1642
+2. **双输出需求**：考虑KTH1604
+3. **高频应用**：考虑KTH1605P
+4. **锁存需求**：考虑KTH1631
+
+### 🔄 产品升级路径
+- **双向检测**：KTH1611 → KTH1611+KTH1621
+- **双输出**：KTH1611 → KTH1604
+- **全极检测**：KTH1611 → KTH1601
+- **高频应用**：KTH1611 → KTH1605P
+
+---
+
+## 技术资源
+
+### 📋 文档下载
+- [KTH1611 Series Datasheet.pdf](/pdfs/KTH1611 Series DATASHEET.pdf)
+- [KTH1611 Series产品手册.pdf](/pdfs/KTH1611 Series产品手册.pdf)
+
+---
+
+## 详细技术信息
+
+以下是从产品规格书中提取的详细技术信息：
+
+ Low power Consumption
+
+
+# **KTH1611 Series**
+## **High sensitivity, Low Power, South-pole Hall Switch**
+
+**4** **Descriptions**
+
+
+The KTH1611 is a miniature micropower magnetic
+
+
+
+   - [5Hz Version：1.6uA@1.8V (typical)](mailto:1.6uA@1.8V)
+
+
+   - 20Hz Version： [3.3uA@1.8V](mailto:3.3uA@1.8V) (typical)
+
+
+ Supply Voltage：1.6V~5.5V
+
+
+ High Magnetic Sensitivity
+
+
+   - B OP = 22Gs B RP = 16GS
+
+
+   - B OP = 33Gs B RP = 23GS
+
+
+   - B OP = 46Gs B RP = 34GS
+
+
+ Magnetic Type: Unipolar
+
+
+ No External Pull-up Resistors Required
+
+
+ Package：SOT-23-3L
+
+
+SOT-553
+
+
+TO-92S
+
+
+ Operating Temperature：-40℃~85℃
+
+
+ High ESD Rating：HBM 8KV
+
+
+ RoHS Compliant
+
+
+**2** **Applications**
+
+
+ Cover switch in notebook PC/PAD
+
+
+ TWS Earphones
+
+
+ Door, Lids and Tray Position Switches
+
+
+ Water, electric and gas utility meters
+
+
+ Level, proximity and position switche
+
+
+**3** **Typical Application**
+
+
+Note: C IN is for stabilization and to strengthen the
+
+
+noise immunity, the recommended capacitance is 1 μ F
+
+
+typical and should be placed as close to the supply pin
+
+
+as possible.
+
+
+**5** **Pin Descriptions**
+
+
+
+Hall effect switch IC with single output. The
+
+
+temperature compensation circuitry improves
+
+
+stability of magnetic switch points over the whole
+
+
+operating range. If the magnetic flux density
+
+
+perpendicular to the part marking surface is larger
+
+
+than operating point (BOPS), the output will be
+
+
+turned on; if it is less than releasing point (BRPS),
+
+
+the output will be turned off. Designed for battery
+
+
+powered consumer equipment, home applications
+
+
+and industrial applications, the average supply
+
+
+current is only 1.6μA at 1.8V. To support portable
+
+
+equipment the KTH1611 can operate over the
+
+
+supply range of 1.6V to 5.5V.
+
+
+The KTH1611 family provides a variety of package
+
+
+to customers: SOT-23-3L, SOT-553 for surface
+
+
+mount and TO-92S flat for through-hole mount. All
+
+
+package are RoHS compliant.
+
+
+**SOT-23-3L** **SOT-553**
+
+
+**TO-92S**
+
+
+
+**KTsense Microelectronics Co.,Ltd.**...
+
+> 💡 **提示**: 完整的技术规格和应用信息请参考 [产品规格书](/pdfs/KTH1611 Series DATASHEET.pdf)
+
+---
+
+
+## 🔗 相关产品推荐
+
+### 霍尔开关
+
+- [KTH1601](../hall-switch/KTH1601.md) | [📖 增强版](../enhanced-products/KTH1601.md) - 同系列产品
+- [KTH1702](../hall-switch/KTH1702.md) | [📖 增强版](../enhanced-products/KTH1702.md) - 同系列产品
+- [KTH1631](../hall-switch/KTH1631.md) | [📖 增强版](../enhanced-products/KTH1631.md) - 同系列产品
+### 3D霍尔传感器
+
+- [KTH31xx](../3d-hall/KTH31xx.md) | [📖 增强版](../enhanced-products/KTH31xx.md) - 推荐3D霍尔传感器
+### 磁编码器
+
+- [KTH7801](../magnetic-encoder/KTH7801.md) | [📖 增强版](../enhanced-products/KTH7801.md) - 推荐磁编码器
+### 其他传感器
+
+- [KTAX333](../other-sensors/KTAX333.md) | [📖 增强版](../enhanced-products/KTAX333.md) - 推荐其他传感器
+
+---
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们
+
+### 支持服务
+- 技术咨询和选型指导
+- 样品申请和评估
+- 定制化解决方案
+- 应用电路设计支持
+- 批量供货服务
+
+---
+
+*最后更新: 2024年*

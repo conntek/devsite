@@ -1,0 +1,2722 @@
+# KTH5702AQ2 - 完整技术参考
+
+[返回产品目录](../index.md) | [返回3d-hall分类](../3d-hall/index.md)
+
+
+## 🧭 页面导航
+
+- 🔙 [返回产品摘要页面](../3d-hall/KTH5702AQ2.md)
+- 📂 [返回3D霍尔传感器分类](../3d-hall/)
+- 🏠 [返回主页](../index.md)
+- 📚 [所有增强版技术参考](./index.md)
+
+---
+
+## 产品概述
+
+**KTH5702AQ2** 完整技术参考文档，包含所有PDF数据手册的详细内容和技术图片。
+
+---
+
+## 产品图片
+
+![KTH5702AQ2 图片 1](./images/kth5702aq2/page_1_img_1_725ebfdb.png)
+
+![KTH5702AQ2 图片 2](./images/kth5702aq2/page_1_img_2_9d8ae425.png)
+
+![KTH5702AQ2 图片 3](./images/kth5702aq2/page_1_img_3_6adefe96.png)
+
+![KTH5702AQ2 图片 4](./images/kth5702aq2/page_2_img_1_6adefe96.png)
+
+![KTH5702AQ2 图片 5](./images/kth5702aq2/page_3_img_2_6adefe96.png)
+
+![KTH5702AQ2 图片 6](./images/kth5702aq2/page_4_img_1_6adefe96.png)
+
+![KTH5702AQ2 图片 7](./images/kth5702aq2/page_5_img_1_6adefe96.png)
+
+![KTH5702AQ2 图片 8](./images/kth5702aq2/page_6_img_1_53e86ada.png)
+
+![KTH5702AQ2 图片 9](./images/kth5702aq2/page_6_img_2_0d9ebe5b.png)
+
+![KTH5702AQ2 图片 10](./images/kth5702aq2/page_6_img_3_788fbcfa.png)
+
+![KTH5702AQ2 图片 11](./images/kth5702aq2/page_6_img_4_6adefe96.png)
+
+![KTH5702AQ2 图片 12](./images/kth5702aq2/page_7_img_1_5f41be8b.png)
+
+---
+
+## 📄 KTH5702AQ2AQ3_DS_CN.pdf
+
+<details>
+<summary>点击展开 KTH5702AQ2AQ3_DS_CN.pdf 完整内容</summary>
+
+**1** 产品特点
+
+
+ 集成高度匹配的2D (X轴、Y轴)霍尔传感器。
+
+
+ 集成多级低功耗，高精度零漂运放，集成高精
+
+
+度16Bit ADC。
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+场景。
+
+
+KTH5702 集成了高效，低功耗 CORDIC 算法模块
+
+
+支持平面的角度输出，支持角度阈值检测。具有高
+
+
+集成度和运用灵活的特点，广泛适用于各种应用场
+
+
+景。
+
+
+
+ 集成CORDIC算法模块，16bit绝对角度位置输出。
+
+
+ 支持绝对位置检测，角度输出范围高达360度。
+
+
+
+**4** 功能框图
+
+
+器件信息
+
+
+
+ 磁感应强度水平分量工作范围±130mT
+
+
+ SPI或I2C可选通信接口。
+
+
+ 支持唤醒和测量触发模式。
+
+
+ 工作电压 2.8V ~ 5.5V
+
+
+ IO供电电压可低至1.8V
+
+
+ AQ2工业级工作温度 -40℃ ~ +105℃
+
+
+ AQ3消费级工作温度 -40℃ ~ +85℃
+
+
+注1：建议平面磁场大于20mT。
+
+
+**2** 典型应用
+
+
+ 旋钮,智能玩具
+
+
+ 2D位置角度检测
+
+
+ 音响&照明&家电
+
+
+ 仪器仪表
+
+
+
+注 1
+
+。
+
+
+|器件型号|封装|封装尺寸（标称值）|
+|---|---|---|
+|KTH5702|QFN3x3-16L|3.00mm x 3.00mm|
+
+
+
+**3** 概述
+
+KTH5702 是一款集成了高度匹配的 2D (X 轴、Y
+
+
+轴)霍尔传感器；低功耗，低噪声，高精度零漂运放；
+
+
+高性能，低阻抗 MUX；集成高精度 16Bit ADC，数
+
+
+字输出旋转位置角度的传感器芯片。其通讯接口 SPI
+
+
+或 I2C 可选，外部主机可以采用 SPI 或 I2C 两种模式
+
+
+读出测量数据。
+
+
+KTH5702 支持持续感应模式、唤醒睡眠模式和
+
+
+单次测量模式等多种工作模式，适用于不同的应用
+
+
+**1**
+
+
+## 目录
+
+1 产品特点 ....................................................1
+
+
+2 典型应用 ....................................................1
+
+
+3 概述 ............................................................1
+
+
+4 功能框图 ....................................................1
+
+
+5 引脚定义 ....................................................3
+
+
+6 规格 ............................................................4
+
+
+6.1 绝对参数 .............................................4
+
+
+6.2 推荐工作条件 .....................................4
+
+
+6.3 电气特性 .............................................4
+
+
+6.4 磁性能 .................................................4
+
+
+6.5 时间参数 .............................................5
+
+
+7 旋转位置角度输出 ....................................5
+
+
+8 测量模式说明 ............................................7
+
+
+8.1 持续感应模式（Continuous Sensing
+
+
+Mode） ......................................................7
+
+
+8.2 唤醒睡眠模式（Wake-up & Sleep
+
+
+Mode） ......................................................8
+
+
+8.3 单次测量模式（Single Conversion
+
+
+Mode） ......................................................9
+
+
+8.4 空闲模式（Idle Mode） ..................10
+
+
+9 重置芯片（Reset） ................................ 11
+
+
+10 芯片运行状态（status）说明 ................12
+
+
+11 测量数据回读帧（data Read Frame） ..13
+
+
+11.1 回读方式 ........................................ 14
+
+
+12 SPI 通信模式 ............................................15
+
+
+13 I2C 通信模式 ........................................... 16
+
+
+14 特殊引脚说明 ..........................................17
+
+
+15 读写寄存器说明 ......................................18
+
+
+15.1 SPI 通信 ............................................18
+
+
+15.2 I2C 通信 ........................................... 19
+
+
+**2**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+16 Register map 说明 ................................... 20
+
+
+17 参考电路 ..................................................23
+
+
+17.1 SPI.....................................................24
+
+
+17.2 I2C.................................................... 24
+
+
+18 QFN_16PIN 封装尺寸图 ..........................25
+
+
+19 订货信息 ..................................................26
+
+
+20 载带和卷盘信息 ......................................26
+
+
+**5** 引脚定义
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 5-1.QFN3x3 16-Pin 顶视图
+
+
+表 5-1. 引脚定义
+
+
+
+
+
+
+
+
+
+
+
+|引脚号|名称|描述|类型|
+|---|---|---|---|
+|1|INT|Data ready 或Wake-up & Sleep Mode 中断<br>信号|输出|
+|2|CS|I2C 通信模式下，上拉至VDD_IO<br>SPI 通信模式下，由SPI master 控制，低电<br>平有效|输入|
+|3|SCL/SCLK|I2C 或SPI 时钟信号|输入|
+|5|SDA/MOSI|I2C 数据输入输出口或SPI 数据口|输入/输出|
+|6|MISO|SPI 的数据接口。当只使用SPI 的三pin 数据<br>传输时，需要将MISO 和MOSI 短接|输出|
+|7|TRIG|TRIG 单次测量信号<br>不使用该引脚功能时，该引脚必须接地|输入/输出|
+|8|VDD_IO|IO 的供电端口|供电|
+|11|A1|I2C 器件地址输入口A1<br>SPI 通信模式下，该引脚必须接地|输入|
+|12|A0|I2C 器件地址输入口A0<br>SPI 通信模式下，该引脚必须接地|输入|
+|13|VSS|地|地|
+|15|VDD|电源|供电|
+|其它|NC|Not Connect<br>建议所有NC 脚接地|无|
+
+
+注：不使用 TRIG 引脚功能时，该引脚必须接地。在 SPI 通信模式下，A1，A0 脚必须接地。建议所有 NC 脚接地。
+
+
+**3**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**6** 规格
+
+以下参数均为室温 25℃下的测量结果。
+
+
+6.1 绝对参数
+
+|参数|说明|最小值|最大值|单位|
+|---|---|---|---|---|
+|VDD_MAX|芯片供电限制|-0.3|6|V|
+|VDD_IO_MAX|数字IO 供电限制|-0.3|6|V|
+|Tstorage|最大存储温度||150|℃|
+|VESD|ESD（HBM）||±5K|V|
+
+
+
+6.2 推荐工作条件
+
+
+
+|参数|说明|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|
+|VDD|芯片供电电压|2.8|3.3|5.5|V|
+|VDD_IO|数字IO 供电电压|1.8||VDD|V|
+|VIH|输入高电平电压|0.75|||VDD_IO|
+|VIL|输入低电平电压|||0.25|VDD_IO|
+|TOPERATION|AQ2 工业级工作温<br>度|-40|25|105|℃|
+|TOPERATION|AQ3 消费级工作温<br>度|-40|25|85|℃|
+
+
+6.3 电气特性
+
+
+
+
+
+
+
+
+
+
+|参数|说明|测试条件|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|---|
+|VDD|芯片供电电压||2.8|3.3|5.5|V|
+|VDD_IO|数字IO 供电电压||1.8||VDD|V|
+|IDD,CONVXY|测量峰值电流|VDD=3.3V||4.89||mA|
+|IDD,STBY|持续感应模式待<br>机电流|持续感应模式待<br>机电流||61.7||μA|
+|IDD,WAKE_STBY|唤醒睡眠模式待<br>机电流|唤醒睡眠模式待<br>机电流||2.4||μA|
+|IDD,IDLE|空闲状态电流|空闲状态电流||1.4||μA|
+
+
+
+6.4 磁性能
+
+
+
+
+
+|参数|说明|测试条件|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|---|
+|Mxy|磁场线性范围|Gain=20|-130||130|mT|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=0<br>digCtrl=0||0.98||Degree|
+
+
+**4**
+
+
+
+
+# KTH5702 系列
+
+
+
+|Col1|Col2|低功耗|耗、高精度|度2D 霍|KTH570 霍尔旋转位|02 位置传感器|
+|---|---|---|---|---|---|---|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=1<br>digCtrl=0||0.28||Degree|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=3<br>digCtrl=0||0.128||Degree|
+|NRMSAngle|角度输出噪声|@B=20mT<br>magnOsr=3<br>digCtrl=3||0.065||Degree|
+
+
+以上参数为 25℃测量结果
+
+
+6.5 时间参数
+
+
+
+表6-4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|参数|说明|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|
+|Tstart|芯片启动时间||4||ms|
+|TCONVM|单轴磁场测量时间（可编<br>程）|165||33349|μs|
+|TCONVM|单轴磁场测量时间（可编<br>程）|69+32*~~2~~magnOsr*（2+~~2~~digCtrl~~）~~|69+32*~~2~~magnOsr*（2+~~2~~digCtrl~~）~~|69+32*~~2~~magnOsr*（2+~~2~~digCtrl~~）~~|μs|
+|TCONV_END|测量结束后到关闭模拟<br>使能时间||108||μs|
+|Tactive|从空闲模式到测量开始||220||μs|
+|TContinuous|当measTime=0，芯片处<br>于持续感应模式时，完成<br>一次测量的时间|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|μs|
+|TwakeUp|当measTime=0，芯片处<br>于唤醒睡眠模式时，完成<br>一次测量的时间|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|μs|
+|Tsingle|芯片开启单次测量模式，<br>完成一次测量的时间|Tactive+ m*TCONVM + TCONV_END|Tactive+ m*TCONVM + TCONV_END|Tactive+ m*TCONVM + TCONV_END|μs|
+
+
+表6-5
+
+
+以上参数为 25℃测量结果
+
+
+注：上表中默认 m=2。
+
+
+**7** 旋转位置角度输出
+
+KTH5702 通过 2D(X 轴、Y 轴)霍尔传感器测量在 X、Y 轴方向的磁感应强度分量,将两轴磁感应强度通过 CORDIC
+
+
+算法计算得出 XY 平面角度，绝对旋转位置输出。
+
+
+注：
+
+
+ - 上述X、Y水平方向的磁场水平磁通密度分量为20mT，未考虑霍尔器件和信号链失调，温漂和噪声影响。
+
+
+**5**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 7-1.绝对旋转位置测量示意图
+
+
+图 7-2. 各轴 Hall 元件在封装内的相对位置
+
+
+**6**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**8** 测量模式说明
+
+
+KTH5702 支持多种工作模式，本产品可以在持续感应模式，唤醒睡眠模式，单次测量模式，三种模式下使
+
+
+用。
+
+|测量功能|功能简介|
+|---|---|
+|持续感应模式（**Continuous Sensing Mode**）|芯片持续对BA 通道进行测量|
+|唤醒睡眠模式（**Wake-up & Sleep Mode**）|当前测量项A 大于对应寄存器中的角度设定值时，芯<br>片将INT 脚置1|
+|单次测量模式（**Single Conversion Mode**）|芯片对BA 通道进行一次测量|
+|空闲模式（**Idle Mode**）|芯片退出当前模式，进入空闲状态|
+
+
+
+表8-1
+
+
+8.1 持续感应模式（Continuous Sensing Mode）
+
+
+图8-1. 持续感应模式SPI通信图
+
+
+图8-2. 持续感应模式I2C通信图
+
+
+**7**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+主机向芯片发送持续感应模式的命令后，芯片会持续对测量项（BA）进行测量，直到主机向芯片发送空闲
+
+
+模式命令为止。
+
+
+在持续感应模式下，芯片的测量数据回读功能需要搭配 INT 脚使用。当芯片正在进行测量时，INT 脚为低电
+
+
+平，此时主机无法对测量结果进行回读，需要等待 INT 脚置 1 后才能对数据进行回读。当芯片完成一次测量后，
+
+
+INT 脚会置 1，此时可以使用测量数据回读帧（data Read Frame）对测量数据进行回读。主机进行回读后，INT
+
+
+脚会拉低。如果主机没有进行回读，INT 脚会保持一定时间高电平，并且在开启下一次测量后，INT 脚会拉低。
+
+
+此时高电平的保持时间与寄存器 0x1D 中，measTime 的设定有关。当 INT 脚在高电平的状态下时，说明当前芯
+
+
+片已经完成一次测量，可以用测量数据回读帧（data Read Frame）进行读取。当 INT 脚在低电平状态下时，说
+
+
+明当前芯片正在进行测量，不能对进行数据读取。
+
+
+在需要持续测量旋转角度时，并且对功耗要求不太严格的场景下，推荐使用持续感应模式。
+
+
+芯片开启持续感应模式时，采用间歇测量的方法以减少芯片功耗。芯片会自动不断开启对应测量项的测量，
+
+
+相邻两次测量之间的间歇时长由 measTime 来控制。
+
+
+8.2 唤醒睡眠模式（Wake-up & Sleep Mode）
+
+
+图 8-3. 唤醒睡眠模式 SPI 通信图
+
+
+图 8-4. 唤醒睡眠模式 I2C 通信图
+
+
+**8**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+主机向芯片发送唤醒睡眠模式命令后，芯片会处于一种低功耗测量模式，以一定的频率对测量项（BA）进
+
+
+行测量，直到主机向芯片发送空闲模式命令为止。
+
+
+芯片开启唤醒睡眠模式后，当芯片检测到的角度超出阈值寄存器中设定值时，芯片 INT 脚会拉高。在主机
+
+
+通过测量数据回读帧（data Read Frame），一次性将测量数据读回后，INT 脚拉低，否则保持为高电平。芯片 INT
+
+
+脚不会主动拉低，即某一时刻芯片检测到的角度值，超出设定阈值，INT 脚拉高后，如果下一时刻，芯片检测到
+
+
+的角度值再次低于设定阈值，但主机没有读回测量数据，INT 脚并不会主动拉低。
+
+
+8.3 单次测量模式（Single Conversion Mode）
+
+
+图 8-5. 单次测量模式 SPI 通信图
+
+
+图 8-6. 单次测量模式 I2C 通信图
+
+
+主机向芯片发送单次测量模式的命令后，芯片会对测量项（BA）进行一次测量，并且自动回到空闲状态，
+
+
+效果等同于发送空闲模式（Idle Mode）命令，即芯片接收到单次测量模式命令，完成一次测量后，并不需要发
+
+
+送空闲模式（Idle Mode）命令返回空闲模式。
+
+
+**9**
+
+
+8.4 空闲模式（Idle Mode）
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 8-7. 空闲模式 SPI 通信图
+
+
+图 8-8. 空闲模式 I2C 通信图
+
+
+
+主机向芯片发送空闲模式的命令后，芯片会进入空闲状态。当芯片处于持续感应模式（Continuous Sensing
+
+
+mode）或唤醒睡眠模式（Wake-up & Sleep Mode）时，芯片无法进行测量数据回读帧以外的其他操作，如读写
+
+
+寄存器等。如需要对芯片进行其他操作，需要先发送空闲模式命令，使芯片进入空闲状态。但发送空闲模式命
+
+
+令后，后续发送的指令不能被立即执行，需要等当前的测量完成后，才能从当前的持续感应模式（Continuous
+
+
+Sensing mode）或唤醒睡眠模式（Wake-up & Sleep Mode）进入空闲状态。如果需要进行其他操作的话，需要等
+
+
+待一次测量时间延时后再进行操作。
+
+
+**10**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+以写寄存器命令为例：
+
+
+ - 第一步：发送空闲模式命令
+
+
+ - 第二步：等待完成一次测量的时间
+
+
+ - 第三步：发送写寄存器命令
+
+
+注：空闲（Idle）状态指的是芯片不处于任何测量模式下的状态。待机（standby）状态指的是芯片处于测
+
+
+量模式下，在测量间歇的状态。
+
+
+**9** 重置芯片（ **Reset** ）
+
+
+图 9-1. 重置芯片 SPI 通信图
+
+
+图 9-2. 重置芯片 I2C 通信图
+
+
+内部寄存器配置被重置到复位状态。
+
+
+如果芯片处于持续感应模式或唤醒睡眠模式，在重置芯片前，需要先发送空闲模式命令，使芯片回到空闲
+
+
+状态。
+
+
+**11**
+
+
+**10** 芯片运行状态（ **status** ）说明
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 10-1. 芯片运行状态 SPI 说明
+
+
+图 10-2. 芯片运行状态 I2C 说明
+
+
+
+除了重置芯片，其他命令发送完后芯片均会返回芯片运行状态（status）；
+
+
+ Continuous
+
+
+该位为 1 时表示当前处于持续感应模式。主机向芯片发送持续感应模式命令，返回的 status 中该 bit 置 1，或芯
+
+
+片处于持续感应模式时，使用测量数据回读帧（data Read Frame），一次性读回测量数据时，该 bit 也置 1。
+
+
+**12**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+ Wake-up
+
+
+该位为 1 时表示当前处于唤醒睡眠模式，当主机向芯片发送唤醒睡眠模式命令，返回的 status 中该 bit 置 1，或
+
+
+芯片处于唤醒睡眠模式时，使用测量数据回读帧（data Read Frame），一次性读回测量数据时，该位也置 1。
+
+
+ Single
+
+
+该位为 1 时表示当前处于单次测量模式。当主机向芯片发送单次测量模式命令，或主机向该芯片 trig 脚发送一
+
+
+个高电平脉冲后，随后该命令返回的对应 status 中该 bit 置 1。在完成单次测量后，芯片回到空闲状态，如后续
+
+
+再发送其他命令，返回的对应 status 中该 bit 为 0。
+
+
+ Failing
+
+
+当前发送的命令无效时，Failing =1。当处于任意一个测量状态期间，再次发送其他测量命令，Failing 位会置 1，
+
+
+例如在持续感应模式的同时发送单次测量命令，Failing 位会置 1。同时如果在持续感应模式时，进行读写寄存器
+
+
+的操作，Failing 位也会置 1，代表命令错误。当芯片处于持续感应测量下，而 INT 脚为低电平时，说明当前芯片
+
+
+正在进行测量，Failing 位也会置 1，不能进行数据回读操作。
+
+
+ RESERVED
+
+
+ RESERVED
+
+
+ softRst
+
+
+主机向 IC 发送重置芯片（Reset）命令后，IC 并不会立即返回 status。因此需要根据芯片被重置后，第一次接收
+
+
+到任意命令时，返回的 status 判断是否重置成功。芯片成功重置后该位置 1，并且在返回一次 status 后，该位清
+
+
+0，即芯片重置后第二次接收到任意命令时，status 的该位为 0。
+
+
+ DRDY
+
+
+当主机向芯片发送持续感应模式（Continuous Sensing mode）后，每完成一次测量后该位置 1，完成一次数据读
+
+
+取后该位清 0。当主机向芯片发送单次测量模式（Single Conversion Mode）后，完成该次测量后该位置 1，完成
+
+
+一次数据读取后该位清 0。当主机向芯片发送唤醒睡眠模式（Wake-up & Sleep Mode）后，芯片检测到的对应磁
+
+
+场变化量，超出设定阈值时，该位置 1，完成一次数据读取后该位清 0。
+
+
+**11** 测量数据回读帧（ **data Read Frame** ）
+
+
+在芯片完成一次测量后，可以使用测量数据回读帧（data Read Frame），一次性将芯片运行状态（status）
+
+
+及所有测量数据读回。
+
+
+在持续感应模式下，测量数据回读帧（data Read Frame）需要与 INT 脚一起使用，否则会出现回读数据失
+
+
+败的情况。
+
+
+如下图所示，主机向芯片发送了数据回读命令后，芯片会一次性向主机返回所有的测量数值。
+
+
+图 11-1. 测量数据回读帧 SPI 通信示意图
+
+
+**13**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 11-2. 测量数据回读帧 I2C 通信示意图
+
+
+11.1 回读方式
+
+
+主机向芯片发送一次性数据读回命令，可读回 AB 值。 B：平面磁感应强度对应量，A：平面夹角。
+
+
+发送部分如下图所示，完整通信格式见图 11-11、图 11-12。
+
+
+
+360
+返回 16bit 角度值，每一个 LSB 对应的角度为： 2 16
+
+
+
+
+
+
+
+。例： A [15:0]=0x1000，XY 平面磁场角度
+
+
+
+_A_ [15:0]*360 
+
+θ =
+
+2 16
+
+
+
+4096*360 
+
+=
+16
+
+
+
+2
+
+
+
+
+
+
+
+= 22.5° 。
+
+
+
+_B_ [15:0]*0.60725
+
+θ 值由 Bx，By 通过 CORDIC 算法计算得出，磁感应强度对应的值为：
+
+
+
+_B_ [15:0]
+
+
+_S_ ensitivity
+
+
+
+_S_
+
+
+
+如下示例图。
+
+
+
+**14**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 11-3. data 回读 SPI 通信示意图
+
+
+图 11-4. data 回读 I2C 通信示意图
+
+
+**12 SPI** 通信模式
+
+
+注：以下参数均为室温 25℃，Vdd = 3.3V 下的测量结果。
+
+
+设计采用 SPI mode 3: CPHA=1 (数据在第一个边沿改变，第二个边沿采样获取)，CPOL=1 (高电平为无效状态)。
+
+
+**15**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+|电气参数|符号|最小值|最大值|单位|
+|---|---|---|---|---|
+|**SPI Clock Cycle**|tc(SPC)|200||ns|
+|**SPI Clock Cycle**|tc(SPC)||5|MHz|
+|**CS Setup Time**|tsu(CS)|5||ns|
+|**CS Hold Time**|th(CS)|10||ns|
+|**SDI Input Setup Time**|tsu(SI)|5||ns|
+|**SDI Input Hold Time**|th(SI)|15||ns|
+|**SDO Valid Output Time**|tv(SO)||50|ns|
+|**SDO Output Hold Time**|th(SO)|5||ns|
+|**SDO Output Disable Time**|tdis(SO)||50|ns|
+
+
+
+图 12-1 SPI 时序图
+
+
+**13 I2C** 通信模式
+
+
+注：以下参数均为室温 25℃，Vdd = 3.3V 下的测量结果。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|电气参数|符号|标准模式|Col4|快速模式|Col6|单<br>位|
+|---|---|---|---|---|---|---|
+|电气参数|符号|最小<br>值|最大<br>值|最小<br>值|最大<br>值|最大<br>值|
+|SCL Clock Frequency|f (SCL)||100||400|kHz|
+|SCL Clock Low Time|tw (SCLL)|4.7||1.3||μs|
+|SCL Clock High Time|tw (SCLH)|4||0.6||μs|
+|SDA Setup Time|tsu (SDA)|250||100||ns|
+|SDA Data Hold Time|th (SDA)||3.45||0.9|μs|
+
+
+
+**16**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+|SDA and SCL Rise Time|tr (SDA)<br>tr (SCL)|Col3|1000|Col5|300|ns|
+|---|---|---|---|---|---|---|
+|SDA and SCL Fall Time|tf (SDA)<br>tf (SCL)||300||300|ns|
+|START Condition Hold Time|th (ST)|4||0.6||μs|
+|REPEATED START Condition Setup Time|tsu (SR)|4.7||0.6||μs|
+|STOP Condition Setup Time|tsu (SP)|4||0.6||μs|
+|Bus Free Time Between STOP and START<br>Condition|tw(SP:ST)|4.7||1.3||μs|
+
+
+
+图 13-1 I2C 时序图
+
+
+**14** 特殊引脚说明
+
+
+INT：主机向芯片发送持续感应模式或单次测量命令，芯片完成一次对应测量项的测量后，INT 脚会置 1，
+
+
+并且在芯片发送读取命令，读回测量数据以前，都保持为 1。
+
+
+当芯片处于持续感应模式状态下时，如果 INT 脚为高电平，则说明当前芯片完成了一次测量，可以对测量
+
+
+数据进行回读，此时如果主机向芯片发送一次测量数据回读命令，INT 脚会拉低，否则 INT 脚会在一段时间内保
+
+
+持为高电平，直到芯片开启下一次测量。此高电平的保持时间与寄存器 0x1D 中，measTime 的设定有关。当芯
+
+
+片开启下一次测量后，INT 脚会保持为低电平，在完成此次测量后，INT 脚会置 1。
+
+
+当芯片在持续感应模式状态下时，对测量数据的回读一定要搭配 INT 脚使用。
+
+
+主机向芯片发送唤醒睡眠模型命令后，当检测到测量项的变化量超出寄存器中设定的变化阈值时，INT 脚会
+
+
+置 1，并且在芯片发送读取命令，读回测量数据以前，都保持为 1。
+
+
+TRIG：当主机将该引脚配置为单次测量模式触发引脚时，如果主机向 TRIG 脚发送一个高电平脉冲，则芯片
+
+
+进行一次单次测量。TRIG 引脚被配置为触发引脚时，该引脚不能处于浮空状态。该引脚不能处于浮空状态并且
+
+
+需在外部触发完成后保持为低电平输入。
+
+
+**17**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**15** 读写寄存器说明
+
+
+芯片上电后，进行内部初始化，当电源稳定后4ms内不允许进行通信，当初始化完成后芯片进入空闲状态，
+
+
+允许通信测量。
+
+
+进行读写寄存器时，寄存器地址应左移两位，如图所示。
+
+
+15.1 SPI 通信
+
+
+图 15-1. 读寄存器 SPI 时序图
+
+
+图 15-2. 读寄存器 0x16 SPI 时序图
+
+
+图 15-3. 写寄存器 SPI 时序图
+
+
+图 15-4. 写寄存器 0x16 SPI 时序图
+
+
+**18**
+
+
+15.2 I2C 通信
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 15-5. 读寄存器 I2C 时序图
+
+
+图 15-6. 读寄存器 0x16 I2C 时序图
+
+
+图 15-7. 写寄存器 I2C 时序图
+
+
+图 15-8. 写寄存器 0x16 I2C 时序图
+
+
+**19**
+
+
+**16 Register map** 说明
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**20**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**0x06**
+
+
+状态寄存器，当主机根据通信协议向 KTH5702 发送命令以后，如果发送的命令需要 KTH5702 应答，该芯片
+
+
+会在第一个 byte 返回当前芯片的状态，这个状态值和 0X06 寄存器中存储的标志位一一对应。
+
+
+
+
+
+
+
+
+
+
+
+
+|位名|位|R/W|说明|
+|---|---|---|---|
+|**DRDY**|0|R|当主机向芯片发送持续感应模式（Continuous Sensing mode）后，每完<br>成一次测量后该位置1，完成一次数据读取后该位清0。当主机向芯片发<br>送单次测量模式（Single Conversion Mode）后，完成该次测量后该位置<br>1，完成一次数据读取后该位清0。当主机向芯片发送唤醒睡眠模式<br>（Wake-up & Sleep Mode）后，芯片检测到的对应磁场变化量，超出设<br>定阈值时，该位置1，完成一次数据读取后该位清0。|
+|**softRst**|1|R|主机向IC 发送重置芯片（Reset）命令后，IC 并不会立即返回status。因<br>此需要根据芯片被重置后，第一次接收到任意命令时，第一次返回的<br>status 判断是否重置成功。芯片成功重置后该位置1，并且在返回一次<br>status 后，该位清0，即芯片重置后第二次接收到任意命令时，status 的<br>该位为0。|
+|**RESERVED**|3:2|R||
+|**Failing**|4|R|当前发送的命令无效时，Failing =1。当处于任意一个测量状态期间，再<br>次发送其他测量命令，Failing 位会置1，例如在持续感应模式的同时发<br>送单次测量命令，Failing 位会置1；同时如果在持续感应模式时，进行<br>读写寄存器的操作，Failing 位也会置1，代表命令错误。|
+|**Single**|5|R|主机向芯片发送单次测量命令（0x3x），或主机向该芯片trig 脚发送一个<br>高电平脉冲后，芯片进入单次测量模式，该bit 置1。|
+|**wake-up**|6|R|主机向芯片发送唤醒睡眠模式命令（0x2x）后，芯片进入唤醒测量模式，<br>该bit 置1。|
+|**Continuous**|7|R|主机向芯片发送持续感应模式命令（0x1x）后，芯片进入持续感应模式，<br>该bit 置1。|
+
+
+
+**0x19h:**
+
+
+
+**21**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+
+
+|位名|Col2|位|R/W|说明|
+|---|---|---|---|---|
+|**wxyTh**||15:0|RW|当芯片被配置为角度输出（TABZ）时，为XY 平面的角度唤醒值，<br>INT 脚拉高，wxyTh 中写入角度的计算方式与读取芯片角度输出时<br>计算方式一致。<br>仅XY 平面有角度唤醒功能，其他平面不含此功能。<br>如：希望芯片检测到XY 平面夹角大于45°的角度时，INT 脚拉高，<br>则wxyTh 中写入<br>16<br>45<br>2<br>~~360~~<br><br><br><br>对应的十六进制数，即0x2000。无论<br>外界角度值是否发生变化，只要芯片当前检测到的平面夹角大于<br>45°，则INT 脚拉高。|
+
+
+**0x1Ch:**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|位名|位|R/W|说明|
+|---|---|---|---|
+|**digCtrl**|2:0|RW|数字滤波控制参数。|
+|**RESERVED**|8:3|R||
+|**magnOsr**|10:9|RW|芯片进行测量的ADC 过采样率，对应两个bit 从低至高分别代表一次性<br>32、64、128、256 个采样点。<br>magnOsr<br>0x03<br>0x02<br>0x01<br>0x00<br>采样点个数<br>256<br>128<br>64<br>32<br>ADC 的总取点数=32x 2 magnOsr x (2digCtrl + 2)<br>进行一次角度测量的时间= (ADC 的取点数+ 69) * 2μs|
+|**RESERVED**|15:11|R||
+
+
+**0x1Dh:**
+
+
+
+|magnOsr|0x03|0x02|0x01|0x00|
+|---|---|---|---|---|
+|采样点个数|256|128|64|32|
+
+
+**22**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+|位名|位|R/W|说明|
+|---|---|---|---|
+|**measTime**|5:0|RW|在持续感应模式和唤醒睡眠模式时，控制每两次测量之间的间歇等待时<br>长（待机状态时长）。measTime 中设定的值对延时次数进行控制，1 个<br>lsb 对应20ms 的等待延时。measTime 中的数值对应十进制设定为多少，<br>就进行多少次延时。<br>如measTime = 0x05，则在芯片两次测量之间的等待时长为5 次20ms 的<br>延时，5*20ms=100ms。|
+|**measSel**|9:6|RW|测量选通信号，当主机向芯片发送三个测量模式命令中没有选通，可以<br>由measSel 选通对应的BA 的位即measSel[3:0] = 0x06, 则选通BA 两个测<br>量通道。|
+|**RESERVED**|15:10|R||
+
+
+
+**0x1Eh:**
+
+
+
+
+
+
+
+|位名|位|R/W|说明|
+|---|---|---|---|
+|**Zero[15:1]**|14:0|RW|设定角度输出的零点值的前15bit。<br>设定[15:0]<br>_A_<br>为16bit 角度输出零点，那么需要<br>16<br>2 - [15:0]<br>2<br>_A_<br>写入zero<br>寄存器中。<br>例如需要将角度0x01AA 设置为零点，则zero 的值为0x7F2B。|
+|**RESERVED**|15|R||
+
+
+**17** 参考电路
+
+
+注：为了保证通信的稳定性，一定要使用 0.1μf 和 10μf 的组合电容，且电容尽量靠近芯片 VDD。A0，A1 脚在
+
+
+不使用时接地。
+
+
+**23**
+
+
+17.1 SPI
+
+
+17.2 I2C
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**24**
+
+
+**18 QFN_16PIN** 封装尺寸图
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+图 18-1. QFN_16PIN 封装尺寸图
+
+
+
+|标识|单位：毫米|Col3|
+|---|---|---|
+|标识|最小值|最大值|
+|A|0.700|0.800|
+|A1|0.000|0.050|
+|A3|0.203REF.|0.203REF.|
+|D|2.900|3.100|
+|E|2.900|3.100|
+|D1|1.350|1.550|
+|E1|1.350|1.550|
+|k|0.375REF.|0.375REF.|
+|b|0.200|0.300|
+|e|0.500BSC.|0.500BSC.|
+|l|0.300|0.500|
+
+
+**25**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**19** 订货信息
+
+|型号|封装形式|工作温度|应用场景|引脚数量|
+|---|---|---|---|---|
+|KTH5702AQ2QNS|QFN3x3-16L|-40℃~ +105℃|工业级|16|
+|KTH5702AQ3QNS|QFN3x3-16L|-40℃~ +85℃|消费级|16|
+
+
+
+**20** 载带和卷盘信息
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Package<br>Type|Pin<br>s|SPQ|卷盘直径|卷盘内宽|A0<br>(mm)|B0<br>(mm)|K0<br>(mm)|P1<br>(mm)|W<br>(mm)|Pin1 方向|
+|---|---|---|---|---|---|---|---|---|---|---|
+|QFN3*3-16L|16|5000|330|12.4|3.35|3.35|1.13|8.00|12.00|Q1|
+
+
+**26**
+
+
+# KTH5702 系列
+### 低功耗、高精度 2D 霍尔旋转位置传感器
+
+**27**
+
+
+
+
+</details>
+
+---
+
+## 📄 KTH5702AQ2AQ3_DS_EN.pdf
+
+<details>
+<summary>点击展开 KTH5702AQ2AQ3_DS_EN.pdf 完整内容</summary>
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **1 Features**
+
+###### • Integrated highly matched 2D (X-axis, Y-axis) Hall
+
+sensor.
+
+###### • Integrated multi-level low power consumption,
+
+
+high-precision zero drift operational amplifier,
+
+and high-precision 16Bit ADC.
+
+###### • Integrated CORDIC algorithm module, 16bit
+
+
+absolute angle position output.
+
+###### • Support absolute position detection with an angle
+
+
+output range of up to 360°
+
+
+###### • The working range of the horizontal component
+
+of magnetic flux density is± 130mT. Note1
+
+###### • SPI or I2C Optional Communication Interface • Support Wake-up and Measurement Trigger
+
+
+Mode.
+
+###### • Working Voltage 2.8V ~ 5.5V • The IO power supply voltage can be as low as
+
+
+1.8V
+
+###### • AQ2 Industrial Grade Working Temperature -40℃
+
+
+~ +105℃
+
+###### • AQ3 Consumer Grade Working Temperature
+
+
+-40℃ ~ +85℃
+
+
+Note1: A planar magnetic field greater than 20mT is
+
+
+recommended.
+
+## **2**
+##### **Typical Application**
+
+###### • Knobs, Smart Toys • 2D Position Angle Detection • Audio & Lighting & Home Appliances • Instrumentation
+
+
+**1**
+
+
+## **3 Overview**
+
+KTH5702 is a highly matched 2D (X-axis, Y-axis)
+
+
+Hall sensor; Low power consumption, low noise, high
+
+
+precision zero drift op amp; High performance, low
+
+
+impedance MUX; Integrated high-precision 16Bit ADC,
+
+
+digital output of rotation position angle sensor chip.
+
+
+The communication interface SPI or I2C is optional,
+
+
+and the external host can read out the measurement
+
+
+data in SPI or I2C modes.
+
+
+KTH5702 supports a variety of operating modes
+
+
+such as Continuous Sensing Mode, Wake-up & Sleep
+
+
+Mode and Single Conversion Mode, which are suitable
+
+
+for different application scenarios.
+
+
+KTH5702 Integrated high-efficiency, low-power
+
+
+CORDIC algorithm module supports the angular output
+
+
+of the plane and supports angle threshold detection.
+
+
+With high integration and flexible application, it is
+
+
+widely applicable to various scenarios.
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **4**
+##### **Functional Diagram**
+
+Device Information
+
+|Model|Package|Package Size (nominal)|
+|---|---|---|
+|KTH5702|QFN3x3-16L|3.00mm x 3.00mm|
+
+
+
+**2**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+
+# Catalog
+
+1 Features ...........................................................1
+
+
+2 Typical Application ......................................... 1
+
+
+3 Overview ..........................................................1
+
+
+4 Functional Diagram ........................................2
+
+
+5 Pin Configuration ............................................4
+
+
+6 Specifications ..................................................5
+
+
+6.1 Absolute Parameters............................5
+
+
+6.2 Recommend Working Conditions........ 5
+
+
+6.3 Electrical Characteristics...................... 5
+
+
+6.4 Magnetic Properties.............................6
+
+
+6.5 Timing Parameter.................................6
+
+
+7 Rotate Position Angle Output .......................7
+
+
+8 Measurement Mode Description ..................8
+
+
+8.1 Continuous Sensing Mode................... 8
+
+
+8.2 Wake-up & Sleep Mode....................... 9
+
+
+8.3 Single Conversion Mode.................... 10
+
+
+8.4 Idle Mode........................................... 11
+
+
+9 Reset ..............................................................13
+
+
+10 Operating Status Description ...................14
+
+
+11 Data Read Frame ...................................... 15
+
+
+11.1 Read Back Method...........................16
+
+
+**3**
+
+
+
+12 SPI Communication Mode ........................17
+
+
+13 I2C Communication Mode ....................19
+
+
+14 Special Pin Description .......................... 20
+
+
+15 Read and Write Register Description .20
+
+
+15.1 SPI Communication..........................20
+
+
+15.2 I2C Communication..........................21
+
+
+16 Register Map Description ......................23
+
+
+17 Reference Circuit ......................................27
+
+
+17.1 SPI.....................................................27
+
+
+17.2 I2C.....................................................28
+
+
+19 Order Information ................................... 29
+
+
+20 Strap and Reel Information ...................30
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **5**
+##### **Pin Configuration**
+
+Figure 5-1.QFN3x3 16-Pin Top view
+
+
+Table 5-1. Pin Configuration and Functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Pin No.|Name|Description|Type|
+|---|---|---|---|
+|1|INT|Data Ready or Wake-up & Sleep Mode Interrupt Signal|Output|
+|2|CS|In I2C communication protocol, pull up to VDD_IO<br>In SPI communication protocol, controlled by SPI master, the<br>low level is effective|Input|
+|3|SCL/SCLK|I2C or SPI Clock Signal|Input|
+|5|SDA/MOSI|I2C data input and output port<br>SPI Data,Master Output Slave Input|Input/Output|
+|6|MISO|SPI Data,Master Input Slave Output<br>When using only 3-wire SPI data transmission, it is necessary<br>to short circuit connect the MISO and MOSI|Output|
+|7|TRIG|TRIG single measurement signal<br>When this pin function is not used, this pin must be<br>connected to ground|Input/Output|
+|8|VDD_IO|IO Power Supply|Power Supply|
+|11|A1|I2C Address Input Port A1<br>In SPI communication protocol, this pin must be connected to<br>ground|Input|
+|12|A0|I2C Address Input Port A0<br>In SPI communication protocol, this pin must be connected to<br>ground|Input|
+
+
+**4**
+
+
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+|13|VSS|Ground|Ground|
+|---|---|---|---|
+|15|VDD|Power Supply|Power Supply|
+|Other|NC|Not Connect<br>It is recommended that all NC pins be grounded|Non|
+
+
+
+Note: When the TRIG pin function is not used, this pin must be connected to ground. In SPI communication protocol,
+
+
+A1 and A0 pins must be connected to ground. It is recommended that all NC pins be grounded.
+
+## **6 Specifications**
+
+
+The following parameters are measured at room temperature of 25 ℃.
+
+###### 6.1 Absolute Parameters
+
+
+
+
+
+
+
+
+
+|Parameter|Description|Min.|Max.|Unit|
+|---|---|---|---|---|
+|VDD_MAX|Maximum Supply Voltage|-0.3|6|V|
+|VDD_IO_MAX|Maximum Digital IO Supply<br>Voltage|-0.3|6|V|
+|Tstorage|Maximum<br>Storage<br>Temperature||150|℃|
+|VESD|ESD（HBM）||±5K|V|
+
+
+Table 6-1
+
+###### 6.2 Recommend Working Conditions
+
+
+
+|Parameter|Description|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|
+|VDD|Supply Voltage|2.8|3.3|5.5|V|
+|VDD_IO|Digital IO Supply Voltage|1.8||VDD|V|
+|VIH|Input High Level Voltage|0.75|||VDD_IO|
+|VIL|Input Low Level Voltage|||0.25|VDD_IO|
+|TOPERATION|AQ2<br>Industrial<br>Grade<br>Operating Temperature|-40|25|105|℃|
+|TOPERATION|AQ3<br>Consumer<br>Grade<br>Operating Temperature|-40|25|85|℃|
+
+
+Table 6-2
+
+
+
+
+
+
+
+
+###### 6.3 Electrical Characteristics
+
+
+
+
+
+
+
+
+
+
+
+|Parameter|Description|Condition|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|---|
+|VDD|Supply Voltage||2.8|3.3|5.5|V|
+|VDD_IO|Digital IO Supply Voltage||1.8||VDD|V|
+|IDD,CONVXY|Measure Peak Current|VDD=3.3V||4.89||mA|
+|IDD,STBY|Continuous<br>Sensing<br>Mode Standby Current|Continuous<br>Sensing<br>Mode Standby Current||61.7||μA|
+|IDD,WAKE_STBY|Wake-up & Sleep Mode|Wake-up & Sleep Mode||2.4||μA|
+
+
+**5**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+|Col1|Standby Current|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|IDD,IDLE|Idle State Current|Idle State Current||1.4||μA|
+
+
+
+Table 6-3
+
+###### 6.4 Magnetic Properties
+
+
+
+|Parameter|Description|Condition|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|---|
+|Mxy|Magnetic<br>Field<br>Linear<br>Range|Gain=20|-130||130|mT|
+|NRMSAngle|Angular Output Noise|@B=20mT<br>magnOsr=0<br>digCtrl=0||0.98||Degree|
+|NRMSAngle|Angular Output Noise|@B=20mT<br>magnOsr=1<br>digCtrl=0||0.28||Degree|
+|NRMSAngle|Angular Output Noise|@B=20mT<br>magnOsr=3<br>digCtrl=0||0.128||Degree|
+|NRMSAngle|Angular Output Noise|@B=20mT<br>magnOsr=3<br>digCtrl=3||0.065||Degree|
+
+
+The above parameters are measured at 25℃.
+
+###### 6.5 Timing Parameter
+
+
+
+Table 6-4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Parameter|Description|Min.|Typ.|Max.|Unit|
+|---|---|---|---|---|---|
+|Tstart|Start Up Time||4||ms|
+|TCONVM|Single<br>axis<br>magnetic<br>field<br>measurement time (programmable)|165||33349|μs|
+|TCONVM|Single<br>axis<br>magnetic<br>field<br>measurement time (programmable)|69+32*~~2~~magnOsr*（2+~~2~~digCtrl）|69+32*~~2~~magnOsr*（2+~~2~~digCtrl）|69+32*~~2~~magnOsr*（2+~~2~~digCtrl）|μs|
+|TCONV_END|The time between the end of the<br>measurement and the time when the<br>analog enable is turned off||108||μs|
+|Tactive|Time from IDLE to ACTIVE||220||μs|
+|TContinuous|When<br>measTime=0,<br>the<br>time<br>to<br>complete a measurement when the<br>chip is in Continuous Sensing Mode|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|μs|
+|TwakeUp|When<br>measTime=0,<br>the<br>time<br>to<br>complete a measurement when the<br>chip is in Wake-up & Sleep Mode|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|m*TCONVM + TCONV_END|μs|
+|Tsingle|Time<br>from<br>turns<br>on<br>the<br>Single<br>Conversion Mode to complete one|Tactive+ m*TCONVM + TCONV_END|Tactive+ m*TCONVM + TCONV_END|Tactive+ m*TCONVM + TCONV_END|μs|
+
+
+**6**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+single measurement
+
+
+Table 6-5
+
+
+The above parameters are measured at 25℃.
+
+
+Note: The default value in the table above is m=2.
+
+## **7**
+##### **Rotate Position Angle Output**
+
+
+KTH5702 measures the magnetic flux density component in the X and Y axis directions through the 2D (X-axis,
+
+
+Y-axis) Hall sensor, and calculates the two-axis magnetic flux density through the CORDIC algorithm to obtain the XY
+
+
+plane angle and absolute rotation position output.
+
+
+Note:
+
+
+   - The horizontal flux density component of the magnetic field in the X and Y horizontal directions described above
+
+
+is 20mT, without considering the Hall device and signal chain offset, temperature drift, and noise effects.
+
+
+Figure 7-1. Absolute rotate position measurement diagram
+
+
+**7**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 7-2. The relative position of each axis Hall element within the package
+
+## **8 Measurement Mode Description**
+
+
+KTH5702 supports a variety of working modes. This product can be used in three modes: Continuous Sensing Mode,
+
+
+Wake-up & Sleep Mode, Single Conversion Mode.
+
+
+
+
+
+
+
+|Measurement Function|Function Introduction|
+|---|---|
+|**Continuous Sensing Mode**|Continuously measures the BA channel|
+|**Wake-up & Sleep Mode**|When the current measurement item A is greater than<br>the angle setting in the corresponding register, the chip<br>sets the INT pin to 1|
+|**Single Conversion Mode**|Make one measurement of the BA channel|
+|**Idle Mode**|Exit the current mode and enter an idle state|
+
+
+Table 8-1
+
+###### 8.1 Continuous Sensing Mode
+
+
+**8**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 8-1. Continuous Sense Mode SPI Communication Diagram
+
+
+Figure 8-2. Continuous Sensing Mode I2C Communication Diagram
+
+
+After the host sends a command for continuous sensing mode to the chip, the chip continues to measure the
+
+
+measurement item (BA) until the host sends an idle mode command to the chip.
+
+
+When continuous measurement of rotation angle is required and power consumption requirements are not
+
+
+stringent, continuous sensing mode is recommended.
+
+
+When the chip is in continuous sensing mode, intermittent measurement is used to reduce chip power
+
+
+consumption. The chip will automatically and continuously open the measurement of the corresponding measurement
+
+
+item, and the interval between two adjacent measurements is controlled by measTime.
+
+###### 8.2 Wake-up & Sleep Mode
+
+
+**9**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 8-3. Wake-up & Sleep Mode SPI Communication Diagram
+
+
+Figure 8-4. Wake-up & Sleep Mode I2C Communication Diagram
+
+
+After the host sends a wake-up & sleep mode command to the chip, the chip is in a low-power measurement
+
+
+mode that measures the measurement item (BA) at a certain frequency until the host sends an idle mode command to
+
+
+the chip.
+
+
+When the chip in wake-up & sleep mode, the chip INT pin is pulled high when the angle detected by the chip
+
+
+exceeds the set value in the threshold register. After the host reads the measurement data back once through the Data
+
+
+Read Frame, the INT pin is pulled low, otherwise it remains high. The chip INT pin will not actively pull down, that is, at
+
+
+a certain moment the angle value detected by the chip, beyond the set threshold, after the INT pin is pulled high, if the
+
+
+next moment, the angle value detected by the chip is lower than the set threshold again, but the host does not read
+
+
+back the measurement data, the INT pin will not actively pull low.
+
+###### 8.3 Single Conversion Mode
+
+
+**10**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 8-5. Single Conversion Mode SPI Communication Diagram
+
+
+Figure 8-6. I2C Communication Diagram in Single Conversion Mode
+
+
+After the host sends a single conversion mode command to the chip, the chip will measure the measurement
+
+
+item (BA) once, and automatically return to the idle state, the effect is equivalent to sending an idle mode command,
+
+
+that is, the chip receives a single conversion mode command, and after completing a measurement, there is no need
+
+
+to send an idle mode command to return to Idle mode.
+
+###### 8.4 Idle Mode
+
+
+**11**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 8-7. SPI Communication Diagram In Idle Mode
+
+
+Figure 8-8. I2C Communication Diagram In Idle Mode
+
+
+After the host sends an idle mode command to the chip, the chip will enter the idle state. When the chip is in
+
+
+continuous sensing mode or wake-up & sleep mode, the chip cannot perform operations other than the measurement
+
+
+data readback frame, such as reading and writing registers. If you need to perform other operations on the chip, you
+
+
+need to send an idle mode command first to make the chip enter an idle state. However, after sending an idle mode
+
+
+command, subsequent instructions cannot be executed immediately, and it is necessary to wait for the current
+
+
+measurement to complete before entering the idle state from the current continuous sensing mode or wake-up &
+
+
+sleep Mode. If additional operations are required, it is necessary to wait for a measurement time delay before
+
+
+proceeding.
+
+
+Take the write register command as an example:
+
+
+  - Step 1: Send idle mode command
+
+
+   - Step 2: Wait for the time to complete a measurement
+
+
+**12**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+
+   - Step 3: Send the write register command
+
+
+Note: Idle state refers to the state that the chip is not in any measurement mode. The standby state refers to the
+
+
+state that the chip is in measurement mode and in intermittent measurement.
+
+## **9 Reset**
+
+
+Figure 9-1. Reset SPI Communication Diagram
+
+
+Figure 9-2. Reset I2C Communication Diagram
+
+
+The internal register configuration is reset to the reset state.
+
+
+If the chip is in continuous sensing mode or wake-up & sleep mode, before resetting the chip, you need to send
+
+
+an idle mode command to make the chip return to the idle state.
+
+
+**13**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **10**
+##### **Operating Status Description**
+
+Figure 10-1. Operating Status SPI Description
+
+
+Figure 10-2. Operating Status I2C Description
+
+
+**14**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+In addition to resetting the chip, the chip will return to the operating status after other commands are sent;
+
+
+ Continuous
+
+
+When this bit is 1, it means that it is currently in continuous sensing mode. The host sends a continuous sensing mode
+
+
+command to the chip, and the bit in the returned status is set to 1, or when the chip is in continuous sensing mode,
+
+
+using the data Read Frame, the bit is also set to 1 when the measurement data is read back at one time.
+
+
+ Wake-up
+
+
+When this bit is 1, it means that it is currently in wake-up & sleep mode. When the host sends a wake-up & sleep
+
+
+mode command to the chip, the bit in the returned status is set to 1, or when the chip is in wake-up & sleep mode,
+
+
+using the data Read Frame, this bit is also set to 1 when the measurement data is read back at one time.
+
+
+ Single
+
+
+When this bit is 1, it means that it is currently in single conversion mode. When the host sends a single conversion
+
+
+mode command to the chip, or the host sends a high-level pulse to the chip trig pin, the command then returns the
+
+
+corresponding status of the bit set to 1. After completing a single measurement, the chip returns to the idle state, and
+
+
+if other commands are sent later, the bit is 0 in the corresponding status returned.
+
+
+ Failing
+
+
+Failing =1 when the currently sent command is invalid. When in any measurement state, send another measurement
+
+
+command again, the Failing bit will be set to 1. For example, when a single conversion command is sent while the
+
+
+continuous sensing mode is in progress, the Failing bit will be set to 1; At the same time, if the operation of the read
+
+
+and write registers is performed in continuous sensing mode, the Failing bit will also be set to 1, which represents a
+
+
+command error.
+
+
+ RESERVED
+
+
+ RESERVED
+
+
+ softRst
+
+
+After the host sends a Reset command to the IC, the IC will not return status immediately. Therefore, it is necessary to
+
+
+judge whether the reset is successful according to the status returned when any command is received for the first time
+
+
+after the chip is reset. This bit is set to 1 after the chip is successfully reset, and is cleared to 0 after status is returned
+
+
+once, that is, when the chip receives any command for the second time after reset, the bit of status is 0.
+
+
+ DRDY
+
+
+When the host sends Continuous Sensing mode to the chip, the bit is set to 1 after each measurement, and the bit is
+
+
+cleared 0 after completing a data reading. When the host sends a single conversion mode to the chip, the bit is set to 1
+
+
+after the measurement is completed, and the bit is cleared to 0 after completing a data reading. When the host sends
+
+
+Wake-up & Sleep Mode to the chip, when the corresponding magnetic field change detected by the chip exceeds the
+
+
+set threshold, the bit is set to 1, and the bit clears 0 after completing a data reading.
+
+## **11 Data Read Frame**
+
+
+After the chip completes a measurement, the data readback frame can be used to read back the chip status and
+
+
+all measurement data at once.
+
+
+As shown in the following figure, after the host sends a data readback command to the chip, the chip returns the
+
+
+measurement values of all gating items to the host at one time.
+
+
+**15**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 11-1. Data Read Frame SPI Communication Diagram
+
+
+Figure 11-2. Data Read Frame I2C Communication Diagram
+
+###### 11.1 Read Back Method
+
+
+The host sends a one-time data readback command to the chip, which can read back the AB value. B:
+
+
+Corresponding amount of plane magnetic flux density, A: plane angle.
+
+
+The sending part is shown in the figure below, and the complete communication format is shown in Figure 11-11
+
+
+and Figure 11-12.
+
+
+
+360
+Returns a 16-bit angle value, and the angle corresponding to each LSB is : 2 16
+
+
+
+
+
+
+
+. Example : A [15:0] = 0x1000, XY
+
+
+
+_A_ [15:0]*360 
+
+plane magnetic field angle θ = 2 16
+
+
+
+4096*360 
+
+=
+16
+
+
+
+2
+
+
+
+
+
+
+
+= 22.5°.
+
+
+
+The θ value is calculated by Bx,By by the CORDIC algorithm, and the corresponding value of the magnetic flux
+
+
+
+
+[15:0]*0.60725
+
+
+
+density is
+
+
+
+_B_ [15:0]
+
+
+_S_ ensitivity
+
+
+
+_S_ ensitivity .
+
+
+
+As shown in the figure below.
+
+
+
+**16**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 11-3. Data Readback SPI Communication Diagram
+
+
+Figure 11-4. Data readback I2C Communication Diagram
+
+## **12 SPI Communication Mode**
+
+
+Note: The following parameters are measured at room temperature 25°C and Vdd = 3.3V.
+
+
+The design uses SPI mode 3: CPHA=1 (data changes at the first edge, the second edge is sampled), CPOL=1 (high
+
+
+level is invalid).
+
+
+**17**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+|Electrical Parameters|Symbol|Min.|Max.|Unit|
+|---|---|---|---|---|
+|**SPI Clock Cycle**|tc(SPC)|200||ns|
+|**SPI Clock Cycle**|tc(SPC)||5|MHz|
+|**CS Setup Time**|tsu(CS)|5||ns|
+|**CS Hold Time**|th(CS)|10||ns|
+|**SDI Input Setup Time**|tsu(SI)|5||ns|
+|**SDI Input Hold Time**|th(SI)|15||ns|
+|**SDO Valid Output Time**|tv(SO)||50|ns|
+|**SDO Output Hold Time**|th(SO)|5||ns|
+|**SDO Output Disable Time**|tdis(SO)||50|ns|
+
+
+
+Figure 12-1 SPI Timing Diagram
+
+
+**18**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **13 I2C Communication Mode**
+
+Note: The following parameters are measured at room temperature 25°C and Vdd = 3.3V.
+
+|Electrical Parameters|Symbol|Standard Mode|Col4|Fast Mode|Col6|Unit|
+|---|---|---|---|---|---|---|
+|**Electrical Parameters**|**Symbol**|**Min.**|**Max.**|**Min.**|**Max.**|**Max.**|
+|SCL Clock Frequency|f (SCL)||100||400|kHz|
+|SCL Clock Low Time|tw (SCLL)|4.7||1.3||μs|
+|SCL Clock High Time|tw (SCLH)|4||0.6||μs|
+|SDA Setup Time|tsu (SDA)|250||100||ns|
+|SDA Data Hold Time|th (SDA)||3.45||0.9|μs|
+|SDA and SCL Rise Time|tr (SDA)<br>tr (SCL)||1000||300|ns|
+|SDA and SCL Fall Time|tf (SDA)<br>tf (SCL)||300||300|ns|
+|START Condition Hold Time|th (ST)|4||0.6||μs|
+|REPEATED START Condition Setup Time|tsu (SR)|4.7||0.6||μs|
+|STOP Condition Setup Time|tsu (SP)|4||0.6||μs|
+|Bus Free Time Between STOP and START<br>Condition|tw(SP:ST)|4.7||1.3||μs|
+
+
+
+Figure 13-1 I2C Timing Diagram
+
+
+**19**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **14**
+##### **Special Pin Description**
+
+INT: The host sends a continuous sensing mode or a single measurement command to the chip, and after the chip
+
+
+completes a measurement of the corresponding measurement item, the INT pin will be set to 1, and it will remain at 1
+
+
+until the chip sends a read command and reads back the measurement data. After the host sends a wake-up & sleep
+
+
+model command to the chip, when it detects that the amount of change in the measurement item exceeds the change
+
+
+threshold set in the register, the INT pin is set to 1, and it remains at 1 until the chip sends a read command to read the
+
+
+measurement data back.
+
+
+TRIG: When the host configures this pin as a single conversion mode trigger pin, if the host sends a high-level
+
+
+pulse to the TRIG pin, the chip makes a single measurement. When the TRIG pin is configured as a trigger pin, the pin
+
+
+cannot float. This pin cannot float and needs to remain low after the external triggering completes.
+
+## **15**
+##### **Read and Write Register Description**
+
+
+After the chip is powered on, internal initialization is carried out, when the power supply is stable,
+
+
+communication is not allowed within 4ms, and when the initialization is completed, the chip enters an idle state,
+
+
+allowing communication measurement.
+
+
+When reading and writing registers, the register address should be shifted two bits to the left, as shown in the
+
+
+figure.
+
+###### 15.1 SPI Communication
+
+
+Figure 15-1. Read Register SPI Timing Diagram
+
+
+Figure 15-2. Read Register 0x16 SPI Timing Diagram
+
+
+**20**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 15-3. Write Register SPI Timing Diagram
+
+
+Figure 15-4. Write Register 0x16 SPI Timing Diagram
+
+###### 15.2 I2C Communication
+
+
+Figure 15-5. Read Register I2C Timing Diagram
+
+
+Figure 15-6. Read Register 0x16 I2C Timing Diagram
+
+
+**21**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 15-7. Write Register I2C Timing Diagram
+
+
+Figure 15-8. Write Register 0x16 I2C Timing Diagram
+
+
+**22**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **16**
+##### **Register Map Description**
+
+**23**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+**0x06**
+
+
+Status register, when the host sends a command to KTH5702 according to the communication protocol, if the sent
+
+
+command requires KTH5702 to answer, the chip will return the current chip status in the first byte, and this status
+
+
+value corresponds to the flag bits stored in the 0x06 register.
+
+|Bit Name|Bit|R/W|Description|
+|---|---|---|---|
+|**DRDY**|0|R|When the host sends Continuous Sensing mode to the chip, the bit is set to 1 after<br>each measurement, and the bit is cleared 0 after completing a data reading. When<br>the host sends a single conversion mode to the chip, the bit is set to 1 after the<br>measurement is completed, and the bit is cleared to 0 after completing a data<br>reading. When the host sends Wake-up & Sleep Mode to the chip, when the<br>corresponding magnetic field change detected by the chip exceeds the set<br>threshold, the bit is set to 1, and the bit clears 0 after completing a data reading.|
+|**softRst**|1|R|After the host sends a Reset command to the IC, the IC will not return status<br>immediately. Therefore, it is necessary to judge whether the reset is successful<br>according to the status returned when any command is received for the first time<br>after the chip is reset. This bit is set to 1 after the chip is successfully reset, and is<br>cleared to 0 after status is returned once, that is, when the chip receives any<br>command for the second time after reset, the bit of status is 0.|
+|**RESERVED**|3:2|R||
+|**Failing**|4|R|Failing = 1 when the currently sent command is invalid. When other measurement<br>commands are sent again during any measurement state, the Failing bit will be set<br>to 1, for example, a single measurement command is sent at the same time in<br>Continuous Sensing Mode, and the Failing bit will be set to 1; At the same time, if<br>the operation of reading and writing registers is performed in Continuous Sensing<br>Mode, the Failing bit will also be set to 1, indicating a command error.|
+|**Single**|5|R|After the host sends a single measurement command (0x3x) to the chip, or the host<br>sends a high-level pulse to the chip trig pin, the chip enters a Single Conversion<br>Mode, and the bit is set to 1.|
+|**wake-up**|6|R|After the host sends a Wake-up & Sleep Mode command (0x2x) to the chip, the<br>chip enters wake-up measurement mode, and the bit is set to 1.|
+|**Continuous**|7|R|After the host sends a Continuous Sensing Mode command (0x1x) to the chip, the<br>chip enters the Continuous Sensing Mode, and the bit is set to 1.|
+
+
+
+**24**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+**0x19h:**
+
+
+
+
+
+
+
+
+
+
+
+|Bit Name|Col2|Bit|R/W|Description|
+|---|---|---|---|---|
+|**wxyTh**||15:0|RW|When the chip detects a plane angle greater than the configured<br>value in wxyTh, the INT pin is pulled up, and the calculation method<br>for writing the angle in wxyTh is consistent with the calculation<br>method for reading the chip angle output.<br>For example, if the chip detects an angle greater than 45 ° in the<br>XY plane, and the INT pin is pulled up, write the hexadecimal number<br>corresponding to<br>16<br>45<br>2<br>~~360~~<br><br><br><br>in wxyTh, which is 0x2000. Regardless<br>of whether the external angle value changes, as long as the angle<br>between the planes detected by the chip is greater than 45 °, the<br>INT pin will be pulled up.|
+
+
+**0x1Ch:**
+
+
+
+
+
+
+
+
+|magnOsr|0x03|0x02|0x01|0x00|
+|---|---|---|---|---|
+|Number of<br>sampling<br>points|256|128|64|32|
+
+
+
+|位名|位|R/W|说明|
+|---|---|---|---|
+|**digCtrl**|2:0|RW|Digital Filter Control Parameters.|
+|**RESERVED**|8:3|R||
+|**magnOsr**|10:9|RW|The ADC oversampling rate measured by the chip, corresponding to two<br>bits from low to high, respectively represent 32, 64, 128, and 256<br>sampling points at one time.<br>magnOsr<br>0x03<br>0x02<br>0x01<br>0x00<br>Number of<br>sampling<br>points<br>256<br>128<br>64<br>32<br>The total number of points taken by the ADC = 32x 2magnOsr x (2digCtrl+ 2)<br>The time at which the chip made an angle measurement= (the number of|
+
+
+**25**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+|Col1|Col2|Col3|ADC points + 69) * 2μs|
+|---|---|---|---|
+|**RESERVED**|15:11|R|R|
+
+
+
+**0x1Dh:**
+
+|Bit Name|Bit|R/W|Decription|
+|---|---|---|---|
+|**measTime**|5:0|RW|During Continuous Sensing Mode and Wake-up & Sleep Mode, control the<br>intermittent waiting time between each measurement (standby state duration).<br>The value set in measTime controls the number of delays, with one lsb<br>corresponding to a waiting delay of 20 ms. The value in measTime corresponds to<br>the decimal setting and how many times the delay is performed.<br>If measTime = 0x05, the waiting time between the two measurements of the chip<br>is 5 times with a delay of 20ms, 5*20ms=100ms.|
+|**measSel**|9:6|RW|Measure the select communication signal, when the host sends three<br>measurement mode commands to the chip without gating, can be gated by<br>measSel corresponding to the BA bit, i.e. measSel[3:0] = 0x06, then gate BA two<br>measurement channels.|
+|**RESERVED**|15:10|R||
+
+
+
+**0x1Eh:**
+
+|Bit Name|Bit|R/W|Description|
+|---|---|---|---|
+|**Zero[15:1]**|14:0|RW|Set the first 15 bits of the zero value of the angle output.<br>Reverse the value that needs to be set to zero plus 1, and write the first 15<br>bits into the zero register. For example, if you need to set the angle 0x01AA<br>to zero, the value of zero is 0x7F2B.|
+|**RESERVED**|15|R||
+
+
+
+**26**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+## **17 Reference Circuit**
+
+Note: In order to ensure the stability of communication, be sure to use a combination capacitor of 0.1μf and 10μf,
+
+
+and the capacitor is as close as possible to the chip VDD. The A0 and A1 pins are grounded when not in use.
+
+###### 17.1 SPI
+
+
+**27**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor** 17.2 I2C
+
+## **18**
+##### **QFN_16PIN Package Dimensions**
+
+**28**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+Figure 18-1. QFN_16PIN Package Dimensions
+
+
+
+
+
+
+
+|Symbol|Unit：mm|Col3|
+|---|---|---|
+|**Symbol**|**Min.**|**Max.**|
+|A|0.700|0.800|
+|A1|0.000|0.050|
+|A3|0.203REF.|0.203REF.|
+|D|2.900|3.100|
+|E|2.900|3.100|
+|D1|1.350|1.550|
+|E1|1.350|1.550|
+|k|0.375REF.|0.375REF.|
+|b|0.200|0.300|
+|e|0.500BSC.|0.500BSC.|
+|l|0.300|0.500|
+
+## **19 Order Information**
+
+**Part Numbers** **Package** **Temperature** **Application** **Number of Pins**
+
+
+**29**
+
+
+### **KTH5702 series**
+
+###### **Low power, high accuracy 2D Hall rotary position sensor**
+
+|KTH5702AQ2QNS|QFN3x3-16L|-40℃ ~ +105℃|Industrial Grade|16|Col6|
+|---|---|---|---|---|---|
+|KTH5702AQ3QNS|QFN3x3-16L|-40℃~ +85℃|Consumer Grade|16|16|
+
+
+## **20**
+##### **Strap and Reel Information**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Package<br>Type|Pins|SPQ|Reel<br>Diameter|Reel<br>Inside<br>Width|A0<br>(mm)|B0<br>(mm)|K0<br>(mm)|P1<br>(mm)|W<br>(mm)|Pin1<br>Direction|
+|---|---|---|---|---|---|---|---|---|---|---|
+|QFN3*3-16L|16|5000|330|12.4|3.35|3.35|1.13|8.00|12.00|Q1|
+
+
+**30**
+
+
+
+
+</details>
+
+---
+
+## 相关资源
+
+### PDF文档
+- [📋 KTH5702AQ2AQ3_DS_CN.pdf](/pdfs/KTH5702AQ2AQ3_DS_CN.pdf)
+- [📋 KTH5702AQ2AQ3_DS_EN.pdf](/pdfs/KTH5702AQ2AQ3_DS_EN.pdf)
+
+### 其他资源
+- [产品选型指南](../technical/)
+- [应用案例](../technical/)
+- [技术支持](../technical/)
+
+---
+
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们：
+
+- 📧 邮箱: support@ktsense.com
+- 📞 技术热线: 400-xxx-xxxx
+- 🌐 在线支持: [技术论坛](../technical/)
+
+---
+
+*最后更新: 2024年*
+*版本: Enhanced v1.0*
+*包含完整PDF内容和技术图片*
+
+
+## 🔗 相关产品推荐
+
+### 3D霍尔传感器
+
+- [KTH5791](../3d-hall/KTH5791.md) - 同系列产品
+- [KTH5701AQ2 增强版](./KTH5701AQ2.md) - 同系列产品
+- [KTH5702AQ1 增强版](./KTH5702AQ1.md) - 同系列产品
+### 磁编码器
+
+- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+### 霍尔开关
+
+- [KTH1201 增强版](./KTH1201.md) - 推荐霍尔开关
+### 其他传感器
+
+- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+
+---

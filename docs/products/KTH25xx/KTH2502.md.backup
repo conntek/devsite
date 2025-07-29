@@ -1,0 +1,1692 @@
+# KTH2502 - 完整技术参考
+
+[返回产品目录](../index.md) | [返回hall-switch分类](../hall-switch/index.md)
+
+
+## 🧭 页面导航
+
+- 🔙 [返回产品摘要页面](../hall-switch/KTH2502.md)
+- 📂 [返回霍尔开关分类](../hall-switch/)
+- 🏠 [返回主页](../index.md)
+- 📚 [所有增强版技术参考](./index.md)
+
+---
+
+## 产品概述
+
+**KTH2502** 完整技术参考文档，包含所有PDF数据手册的详细内容和技术图片。
+
+---
+
+## 产品图片
+
+![KTH2502 图片 1](./images/kth2502/page_4_img_1_783cfe4e.png)
+
+![KTH2502 图片 2](./images/kth2502/page_5_img_1_57867c6f.png)
+
+![KTH2502 图片 3](./images/kth2502/page_6_img_1_780cc8c3.png)
+
+![KTH2502 图片 4](./images/kth2502/page_7_img_1_684420b4.png)
+
+![KTH2502 图片 5](./images/kth2502/page_7_img_2_f21c377f.png)
+
+![KTH2502 图片 6](./images/kth2502/page_7_img_3_d2521175.png)
+
+![KTH2502 图片 7](./images/kth2502/page_7_img_4_70614169.png)
+
+![KTH2502 图片 8](./images/kth2502/page_7_img_5_55b7e604.png)
+
+![KTH2502 图片 9](./images/kth2502/page_8_img_1_70614169.png)
+
+![KTH2502 图片 10](./images/kth2502/page_8_img_2_55b7e604.png)
+
+![KTH2502 图片 11](./images/kth2502/page_9_img_1_84c3850a.png)
+
+![KTH2502 图片 12](./images/kth2502/page_9_img_2_5af37b01.png)
+
+---
+
+## 📄 KTH2502 Datasheet_EN.pdf
+
+<details>
+<summary>点击展开 KTH2502 Datasheet_EN.pdf 完整内容</summary>
+
+# **KTH2502 Series**
+
+## **Automotive Digital-Latch** **Hall Effect Sensor**
+
+### Technical Support sales.global@conntek.com.cn
+
+
+**Disclaimer**
+
+
+The information in this document is provided by Quanzhou KTsense Microelectronics Co., Ltd. (泉州昆泰芯微电子科技有限公司) (hereafter referred to as ”KTsense Micro”) on an ”as is” basis for informational purposes only. KTsense Micro does not guarantee the accuracy of the information contained herein or the outcomes of its implementation. KTsense Micro assumes no liability for any errors or
+inaccuracies that may be present in this document. Users assume full responsibility for the application of the practices outlined in this
+document.
+
+
+KTsense Micro owns the registered trademark CONNTEK, under which the CONNTEK brand sensors are marketed.
+
+
+This document comes without any warranties, express or implied, including but not limited to warranties of merchantability, satisfactory quality, non-infringement, and fitness for a particular purpose. KTsense Micro, along with its employees, agents, and affiliates, is
+not liable for any losses arising from the use or reliance on this document.
+
+
+This document is subject to change without prior notice and should not be construed as a commitment by KTsense Micro. Users should
+ensure they have the latest version of the relevant information before placing orders or integrating the product into their systems.
+
+
+Users must evaluate the suitability of the product described in this document for their specific applications, including the required level
+of reliability and fitness for purpose.
+
+
+This document and the described product may be subject to export control regulations. Export may require prior authorization from
+the competent authorities. The product is not intended, authorized, or warranted for use in applications requiring extended temperature ranges or unusual environmental conditions. High reliability applications, such as medical life-support or aviation systems, are
+specifically excluded.
+
+
+The product may not be used for the development, production, maintenance, or storage of:
+
+
+1. Chemical, biological, or nuclear weapons, including missile systems for such weapons.
+2. Civil firearms, including spare parts or ammunition.
+3. Defense-related products or materials for military or law enforcement use.
+4. Applications that could cause serious harm to persons or property and that can be used as a means of violence in armed conflicts
+or similar situations.
+
+
+No licenses or rights to any intellectual property of KTsense Micro or third parties are granted.
+
+
+If this document is marked as “confidential”or similar, or if the content is reasonably understood to be confidential, the recipient must
+not disclose any part of the document to third parties without the express written consent of KTsense Micro. The recipient must take
+all necessary measures to maintain the confidentiality of the document, using at least the same degree of care as they use to protect
+their own confidential information, but no less than a reasonable degree of care. The recipient may only disclose the document to employees on a need-to-know basis, provided they are bound by confidentiality terms similar to those in this disclaimer. The document
+may only be used for the purpose for which it was received and may not be used for commercial purposes or to the detriment of KTsense Micro or its customers. These confidentiality obligations will last indefinitely but in any case, for no less than 10 years from the
+receipt of the document.
+
+
+This disclaimer is governed by the laws of China, and any disputes arising from it will be subject to the exclusive jurisdiction of the
+courts in Shenzhen, China.
+
+
+The invalidity of any provision in this disclaimer does not affect the validity of the remaining provisions. Previous versions of this document are repealed.
+
+
+**Copyright**
+
+
+This document and its contents are protected by copyright law. No part of this document may be reproduced or distributed in any form
+or manner without the prior written consent of KTsense Micro.
+
+
+**Contact Information**
+
+
+[For the latest version of this document, go to our website at https://en.conntek.com.cn/.](https://en.conntek.com.cn/)
+
+
+For additional information, please contact our Direct Sales team and get help for your specific needs:
+
+
+|Region|Contact Information|
+|---|---|
+|Overseas|Email: sales.global@conntek.com.cn|
+|China|Email: sales@conntek.com.cn|
+
+
+## **Table of Contents**
+
+**1 Product Features** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **4**
+
+
+**2 Applications** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **4**
+
+
+**3 Typical Application Circuits** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **5**
+
+
+**4 Ordering Information** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **5**
+
+
+**5 Overview** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **5**
+
+
+**6 Pin Definitions** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **6**
+
+
+**6.1** SOT23 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+**6.2** SOT-23-3L . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+**6.3** TO-92S. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+
+**7 Functional Block Diagram** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **7**
+
+
+**8 Output Switching Characteristics** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **7**
+
+
+**9 Part Name Structure** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **7**
+
+
+**10 Absolute Maximum Ratings** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **7**
+
+
+**11 ESD Ratings** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **8**
+
+
+**12 Recommended Operating Conditions** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **8**
+
+
+**13 Electrical Characteristics** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **8**
+
+
+**14 Magnetic Characteristics** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **8**
+
+
+**15 Performance Characteristics** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **9**
+
+
+**16 Power-On Behavior** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **9**
+
+
+**17 Output Stage** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **10**
+
+
+KTH2502 Series
+
+## **1 Product Features**
+
+
+The KTH2502 series is suitable for automotive applications:
+
+### • [Device HBM ESD rating:][ 4000 V] • [Device CDM ESD rating:][ 500 V] • [Grade Q:] [ T] A [=] [ −] [40] [ ◦] [C] [ ∼] [150] [ ◦] [C]
+
+
+Additional features include:
+
+### • [Digital bipolar latching Hall sensor] • [Excellent temperature stability: Full temperature range] [ B] RP [±] [ 10%] • [Multiple sensitivity options (] [B] OP [/] [ B] RP [):] –
+
+[A:] _[ B]_ _OP_ [=] _[ ±]_ [15 G][,] _[ B]_ _RP_ [=] _[ ±]_ [15 G]
+
+### –
+
+[B:] _[ B]_ _OP_ [=] _[ ±]_ [30 G][,] _[ B]_ _RP_ [=] _[ ±]_ [30 G]
+
+### –
+
+[C:] _[ B]_ _OP_ [=] _[ ±]_ [60 G][,] _[ B]_ _RP_ [=] _[ ±]_ [60 G]
+
+### • [Wide operating voltage range:][ 2.7 V][ to][ 32 V][, no external regulator]
+
+required
+
+### • [Open-drain output (30-mA sink current)] • [Fast power-on time:][ 35][ µ][s] • [Small package sizes:] –
+
+[Surface mount: 3-Pin SOT23 and SOT-23-3L]
+
+### –
+
+[Through-hole: 3-Pin TO-92S]
+
+### • [AEC-Q100 automotive standard compliant] • [Protection features:] –
+
+[Reverse power protection (up to] _[ −]_ [22 V][)]
+
+### –
+
+[Load dump protection up to][ 36 V]
+
+### –
+
+[Output short-circuit protection]
+
+### –
+
+[Output current limit]
+
+
+Figure 1: Output curve of the SOT-23-3L package
+
+## **2 Applications**
+
+
+The KTH2502 series is ideal for:
+
+
+4 of 16
+
+
+KTH2502 Series
+
+
+Figure 2: Output curve of the SOT23 and TO-92S package
+
+### • [Power tools] • [Flow meters] • [Valve and solenoid status] • [Brushless DC motors] • [Proximity sensing] • [Tachometers] • [Sunroof controllers] • [Tailgate controllers] • [Folding blind controllers] • [Seat adjustment controllers]
+
+## **3 Typical Application Circuits** **4 Ordering Information**
+
+|Model|Number of pins|Package Type|Operating Temperature|MSL Level|SPQ|
+|---|---|---|---|---|---|
+|KTH2502QA-SS3<br>KTH2502QA-ST3<br>KTH2502QA-TO3<br>KTH2502QB-SS3<br>KTH2502QB-ST3<br>KTH2502QB-TO3<br>KTH2502QC-SS3<br>KTH2502QC-ST3<br>KTH2502QC-TO3|3<br>3<br>3<br>3<br>3<br>3<br>3<br>3<br>3|SOT23<br>SOT-23-3L<br>TO-92S<br>SOT23<br>SOT-23-3L<br>TO-92S<br>SOT23<br>SOT-23-3L<br>TO-92S|_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C<br>_−_40 _◦_C to 150 _◦_C|1<br>1<br>NA<br>1<br>1<br>NA<br>1<br>1<br>NA|3000<br>3000<br>1000<br>3000<br>3000<br>1000<br>3000<br>3000<br>1000|
+
+
+
+Table 1: Ordering Information for KTH2502 Series
+
+## **5 Overview**
+
+
+The KTH2502 employs advanced chopping technology, integrating temperature compensation circuitry along with over-current and negative volt
+
+5 of 16
+
+
+KTH2502 Series
+
+
+Figure 3: Typical application circuit for KTH2502
+
+
+age protection circuits, providing excellent sensitivity and temperature
+stability. The magnetic field is indicated through a digital bipolar latch output. The chip features an open-drain output stage with a sink current capability of 30 mA. It operates over a wide voltage range from 2.7 V to 32 V,
+with reverse polarity protection up to _−_ 22 V, making it suitable for a wide
+range of automotive applications.
+
+## **6 Pin Definitions**
+
+
+**6.1 SOT23**
+
+|Pin Name|Pin Number|Description|
+|---|---|---|
+|VCC<br>OUTPUT<br>GND|1<br>2<br>3|Power supply input<br>Output<br>Ground|
+
+
+
+Table 2: Pin Definitions for SOT23 Package
+
+
+**6.2 SOT-23-3L**
+
+
+**6.3 TO-92S**
+
+
+6 of 16
+
+
+KTH2502 Series
+
+
+Figure 4: SOT23 Package
+
+
+
+Figure 5: SOT-23-3L
+Package Figure 6: TO-92S Package
+
+
+Figure 7: SOT-23 Pinout Top View
+
+
+## **7 Functional Block Diagram** **8 Output Switching Characteristics**
+
+When the south pole of a magnet approaches the top of the chip, the magnetic flux lines pass from the bottom to the top of the chip, making the
+magnetic flux density _B_ positive. When the north pole approaches the top
+of the chip, the flux lines pass from the top to the bottom, making _B_ negative.
+
+
+When the KTH2502 detects the presence of a magnetic field, it can accurately determine the magnetic poles and their strength.
+
+## **9 Part Name Structure**
+
+
+The KTH2502 model construction is defined as follows:
+
+## **10 Absolute Maximum Ratings**
+
+
+Exceeding the absolute maximum ratings may cause permanent damage
+to the device. These are stress ratings only, and functional operation of
+
+
+7 of 16
+
+
+KTH2502 Series
+
+
+Figure 8: SOT-23-3L Pinout Top View
+
+|Pin Name|Pin Number|Description|
+|---|---|---|
+|VCC<br>OUTPUT<br>GND|1<br>2<br>3|Power supply input<br>Output<br>Ground|
+
+
+
+Table 3: Pin Definitions for SOT-23-3L Package
+
+
+the device at these or any other conditions beyond those indicated under
+recommended operating conditions is not implied. Exposure to absolute
+maximum rating conditions for extended periods may affect device reliability.
+
+
+(1) Design guaranteed.
+
+## **11 ESD Ratings**
+
+
+The KTH2502 series has the following ESD ratings:
+
+### • [Human Body Model (HBM):] [ ±] [4000 V] • [Charged Device Model (CDM):] [ ±] [500 V]
+
+## **12 Recommended Operating Conditions**
+
+
+The following table lists the recommended operating conditions for the
+KTH2502 series:
+
+
+(1) Power consumption and thermal limits must be observed.
+
+## **13 Electrical Characteristics**
+
+
+The following table lists the electrical characteristics for the KTH2502 series over the recommended operating conditions, unless otherwise noted.
+
+## **14 Magnetic Characteristics**
+
+
+The following table lists the electrical characteristics for the KTH2502 series over the recommended operating conditions, unless otherwise noted.
+
+
+8 of 16
+
+
+KTH2502 Series
+
+
+Figure 9: TO-92S Pinout Top View
+
+|Pin Name|Pin Number|Description|
+|---|---|---|
+|VCC<br>GND<br>OUTPUT|1<br>2<br>3|Power supply input<br>Ground<br>Output|
+
+
+
+Table 4: Pin Definitions for TO-92S Package
+
+
+All parameters are measured over the test conditions of _T_ _A_ = _−_ 40 _[◦]_ C to
+150 _[◦]_ C.
+
+## **15 Performance Characteristics**
+
+
+The following figures illustrate various performance characteristics of the
+KTH2502 series.
+
+## **16 Power-On Behavior**
+
+
+When the chip is powered on, it takes time _t_ _on_ for the OUT pin to become
+active. During power-on, the output is Hi-Z. This pulse allows the host processor to determine whether the KTH2502 output is valid after startup.
+In Case 1 and Case 2, assuming a constant magnetic field _B_ _>_ _B_ _OP_ and
+_B_ _<_ _B_ _RP_, the output is defined.
+
+
+If the magnetic field strength is _B_ _RP_ _<_ _B_ _<_ _B_ _OP_ when the chip is powered
+
+
+9 of 16
+
+
+KTH2502 Series
+
+
+Figure 10: Functional Block Diagram of KTH2502
+
+
+Figure 11: Magnetic Flux for SOT23
+
+
+on, the output is pulled low. During power-on, the output remains Hi-Z
+until _t_ _on_ has elapsed. At the end of _t_ _on_, a pulse is given on the OUT pin to
+indicate that _t_ _on_ has passed. After _t_ _on_, if the magnetic field changes so that
+_B_ _<_ _B_ _RP_, the output is released. As shown in Case 3 and Case 4.
+
+## **17 Output Stage**
+
+
+The KTH2502 uses an open-drain NMOS output stage rated for a sink current up to 30 mA. For proper operation, use the equation below to calculate the value of the pull-up resistor R1.
+
+
+
+_V_ _re f max_
+
+
+
+_V_ _re f max_ _V_ _re f min_
+
+30 mA _[≤]_ _[R]_ [1] _[ ≤]_ 100 A
+
+
+
+100 _µ_ A
+
+
+
+The value of R1 is a trade-off between the rise time on OUT and the current when OUT is pulled low. Lower current is generally better, but faster
+transitions and bandwidth require a smaller resistor to achieve faster switching. Additionally, ensure that _R_ 1 _>_ 500 Ω to allow the output driver to pull
+the OUT pin close to GND. Note: Vref is not limited to VCC. The allowed
+voltage range for this pin is specified in the absolute maximum ratings.
+
+
+10 of 16
+
+
+KTH2502 Series
+
+
+Figure 12: Magnetic Flux for SOT23-3L
+
+
+Figure 13: Magnetic Flux for TO-92S
+
+
+Based on the system bandwidth specifications, select the value of C2 using the equation below.
+
+
+1
+2 _×_ _f_ _BW_ ( Hz ) _<_
+2 _π_ _×_ _R_ 1 _×_ _C_ 2
+
+
+11 of 16
+
+
+KTH2502 Series
+
+
+Figure 14: Magnetic Fields Detection in Different Packages
+
+
+Figure 15: Chipset Name Structure
+
+
+
+
+
+
+
+|Col1|Col2|Min|Max|Unit|
+|---|---|---|---|---|
+|Supply Voltage|VCC<br>Voltage Ramp Rate (VCC), VCC < 5 V<br>Voltage Ramp Rate (VCC), VCC > 5 V|-22(1)<br>36<br>Unlimited<br>0<br>2|-22(1)<br>36<br>Unlimited<br>0<br>2|V<br>V/µs<br>V/µs|
+|Output Pin Voltage|Output Pin Voltage|-0.5|36|V|
+|Reverse Output Pin Current|Reverse Output Pin Current|0|100|mA|
+|Magnetic Flux Density,_ BMAX_|Magnetic Flux Density,_ BMAX_|Unlimited|Unlimited||
+|Operating Junction Temperature_ TJ_|Q|-40|150|_◦_C|
+|Storage Temperature,_ Tstg_|Storage Temperature,_ Tstg_|-65|150|_◦_C|
+
+
+Table 5: Absolute Maximum Ratings
+
+|Parameter|Min|Max|Unit|
+|---|---|---|---|
+|Supply Voltage, VCC<br>Output Pin Voltage,_ VO_<br>Output Pin Sink Current,_ ISINK_<br>textsuperscript(1)<br>Operating Temperature Range,_ TA_ (Grade Q)|2.7<br>32<br>V<br>0<br>32<br>V<br>0<br>30<br>mA<br>-40<br>150<br>°C|2.7<br>32<br>V<br>0<br>32<br>V<br>0<br>30<br>mA<br>-40<br>150<br>°C|2.7<br>32<br>V<br>0<br>32<br>V<br>0<br>30<br>mA<br>-40<br>150<br>°C|
+
+
+
+Table 6: Recommended Operating Conditions
+
+
+12 of 16
+
+
+KTH2502 Series
+
+|Parameter|Test Conditions|Min|Typ|Max|
+|---|---|---|---|---|
+|Supply Voltage, VCC<br>Operating Current, ICC<br>Operating Current, ICC<br>Power-on Time, tON|VCC = 2.7 to 32 V, TA = 25°C<br>VCC = 2.7 to 32 V, TA = 150°C<br>Versions A, B, C|2.7|2.7<br>2.7<br>35|32<br>4.5<br>50|
+
+
+
+Open-Drain Output (OUT)
+
+
+FET On Resistance, r DS(on) V CC = 3.3 V, I O = 10 mA, T A = 25°C 11
+
+FET On Resistance, r DS(on) V CC = 3.3 V, I O = 10 mA, T A = 150°C 15 20
+
+Off-state Leakage Current, I lkg(off) Output Hi-Z 500
+
+Output Delay Time, t d B = B RP + 10 mT to B OP     - 10 mT in 1 μs (@SOT-23-3L) 10 25
+
+
+Output Delay Time, t d B = B RP     - 10 mT to B OP + 10 mT in 1 μs (@SOT23 & TO-92S) 10 25
+
+
+Output Rise Time, t r, (10% to 90%) R 1 = 1 kΩ, C O = 50 pF, V CC = 3.3 V 160
+
+
+Output Fall Time, t f (90% to 10%) R 1 = 1 kΩ, C O = 50 pF, V CC = 3.3 V 80
+
+
+Protection Circuitry
+
+
+Reverse Supply Voltage, V CCR -22
+
+
+Over-current Protection Level, I OCP OUT shorted to V CC 20 30 40
+
+
+Table 7: Electrical Characteristics
+
+|Parameter|Min|Typ|Max|Unit|
+|---|---|---|---|---|
+|Bandwidth,_ fBW_1|20|30||kHz|
+|KTH2502QA: 15 / -15 GS|KTH2502QA: 15 / -15 GS|KTH2502QA: 15 / -15 GS|KTH2502QA: 15 / -15 GS|KTH2502QA: 15 / -15 GS|
+|Operating Point,_ BOP_<br>Release Point,_ BRP_<br>Hysteresis,_ Bhys_ =_ |BOP −BRP|_<br>Magnetic Offset,_ BO_ = _BOP_+_BRP_<br>2|-25<br>5<br>-10|-15<br>15<br>30<br>0|-5<br>25<br>10|GS<br>GS<br>GS<br>GS|
+|KTH2502QB: 30 / -30 GS|KTH2502QB: 30 / -30 GS|KTH2502QB: 30 / -30 GS|KTH2502QB: 30 / -30 GS|KTH2502QB: 30 / -30 GS|
+|Operating Point,_ BOP_<br>Release Point,_ BRP_<br>Hysteresis,_ Bhys_ =_ |BOP −BRP|_<br>Magnetic Offset,_ BO_ = _BOP_+_BRP_<br>2|-45<br>15<br>-15|-30<br>30<br>60<br>0|-15<br>45<br>15|GS<br>GS<br>GS<br>GS|
+|KTH2502QC: 60 / -60 GS|KTH2502QC: 60 / -60 GS|KTH2502QC: 60 / -60 GS|KTH2502QC: 60 / -60 GS|KTH2502QC: 60 / -60 GS|
+|Operating Point,_ BOP_<br>Release Point,_ BRP_<br>Hysteresis,_ Bhys_ =_ |BOP −BRP|_<br>Magnetic Offset,_ BO_ = _BOP_+_BRP_<br>2|-90<br>30<br>-30|-60<br>60<br>120<br>0|-30<br>90<br>30|GS<br>GS<br>GS<br>GS|
+
+
+
+Table 8: Magnetic Characteristics
+
+
+13 of 16
+
+
+KTH2502 Series
+
+
+
+Figure 16: Icc vs Vcc
+
+
+Figure 17: Icc vs Temperature
+
+
+Figure 18: Bop, Brp vs Vcc
+
+
+
+14 of 16
+
+
+KTH2502 Series
+
+
+Figure 19: Bop, Brp vs Temperature
+
+
+Figure 20: Hysteresis vs Vcc Figure 21: Hysteresis vs Temperature
+
+
+Figure 22: Case 1: Power On, B > B OP
+
+
+15 of 16
+
+
+KTH2502 Series
+
+
+
+Figure 23: Case 2: Power On, B < B RP
+
+
+Figure 24: Case 3: Power On, B RP < B < B OP
+
+
+Figure 25: Case 4: Power On, B RP < B < B OP
+
+
+16 of 16
+
+
+KTH2502 Series
+
+
+
+Figure 26: Output Stage
+
+
+
+17 of 16
+
+
+
+
+</details>
+
+---
+
+## 📄 KTH2502 产品手册.pdf
+
+<details>
+<summary>点击展开 KTH2502 产品手册.pdf 完整内容</summary>
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **1 产品特点**
+
+##### • KTH2502 适用于汽车应用：
+
+– 器件 HBM ESD 等级 4000V
+
+
+– 器件 CDM ESD 等级 500V
+
+
+– 等级 Q:TA = –40°C ~150°C
+
+##### • 数字双极锁存霍尔传感器 • 卓越的温度稳定性
+
+
+– 全温度范围 B RP ±10%
+
+##### • 多灵敏度可选 (B OP / B RP )
+
+
+A：Bop=±15Gauss Brp=  15 Gauss
+
+
+B：Bop=±30 Gauss Brp=  30Gauss
+
+
+C：Bop=±60 Gauss Brp=  60Gauss
+
+##### • 宽工作电压范围
+
+
+– 2.7 ~ 32V
+
+
+–
+无需外部稳压器
+
+##### • 开漏输出 (30-mA 灌电流 ) • 35µs 快速上电时间 • 小封装尺寸
+
+
+– 表面贴装 3-Pin SOT23 和 SOT-23-3L
+
+
+– 通孔 3-Pin TO-92S
+
+##### • 符合 AEC-Q100 汽车标准 • 保护功能
+
+
+–
+反向电源保护 (高达–22 V)
+
+
+– 支持高达 36V 的负载突降
+
+
+–
+输出短路保护
+
+
+–
+输出电流限制
+
+
+# **2 应用**
+
+##### • 电动工具 • 流量计 • 阀门和电磁阀状态 • 无刷直流电机 • 接近感应 • 转速表 • 天窗控制器 • 尾门控制器 • 折阳帘控制器 • 座椅调节控制器
+# **3 典型应用电路**
+
+
+
+**1**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+目录
+
+
+1 产品特点 ...................................................................1
+
+
+2 应用 ..........................................................................1
+
+
+3 典型应用电路 ........................................................... 1
+
+
+目录 ...................................................................... 2
+
+
+4 订货信息 .................................................................. 3
+
+
+5 概述 ..........................................................................4
+
+
+6 引脚定义 .................................................................. 4
+
+
+7 功能框图 ...................................................................6
+
+
+8 开关输出特性 ........................................................... 6
+
+
+9 产品型号构成 ........................................................... 8
+
+
+10 绝对最大额定值 ..................................................... 9
+
+
+11 ESD 额定 ...............................................................10
+
+
+12 推荐工作条件 .......................................................10
+
+
+13 电参数 .................................................................. 11
+
+
+14 磁参数 ..................................................................12
+
+
+15 性能曲线图 ...........................................................13
+
+
+16 上电时间 .............................................................. 14
+
+
+17 输出级 ..................................................................16
+
+
+18 保护电路 .............................................................. 17
+
+
+19 过流保护(OCP) .................................................... 17
+
+
+**2**
+
+
+
+20 负载突降保护 .......................................................17
+
+
+21 反向电源保护 .......................................................17
+
+
+22 器件功能模式 .......................................................17
+
+
+23 应用与实施 ...........................................................17
+
+
+24 应用信息 .............................................................. 18
+
+
+25 设计要求 .............................................................. 18
+
+
+26 详细设计程序 .......................................................18
+
+
+27 配置示例 .............................................................. 18
+
+
+28 应用曲线 .............................................................. 19
+
+
+29 替代双线应用 .......................................................20
+
+
+30 设计要求 .............................................................. 20
+
+
+31 详细设计程序 .......................................................21
+
+
+32 电源建议 .............................................................. 21
+
+
+33 布局指南 .............................................................. 21
+
+
+34 布局示例 .............................................................. 21
+
+
+35 封装外形尺寸 ....................................................... 22
+
+
+SOT23....................................................................... 22
+
+
+SOT-23-3L................................................................. 23
+
+
+TO-92S ...................................................................... 24
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **4 订货信息**
+
+|型号|引脚数|封装形式|工作温度|MSL Level|SPQ|
+|---|---|---|---|---|---|
+|KTH2502QA-SS3|3|SOT23|-40℃~150℃|1|3000|
+|KTH2502QA-ST3|3|SOT-23-3L|-40℃~150℃|1|3000|
+|KTH2502QA-TO3|3|TO-92S|-40℃~150℃|NA|1000|
+|KTH2502QB-SS3|3|SOT23|-40℃~150℃|1|3000|
+|KTH2502QB-ST3|3|SOT-23-3L|-40℃~150℃|1|3000|
+|KTH2502QB-TO3|3|TO-92S|-40℃~150℃|NA|1000|
+|KTH2502QC-SS3|3|SOT23|-40℃~150℃|1|3000|
+|KTH2502QC-ST3|3|SOT-23-3L|-40℃~150℃|1|3000|
+|KTH2502QC-TO3|3|TO-92S|-40℃~150℃|NA|1000|
+
+
+
+**3**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **5 概述**
+
+KTH2502采用了先进的斩波技术，集成了温度补偿电路和过流、负压保护电路，具有卓越的灵敏度和温度稳定
+
+
+性。磁场通过数字双极锁存器输出指示。该芯片具有开漏输出级以及30mA的灌电流能力。2.7~32 V的宽电压工
+
+
+作范围，反极性保护高达-22 V，使该芯片广泛适用于汽车应用。芯片内部电路提供了反向供电保护、负载突降
+
+
+保护、输出短路保护和过流保护。
+
+
+SOT23 SOT-23-3L TO-92S
+
+# **6 引脚定义**
+
+
+SOT23
+
+
+引脚结构（俯视图）
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VCC|1|供电输入端|
+|OUTPUT|2|输出端|
+|GND|3|接地端|
+
+
+
+**4**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+SOT-23-3L
+
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VCC|1|供电输入端|
+|OUTPUT|2|输出端|
+|GND|3|接地端|
+
+
+
+TO-92S
+
+
+
+引脚结构（俯视图）
+
+
+**引脚结构（俯视图）**
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VCC|1|供电输入端|
+|GND|2|接地端|
+|OUTPUT|3|输出端|
+
+
+
+**5**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **7 功能框图**
+
+# **8 开关输出特性**
+
+如下图，当磁铁南极靠近芯片顶部时，磁感线由芯片底部向顶部穿过，认为此时磁感应强度B为正；当磁铁北极
+
+
+靠近芯片顶部时，磁感线由芯片顶部向底部穿过，认为此时磁感应强度B为负。
+
+
+SOT23
+
+
+**6**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+
+
+SOT-23-3L
+
+
+TO-92S
+
+
+**7**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+如下图所示，KTH2502可以检测到南极和北极的磁场
+
+# **9 产品型号构成**
+
+
+KTH2502 X X-XXX
+
+
+封装简称：ST3：SOT-23-3L ; SS3：SOT23
+
+
+TO3：TO-92S
+
+
+磁场阈值：A: B OP =15GS; B: B OP =30GS
+
+
+C: B OP =60GS
+
+
+等级：Q：150℃ 车规级
+
+
+**8**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **10 绝对最大额定值**
+
+超过工作自由空气温度范围(除特别说明外) [(1)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Col1|Col2|最小值|最大值|单位|
+|---|---|---|---|---|
+|电源电压|VCC|–22<br>(2)|36|V|
+|电源电压|电压斜坡率(VCC), VCC < 5 V|Unlimited|Unlimited|V/µs|
+|电源电压|电压斜坡率(VCC), VCC > 5 V|0|2|2|
+|输出引脚电压|输出引脚电压|–0.5|36|V|
+|反向供电时输出引脚反向电流|反向供电时输出引脚反向电流|0|100|mA|
+|磁感应强度, BMAX|磁感应强度, BMAX|Unlimited|Unlimited||
+|工作结温, TJ|Q|–40|150|°C|
+|存储温度, Tstg|存储温度, Tstg|–65|150|°C|
+
+
+(1) 超过绝对最大额定值的压力可能会对设备造成永久性损坏。这些仅是压力额定值，并不意味着设备在这些或
+
+
+超出推荐工作条件的任何其他条件下的功能运行。长时间暴露在绝对最大额定条件下可能会影响设备的可靠性。
+
+
+(2)设计保证。
+
+
+**9**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **11 ESD额定**
+
+|Col1|Col2|值|单位|
+|---|---|---|---|
+|V(ESD)<br>静电放电|人体模型(HBM)|±4000|V|
+|V(ESD)<br>静电放电|带电器件模型(CDM)|±500|±500|
+
+
+# **12 推荐工作条件**
+
+超过工作自由空气温度范围(除特别说明外)
+
+
+
+
+
+|Col1|Col2|Col3|最小值|最大值|单位|
+|---|---|---|---|---|---|
+|VCC|电源电压|电源电压|2.7|32|V|
+|VO|输出引脚电压(OUT)|输出引脚电压(OUT)|0|32|V|
+|ISINK|输出引脚吸电流(OUT)(1)|输出引脚吸电流(OUT)(1)|0|30|mA|
+|TA|工作温度范围|Q|–40|150|°C|
+
+
+(1) 必须遵守功耗和热限制
+
+
+**10**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **13 电参数**
+
+超过工作自由空气温度范围(除特别说明外)
+
+|参数|Col2|测试条件|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|---|
+|电源电压**(VCC)**|电源电压**(VCC)**|电源电压**(VCC)**|电源电压**(VCC)**|电源电压**(VCC)**|电源电压**(VCC)**|电源电压**(VCC)**|
+|VCC|VCC 工作电压||2.7||32|V|
+|ICC|工作电流|VCC = 2.7 to 32 V, TA = 25°C|2.7|2.7|2.7|mA|
+|ICC|工作电流|VCC = 2.7 to 32 V, TA = 150°C||2.7|4.5|4.5|
+|ton|上电时间|A, B, C 版本||35|50|µs|
+|开漏输出<br>**(OUT)**|开漏输出<br>**(OUT)**|开漏输出<br>**(OUT)**|开漏输出<br>**(OUT)**|开漏输出<br>**(OUT)**|开漏输出<br>**(OUT)**|开漏输出<br>**(OUT)**|
+|rDS(on)|FET 导通电阻|VCC = 3.3 V, IO = 10 mA, TA = 25°C|11|11|11|Ω|
+|rDS(on)|FET 导通电阻|VCC = 3.3 V, IO = 10 mA, TA =150°C||15|20|20|
+|Ilkg(off)|关断状态漏电流|输出Hi-Z|500|500|500|nA|
+|保护电路<br>|保护电路<br>|保护电路<br>|保护电路<br>|保护电路<br>|保护电路<br>|保护电路<br>|
+|~~V~~CCR|反向电源电压||–22|–22|–22|V|
+|IOCP|过流保护等级|OUT 短接VCC|20|30|40|mA|
+
+
+
+(1)开关特性
+
+
+超过工作自由空气温度范围(除特别说明外)
+
+
+
+
+
+
+
+
+
+
+
+|参数|测试条件|最小值 典型值 最大值|单位|
+|---|---|---|---|
+|开漏输出**(OUT)**|开漏输出**(OUT)**|开漏输出**(OUT)**|开漏输出**(OUT)**|
+|td<br>输出延迟时间|B = BRP +10 mT to BOP - 10 mT in 1 µs<br>(@SOT-23-3L)<br>B = BRP -10 mT to BOP + 10 mT in 1 µs<br>( @SOT23&TO-92S)|10<br>25<br>10<br>25|µs|
+|tr<br>输出上升时间<br>(10% to 90%)|R1 = 1 kΩ, CO = 50 pF, VCC = 3.3 V|160|ns|
+|tf<br>输出下降时间(90% to 10%)|R1 = 1 kΩ, CO = 50 pF, VCC = 3.3 V|80|ns|
+
+
+**11**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **14 磁参数**
+
+超过工作自由空气温度范围(除特别说明外)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|参数|Col2|测试条件|最小值|典型值|最大值|单位|
+|---|---|---|---|---|---|---|
+|ƒBW|带宽(1)||20|30||kHz|
+|**KTH2502QA: 15 / –15 GS**|**KTH2502QA: 15 / –15 GS**|**KTH2502QA: 15 / –15 GS**|**KTH2502QA: 15 / –15 GS**|**KTH2502QA: 15 / –15 GS**|**KTH2502QA: 15 / –15 GS**|**KTH2502QA: 15 / –15 GS**|
+|BOP|工作点|TA = –40°C to 150°C|-25|-15|-5|GS|
+|BRP|释放点|释放点|5|15|25|GS|
+|Bhys|磁滞;<br>Bhys =(|BOP – BRP|)|磁滞;<br>Bhys =(|BOP – BRP|)|30|30|30|GS|
+|BO|磁偏移; BO = (BOP + BRP) / 2|磁偏移; BO = (BOP + BRP) / 2|-10|0|10|GS|
+|**KTH2502QB: 30 / –30 GS**|**KTH2502QB: 30 / –30 GS**|**KTH2502QB: 30 / –30 GS**|**KTH2502QB: 30 / –30 GS**|**KTH2502QB: 30 / –30 GS**|**KTH2502QB: 30 / –30 GS**|**KTH2502QB: 30 / –30 GS**|
+|BOP|工作点|TA = –40°C to 150°C|-45|-30|-15|GS|
+|BRP|释放点|释放点|15|30|45|GS|
+|Bhys|磁滞;<br>Bhys =(|BOP – BRP|)|磁滞;<br>Bhys =(|BOP – BRP|)|60|60|60|GS|
+|BO|磁偏移; BO = (BOP + BRP) / 2|磁偏移; BO = (BOP + BRP) / 2|–15|0|15|GS|
+|**KTH2502QC: 60 / –60GS**|**KTH2502QC: 60 / –60GS**|**KTH2502QC: 60 / –60GS**|**KTH2502QC: 60 / –60GS**|**KTH2502QC: 60 / –60GS**|**KTH2502QC: 60 / –60GS**|**KTH2502QC: 60 / –60GS**|
+|BOP|工作点|TA = –40°C to 150°C|-90|-60|-30|GS|
+|BRP|释放点|释放点|30|60|90|GS|
+|Bhys|磁滞;<br>Bhys =(|BOP – BRP|)|磁滞;<br>Bhys =(|BOP – BRP|)|120|120|120|GS|
+|BO|磁偏移; BO = (BOP + BRP) / 2|磁偏移; BO = (BOP + BRP) / 2|–30|0|30|GS|
+
+
+(1)带宽描述的是可以检测到并转换为输出的变化最快的磁场。
+
+
+**12**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **15 性能曲线图**
+
+
+
+**13**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **16 上电时间**
+
+将芯片施加电压后，需经过t on 才能使OUT引脚生效。在上电过程中，输出Hi-Z。这个脉冲可以让主机处理器确
+
+
+定启动后KTH2502的输出是否有效。在情形1和情形2中，假设磁场恒定B > B OP 和B < B RP ，则定义输出。
+
+
+.
+
+
+**14**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+如果芯片上电时磁场强度B RP < B < B OP ，则输出被拉低。在上电过程中，输出保持Hi-Z，直到t on 过去。在t on 结
+
+
+束时，OUT引脚上给出一个脉冲，表示t on 已过。t on 后，如果磁场变化使B < B RP ，则释放输出。如情形3和情形4
+
+
+所示。
+
+
+**15**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **17 输出级**
+
+KTH2502输出级采用开漏NMOS，额定吸收电流高达30mA。为了正常工作，使用公式1计算上拉电阻R1的值。
+
+
+
+� ref max
+##### 30 mA [≤�1 ≤]
+
+
+
+� ref min
+
+(1)
+100 µA
+
+
+
+R1的大小是在OUT上升时间和OUT被拉低时的电流之间的权衡。低电流通常更好，但是更快的转换和带宽需要
+
+
+更小的电阻来实现更快的开关。此外，让R1 > 500 Ω ，以确保输出驱动器可以将OUT引脚拉近GND。
+
+
+注：Vref 并不局限于 VCC。该引脚的允许电压范围在绝对最大额定值中规定。
+
+
+根据系统带宽规格选择 C2 值，如公式 2 所示。
+
+
+##### 2 f BW (Hz) 
+
+
+
+1
+
+(2)
+2π  R1  C2
+
+
+**16**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **18 保护电路**
+
+KTH2502 具有全面的过流和反向供电保护。
+
+# **19 过流保护(OCP)**
+
+
+模拟限流电路限制通过 FET 的电流。驱动电流被箝位至 IOCP。在此箝位期间，输出 FET 的 rDS(on)从标称
+
+
+值增加。
+
+# **20 负载突降保护**
+
+
+KTH2502在额定电压高达32 V的直流 VCC 条件下工作，并且还可以承受VCC = 36 V。这种保护不需要限流
+
+
+串联电阻。
+
+# **21 反向电源保护**
+
+
+KTH2502在VCC引脚和GND引脚反接（最高达–22 V）时受到保护。
+
+
+表 1.
+
+|故障|条件|器件|描述|恢复|
+|---|---|---|---|---|
+|FET 过载(OCP)|ISINK ≥IOCP|工作|输出电流被箝位至IOCP|IO < IOCP|
+|负载突降|32 V < VCC < 36 V|工作|器件将在瞬态持续时间内运行|VCC ≤32 V|
+|反向供电|–22 V < VCC < 0 V|不工作|器件将在这种条件下不会损坏|VCC ≥2.7 V|
+
+
+# **22 器件功能模式**
+
+
+KTH2502 只有 VCC 在 2.7 ~ 32v 之间时才有效。当反向供电条件存在时，芯片处于非运行状态。
+
+# **23 应用与实施**
+
+
+注：以下应用部分中的信息不是 CONNTEK 组件规范的一部分，CONNTEK 不保证其准确性或完整性。
+
+
+CONNTEK 客户有责任确定组件是否适合其用途。客户应验证和测试其设计实现，以确认系统功能。
+
+
+**17**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **24 应用信息**
+
+KTH2502 用于磁场传感应用。
+
+# **25 设计要求**
+
+
+对于此设计示例，请使用表 2 中列出的参数作为输入参数。
+
+
+**表** **2. 设计参数**
+
+|设计参数|参考|示例值|
+|---|---|---|
+|电源电压|VCC|3.2 to 3.4 V|
+|系统带宽|ƒBW|10 kHz|
+
+
+# **26 详细设计程序**
+
+
+表 3.外部组件
+
+|组件|PIN 1|PIN 2|推荐|
+|---|---|---|---|
+|C1|~~VCC~~|GND|额定用于VCC 的A 0.1-µF (最小值)陶瓷电容器|
+|C2|OUT|GND|可选：将陶瓷电容器置于接地|
+|R1|OUT|REF(1)|需要电阻上拉|
+
+
+
+(1) REF 不是 KTH2501 上的引脚，但 OUT 引脚需要 REF 电源电压上拉；OUT 引脚可以上拉至 VCC。
+
+# **27 配置示例**
+
+
+在 3.3V 系统中，3.2 V≤ Vref≤3.4 V。使用公式 3 计算 R1 的允许范围。
+
+
+
+�30 mA ref max [≤R1 ≤]
+
+
+
+� ref min (3)
+
+100 µA
+
+
+
+在本设计示例中，使用公式 4 计算 R1 的允许范围。
+
+
+
+3.4v
+30 mA [≤R1 ≤]
+
+
+
+3.2v
+(4)
+100 µA
+
+
+
+因此:
+
+
+113 Ω ≤R1 ≤32 kΩ （5）
+
+
+找到 R1 的允许范围（公式 5）后，为 R1 选择一个介于 500Ω至 32 kΩ之间的值。
+
+
+假设系统带宽为 10 kHz，使用公式 6 计算 C2 的值。
+
+
+1
+##### 2  ƒ BW (Hz) ≤ 2π R1  C2 (6)
+
+
+对于本设计示例，使用公式 7 计算 C2 的值。
+
+
+**18**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+1
+##### 2  10 kHz ≤ 2π R1  C2 (7)
+
+
+当 R1 值为 10 kΩ， C2 值小于 820 pF 时，满足 10kHz 的系统带宽要求。如果选择 R1 = 10 kΩ和 C2 = 680pF，
+
+
+则会得到拐角频率为 23.4 kHz 的低通滤波器。
+
+# **28 应用曲线**
+
+
+**R1=10 k** Ω **上拉电阻** **R1= 10 k** Ω **上拉电阻** **C2= 680pF**
+**10kHz 开关磁场** **10kHz 开关磁场**
+
+##### 低通滤波
+
+
+**19**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **29 替代双线应用**
+
+对于需要最小线数的系统，器件输出可以通过电阻连接到 VCC，并且可以在控制器附近检测总供电电流。
+
+
+可以使用分流电阻器或其他电路检测电流。
+
+# **30 设计要求**
+
+
+表4 列出了相关的设计参数,见图 1（当 R1=1kΩ）。
+
+
+**表** **4. 设计参数**
+
+|设计参数|参考|示例值|
+|---|---|---|
+|电源电压|VCC|12 V|
+|OUT 电阻|R1|1 kΩ|
+|旁路电容|C1|0.1 µF|
+|当B < BRP 时的电流|IRELEASE|约3 mA|
+|当B > BOP 时的电流|IOPERATE|约15 mA|
+
+
+
+**20**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **31 详细设计程序**
+
+当器件的开漏输出为高阻抗时，通过该路径的电流等于器件的ICC(约3mA)。
+
+
+当输出拉低时，增加一条并联电流路径，等于VCC / (R1 + r DS(on) )。使用12v和1 kΩ时，并联电流约为12mA，
+
+
+使总电流约为15mA。
+
+
+本端旁路电容C1应不小于0.1µF，如果电源线连接处电感较大，则值应更大。
+
+# **32 电源建议**
+
+
+KTH2502 在 2.7 V 到 32 V 的输入电压范围内工作。额定用于 V CC 的 0.1-µF(最小值)陶瓷电容器必须尽可能的
+
+
+靠近 KTH2502。可能需要更大的旁路电容值来衰减电源产生的任何显著的高频纹波和噪声分量。CONNTEK 建
+
+
+议将电源电压变化限制在 50 mV PP 以下。
+
+# **33 布局指南**
+
+
+旁路电容器应放置在KTH2502附近，以便以最小的电感高效供电。外部上拉电阻应放置在微控制器输入附近，
+
+
+以在输入端提供最稳定的电压；或者，可以使用微控制器GPIO中的集成上拉电阻。
+
+
+通常，在KTH2502器件下方使用PCB铜层对磁感应强度没有影响，也不会干扰器件性能。这是因为铜不是铁磁
+
+
+材料。但是，如果附近的系统组件含有铁或镍，它们可能会以不可预测的方式改变磁感应强度。
+
+# **34 布局示例**
+
+
+**21**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+# **35 封装外形尺寸**
+
+
+
+**SOT23**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|
+|---|---|---|
+|**Symbol**|**Min.**|**Max.**|
+|A|-|1.15|
+|A1|0.00|0.1|
+|A2|0.9|1.1|
+|b|0.30|0.50|
+|c|0.132|0.202|
+|D|2.8|3.0|
+|E|2.25|2.55|
+|E1|1.2|1.4|
+|e|1.8|2.0|
+|L|0.30|0.50|
+|θ|0︒|8︒|
+
+
+**22**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+
+
+**SOT-23-3L**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|-|-|1.25|
+|A1|0.00|-|0.1|
+|A2|1.00|1.10|1.15|
+|b|0.30|-|0.50|
+|c|0.10|-|0.20|
+|D|2.82|2.95|3.02|
+|E|2.65|2.80|2.95|
+|E1|1.50|1.65|1.70|
+|e|0.85|0.95|1.05|
+|e1|1.80|1.90|2.00|
+|L|0.30|0.45|0.60|
+|θ|0︒|-|8︒|
+
+
+**23**
+
+
+## KTH2502 系列
+##### 车规数字锁存霍尔效应传感器
+
+
+
+**TO-92S**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|2.90|3.00|3.10|
+|b|0.35|0.39|0.50|
+|b1|0.40|0.44|0.55|
+|C|0.36|0.38|0.45|
+|D|3.90|4.00|4.10|
+|E|1.42|1.52|1.62|
+|E1||0.75||
+|e|1.27 TYP|1.27 TYP|1.27 TYP|
+|L|13.50|14.50|15.50|
+|θ1||6°||
+|θ2||3°||
+|θ3||45°||
+|θ4||3°||
+
+
+**24**
+
+
+
+
+</details>
+
+---
+
+## 相关资源
+
+### PDF文档
+- [📋 KTH2502 Datasheet_EN.pdf](/pdfs/KTH2502 Datasheet_EN.pdf)
+- [📋 KTH2502 产品手册.pdf](/pdfs/KTH2502 产品手册.pdf)
+
+### 其他资源
+- [产品选型指南](../technical/)
+- [应用案例](../technical/)
+- [技术支持](../technical/)
+
+---
+
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们：
+
+- 📧 邮箱: support@ktsense.com
+- 📞 技术热线: 400-xxx-xxxx
+- 🌐 在线支持: [技术论坛](../technical/)
+
+---
+
+*最后更新: 2024年*
+*版本: Enhanced v1.0*
+*包含完整PDF内容和技术图片*
+
+
+## 🔗 相关产品推荐
+
+### 霍尔开关
+
+- [KTH1501 增强版](./KTH1501.md) - 同系列产品
+- [KTH1701 增强版](./KTH1701.md) - 同系列产品
+- [KTH5641 增强版](./KTH5641.md) - 同系列产品
+### 3D霍尔传感器
+
+- [KTH31xx 增强版](./KTH31xx.md) - 推荐3D霍尔传感器
+### 磁编码器
+
+- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+### 其他传感器
+
+- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+
+---

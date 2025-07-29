@@ -1,0 +1,1536 @@
+# KTH564A1 - 完整技术参考
+
+[返回产品目录](../index.md) | [返回hall-switch分类](../hall-switch/index.md)
+
+
+## 🧭 页面导航
+
+- 🔙 [返回产品摘要页面](../hall-switch/KTH564A1.md)
+- 📂 [返回霍尔开关分类](../hall-switch/)
+- 🏠 [返回主页](../index.md)
+- 📚 [所有增强版技术参考](./index.md)
+
+---
+
+## 产品概述
+
+**KTH564A1** 完整技术参考文档，包含所有PDF数据手册的详细内容和技术图片。
+
+---
+
+## 产品图片
+
+![KTH564A1 图片 1](./images/kth564a1/page_1_img_2_a0269173.png)
+
+![KTH564A1 图片 2](./images/kth564a1/page_1_img_3_d2b4a381.png)
+
+![KTH564A1 图片 3](./images/kth564a1/page_2_img_3_d2b4a381.png)
+
+![KTH564A1 图片 4](./images/kth564a1/page_3_img_2_4882cb57.png)
+
+![KTH564A1 图片 5](./images/kth564a1/page_3_img_3_f9226495.png)
+
+![KTH564A1 图片 6](./images/kth564a1/page_3_img_4_d2b4a381.png)
+
+![KTH564A1 图片 7](./images/kth564a1/page_4_img_2_d2b4a381.png)
+
+![KTH564A1 图片 8](./images/kth564a1/page_5_img_1_d2b4a381.png)
+
+![KTH564A1 图片 9](./images/kth564a1/page_6_img_1_cd783bd8.png)
+
+![KTH564A1 图片 10](./images/kth564a1/page_6_img_2_0d8080ba.png)
+
+![KTH564A1 图片 11](./images/kth564a1/page_6_img_3_d2b4a381.png)
+
+![KTH564A1 图片 12](./images/kth564a1/page_6_img_4_823d1f60.png)
+
+---
+
+## 📄 KTH564A1 Series Datasheet.pdf
+
+<details>
+<summary>点击展开 KTH564A1 Series Datasheet.pdf 完整内容</summary>
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+
+
+ Proportional Linear Hall-effect Magnetic Sensor
+
+
+ Wide Operating Voltage：2.8V~6.0V
+
+
+ [Low Power Consumption: 3.3mA@5.0V V](mailto:3.3mA@5.0V) DD
+
+ Low-Noise Output
+
+
+ Responds to either positive or negative gauss
+
+
+ Sensitivity Adjustable: 1.5mV/Gs 2.0mV/Gs
+
+
+2.5mV/Gs 3.0mV/Gs
+
+
+ Package: DFN2020-6L, DFN1616-6L
+
+
+ Operating Temperature：-40℃~125℃
+
+
+ Robust ESD Performance：HBM 4KV
+
+
+ RoHS Compliant 2011/65/EU and Halogen Free
+
+
+**2** **Applications**
+
+ Current sensing
+
+
+ Motor control
+
+
+ Position sensing
+
+
+ Vibration sensing
+
+
+ Liquid level sensing
+
+
+ Weight sensing
+
+
+ Proximity sensing
+
+
+ Rotary encoder
+
+
+ Ferrous metal detector
+
+
+**3** **Typical Application Circuit**
+
+
+Note：C1： 1nF/10V
+
+
+C2：10nF/10V
+
+
+
+**4** **Descriptions**
+
+KTH564A1 is a sensitivity adjustable of linear
+
+
+Hall-effect sensor, is composed of Hall sensor,
+
+
+linear amplifier and Totem-Pole output stage. It
+
+
+features low noise output, which use an external
+
+
+capacitance. It also can provide increased
+
+
+temperature stability and accuracy. The linear Hall
+
+
+sensor has a wide operating temperature range of
+
+
+-40℃ to +125℃, appropriate for commercial,
+
+
+consumer, and industrial environments.
+
+
+The high sensitivity of Hall-effect sensor accurately
+
+
+tracks extremely weak changes in magnetic flux
+
+
+density. The linear sourcing output voltage is set by
+
+
+the supply voltage and in proportion of vary of the
+
+
+magnetic flux density. That is proportional to the
+
+
+applied magnetics and features a null voltage
+
+
+output of half of the applied voltage.
+
+
+KTH564A1 family provides a variety of package to
+
+
+customers:DFN2020-6L,DFN1616-6L. All packages
+
+
+are RoHS compliant.
+
+
+KTH564A1E-DS6
+
+
+KTH564A1E-DZ6
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**DFN2020-6L**
+
+|Pin Name|Pin No.|Function|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|NC|2, 7|NC|
+|OUT|3|Output Pin|
+|GS1|4||
+|VSS|5|Ground Pin|
+|GS2|6||
+
+
+
+**DFN1616-6L**
+
+|Pin Name|Pin No.|Function|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|NC|2, 7|NC|
+|OUT|3|Output Pin|
+|GS1|4||
+|VSS|5|Ground Pin|
+|GS2|6||
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**7** **Output Characteristics (TA=-40** ℃ **~105** ℃， **Vcc=2.8V~6.0V )**
+
+|Symbol|Conditions|Output|
+|---|---|---|
+|**South pole**|B>0 Gauss|>VNULL|
+|**North pole**|B<0 Gauss|<VNULL|
+
+
+
+B<0 Gauss B>0 Gauss
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**8** **Product Name Structure**
+
+
+KTH564A1 X-XXX
+
+
+Package Abbreviation ：DZ6：DFN2020-6L
+
+
+DS6：DFN1616-6L
+
+
+Temperature Range Suffix：E: -40℃～+85℃
+
+
+K: -40℃～+125℃
+
+
+**9** **Absolute Maximum Ratings** **(@TA=+25** ℃ **,** **unless otherwise specified** **)**
+
+|Symbol|Parameter|Col3|Value|Unit|
+|---|---|---|---|---|
+|VDD|Supply Voltage|Supply Voltage|8|V|
+|VDD_REV|Reverse Voltage|Reverse Voltage|-0.5|V|
+|IOUTPUT|Output current|Output current|20|mA|
+|VOUTPUT|Output Voltage|Output Voltage|8|V|
+|TA|Operating Temperature Rang|“E”Class|-40～+85|oC|
+|TA|Operating Temperature Rang|“K”Class|-40～+125|oC|
+|TSTG|Storage temperature Range|Storage temperature Range|-65～+150|oC|
+|TJ|Maximum Junction Temp|Maximum Junction Temp|+150|oC|
+|PD|Package Power Dissipation|DZ6/DS6|780/500|mW|
+|TR|Thermal Resistance|(θJA) DZ6/DS6|160/250|oC/W|
+|TR|Thermal Resistance|(θJC) DZ6/DS6|35/50|35/50|
+
+
+
+**Note:** Exceeding the absolute maximum ratings may cause permanent damage. Exposure to
+
+
+absolute-maximum rated conditions for extended periods may affect device reliability.
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**10 Electronics Characteristics (@TA=+25** ℃ **,Vcc=5.0V,** **unless otherwise specified** **)**
+
+
+
+
+
+
+
+
+
+
+
+
+
+|KTH564A1 Series|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|**Symbol**|**Parameter**|**Condition**|**Min.**|**Typ.**|**Max.**|**Unit**|
+|VDD|Supply Voltage|Operating|2.8|—|6.0|V|
+|IDD|Supply Current|B=0 Gs|—|3.3|5.0|mA|
+|IO|Output Current|VDD>3V|1.0|1.5|—|mA|
+|VNULL|Null Output Voltage|B=0 Gs|2.475|2.5|2.525|V|
+|VOH|High Output Voltage|B> Max Magnetic Gauss|—|4.9|4.99|V|
+|VOL|Low Output Voltage|B> Min Magnetic Gauss|0.01|0.1|—|V|
+|VOS|Output Voltage Span|Operating|—|4.8|—|V|
+|VON|Output Referred Noise|C2=10nF|—|—|50|mV|
+|TP|Power-On Time|Operating|—|—|150|uS|
+|TSW|Output Switch Time|Operating|—|—|150|uS|
+|FSW|Output Switch Frequency|Operating|3|—||kHz|
+|Magnetic Range|Magnetic Range||±800|—|±1600|Gs|
+|Sensitivity|Sensitivity|GS1=Low,GS2=Open|1.38|1.5|1.62|mV/Gs|
+|Sensitivity|Sensitivity|GS1=Open,GS2=Open|1.84|2.0|2.16|mV/Gs|
+|Sensitivity|Sensitivity|GS1=Low,GS2=Low|2.30|2.5|2.68|mV/Gs|
+|Sensitivity|Sensitivity|GS1=Open,GS2=Low|2.76|3.0|3.24|mV/Gs|
+|RVON|Ratiometry Null output error|Operating voltage range<br>relative to 5V|—|±1.5|—|%|
+|RSEN|Ratiometry Sensitivity error|Operating voltage range<br>relative to 5V|—|±1.5|—|%|
+|LIN|Linearity|% of Span|—|±1.5|—|%|
+|TCSens|Sensitivity Temperature<br>Coefficient|Sens@125℃/Sens@25℃|—|±0.1|—|%/℃|
+|δVON|Delta null voltage||VON@125℃-VON@25℃||—|20|—|mV|
+|ESD|Electro-Static Discharge|HBM|4|—|—|kV|
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**KTH564A1**
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Ratio of V NULL to V DD Typical Temperature (TA) _**VS**_ V NULL Offset
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Linearity Typical Temperature (TA) _**VS**_ Linearity
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Supply Current (I DD ) Typical Temperature (TA) _**VS**_ Supply Current (I DD )
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+Typical Supply Voltage (V DD ) _**VS**_ Sensitivity Typical Temperature (TA) _**VS**_ Sensitivity
+
+
+Typical Flux Density _**VS**_ Output Voltage Load Current _**VS**_ Output Voltage
+
+
+Range of Flux Density _**VS**_ Output Voltage Range of Flux Density _**VS**_ Output Voltage
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+Range of Flux Density _**VS**_ Output Voltage Range of Flux Density _**VS**_ Output Voltage
+
+
+Power Dissipation _**VS**_ Temperature (TA)
+
+
+**12 Function Description**
+
+
+（1）V DD Pin
+
+
+The pin is Supplied power to IC as circuit operation and output transition requirements, and the Supplied
+
+
+voltage must greater than the minimum operating voltage - 2.8V.
+
+
+（2）V SS Pin
+
+
+The pin is connected to ground of the supplied power and must to be connected firmly.
+
+
+（3）Out Pin
+
+
+The output pin is Totem-Pole type, don’t place pull-high resistance. When there is no magnetic field, the
+
+
+output voltage is half of IC’s V DD . When the magnetic field is near the marking of IC, and magnetic force is
+
+
+South pole, this pin output state will larger than half of IC’s V DD . When the magnetic field is near the
+
+
+marking of IC, and magnetic force is North pole, this pin output state will less than half of IC’s V DD . Every
+
+
+time of the output transition must be after T SW .
+
+
+（4）GS1、GS2 Pin
+
+
+The GS1 and GS2 input pins are setup sensitivity of the IC. There are four types sensitivities can be
+
+
+selected via change GS1 and GS2 Potential. The typical truth table as below:
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+|Col1|Low|Open|1.5 mV/GS|Col5|
+|---|---|---|---|---|
+||Open|Open|2.0 mV/GS|2.0 mV/GS|
+||Low|Low|2.5 mV/GS|2.5 mV/GS|
+||Open|Low|3.0 mV/GS|3.0 mV/GS|
+
+
+
+（5）Power on Time
+
+
+When the applied voltage is into the device, the device output requires a response time to react to the
+
+
+ratiometry magnetic field.
+
+
+（6）Null Voltage output
+
+
+In the zero magnetic field state, the output voltage is half of the applied voltage V DD .
+
+
+（7）Sensitivity
+
+
+The amount of the output voltage is proportional to the magnetic field’s changes. This proportionality is
+
+
+specified as the below:
+
+
+
+_S_ ens  _V_ _OUT_ ( _B_ )  _V_
+
+
+
+ _OUT_ ( _B_ ) 
+
+
+
+( _B_ ) _OUT_ ( _B_ )
+
+
+
+_OUT_ _B_  _OUT_ _B_
+
+
+
+ 
+
+
+
+ens 
+( _B_ )  ( _B_ )
+
+
+
+_B_   _B_
+
+
+
+  
+
+
+
+（8）Linearity
+
+
+The device is designed to provide linear output in response to a ramping applied magnetic field.
+
+
+Consider two magnetic fields, B1 and B2. Ideally, the sensitivity of a device is the same for both fields,
+
+
+for a given applied voltage and temperature. The Linearity is calculated separately for positive and
+
+
+negative applied magnetic fields.
+
+
+
+_Sens_
+_Lin_  
+
+
+
+  ( _B_ 2) 
+
+
+
+  ( _B_
+
+_B_  1( _Sens_
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 1(
+
+
+
+1( ) 100%
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+_Sens_
+_Lin_  
+
+
+
+-  1( ( _B_ 2) ) 
+
+
+
+  ( _B_
+
+_B_ - 1( _Sens_
+
+
+
+
+
+1( ) 100%
+
+
+
+
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+
+
+
+
+（9）Ratiometry Error
+
+
+The device provides ratiometric output. The means that Null voltage output, V NULL, and the magnetic
+
+
+sensitivity, Sens, are proportional to the applied voltage, V DD . The ratiometric amount is relative to 5V,
+
+
+and defined as the below:
+
+
+
+  - Vnull V DD /Vnull
+(1
+
+
+
+  - V DD 5V
+
+on (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+_R_ _V_ on  (1- DD ) 
+
+
+
+DD
+
+
+
+  - _Sens_ V DD /
+(1
+
+
+
+_R_ Sen _s_  (1- _Sens_ V DD / _Sens_ 5V ) 
+
+
+
+  - V DD 5V
+
+Sen _s_ (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+DD
+
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+Power on timing
+
+
+⚫ Power-On time ( T PO )：
+
+
+When input voltage to VDD of IC, IC can be normal working after Power-On Time (T PO ).
+
+
+⚫ Output switch time( T SW )：
+
+
+The time from magnetic field change to output signal begin to transit is called output switch time.
+
+
+**14 Order Information**
+
+|Part Numbers|Package|Number<br>of Pins|Temperature|
+|---|---|---|---|
+|KTH564A1E-DZ6|DFN2020-6L|6|-40℃～+85℃|
+|KTH564A1E-DS6|DFN1616-6L|6|-40℃～+85℃|
+|KTH564A1K-DZ6|DFN2020-6L|6|-40℃～+125℃|
+|KTH564A1K-DS6|DFN1616-6L|6|-40℃～+125℃|
+
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**DFN2020-6L**
+
+
+
+
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A1|1.176|-|-|
+|A2|0.62|-|-|
+|A3|0.21|-|-|
+|A4|0.25|-|0.45|
+|A5|0.60|-|0.70|
+|A6|0.225|-|0.325|
+|A7|-|1.30|-|
+|A8|-|0.25|-|
+|B1|0.15|-|0.25|
+|B2|0.005|-|0.060|
+|B3|0.57|-|0.63|
+|C1|-|1.0|-|
+|C2|-|1.0|-|
+|C3|1.95|-|2.05|
+|C4|1.95|-|2.05|
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**DFN1616-6L**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A1|1.25|-|1.35|
+|A2|0.65|-|0.75|
+|A3|-|0.1|-|
+|A4|0.20|-|0.30|
+|A5|0.45|0.50|0.55|
+|A6|0.15|-|0.25|
+|A7|-|1.00|-|
+|B1|-|-|0.13|
+|B2|0.00|-|0.04|
+|B3|0.35|-|0.45|
+|C1|-|0.8|-|
+|C2|1.55|-|1.65|
+|C3|-|0.8|-|
+|C4|1.55|-|1.65|
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+**DFN2020-6L**
+
+
+**DFN1616-6L**
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+# **KTH564A1 Series**
+
+## **Sensitivity Adjustable, Linear Hall-effect Sensor**
+
+DFN2020-6L Soldering Condition
+
+
+DFN1616-6L Soldering Condition
+
+
+
+昆泰芯微电子科技有限公司 **14**
+
+
+
+
+</details>
+
+---
+
+## 📄 KTH564A1 Series产品手册.pdf
+
+<details>
+<summary>点击展开 KTH564A1 Series产品手册.pdf 完整内容</summary>
+
+ 比例式线性霍尔效应磁传感器
+
+
+ 宽工作电压范围：2.8V~6.0V
+
+
+ 低功耗 [3.3mA@5.0V V](mailto:3.3mA@5.0V) DD
+
+ 低输出噪声
+
+
+ Vcc/2 静态输出，可检测N极和S极磁场
+
+
+ 多灵敏度可调
+
+
+1.5mV/Gs 2.0mV/Gs
+
+
+2.5mV/Gs 3.0mV/Gs，
+
+
+ 高品质封装： DFN2020-6L，DFN1616-6L
+
+
+ 工作温度范围：-40℃~125℃
+
+
+ 卓越的ESD性能：HBM 4KV
+
+
+ 符合RoHS & REACH 标准
+
+
+**2** 典型应用
+
+ 电流传感器
+
+
+ 电机控制
+
+
+ 位置检测
+
+
+ 震动传感，液位传感，称重传感器
+
+
+ 接近开关
+
+
+ 旋转编码器
+
+
+ 铁金属检测
+
+
+**3** 应用电路原理图
+
+
+注 ：C1： 1nF/10V
+
+
+C2：10nF/10V
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**4** 概述
+
+
+KTH564A1是一款线性霍尔效应传感器，可按比例响
+
+
+应磁通量密度。KTH564A1内部电路包含霍尔传感
+
+
+器、线性放大器和推挽输出级电路。具有高速、低噪
+
+
+声输出特性，在-40℃至125℃的宽温度范围内实现
+
+
+线性性能。可用于消费类、工业类各种磁场检测。
+
+
+KTH564A1具有高灵敏度，可以准确的反应微弱磁场
+
+
+的变化。当不存在磁场时，模拟输出 1/2 V CC 。输出
+
+
+会随施加的磁通量密度呈线性变化。四个灵敏度可根
+
+
+据用户所需自定义选择。南北磁极产生唯一的电压。
+
+
+KTH564A1可检测垂直于封装顶部的磁通量。采用高
+
+
+品质DFN2020-6L，DFN1616-6L封装，KTH564A1
+
+
+可提供不同的检测方向。
+
+
+KTH564A1E-DS6
+
+
+KTH564A1E-DZ6
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**DFN2020-6L**
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|NC|2, 7|NC|
+|OUT|3|输出端|
+|GS1|4||
+|VSS|5|接地端|
+|GS2|6||
+
+
+
+**DFN1616-6L**
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|NC|2, 7|NC|
+|OUT|3|输出端|
+|GS1|4||
+|VSS|5|接地端|
+|GS2|6||
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**6** 功能框图
+
+
+**7** 输出特性 **(TA=-40** ℃ **~105** ℃， **Vcc=2.8V~6.0V )**
+
+|项目|工作条件|输出|
+|---|---|---|
+|**South pole**|B>0 Gauss|>VNULL|
+|**North pole**|B<0 Gauss|<VNULL|
+
+
+
+B<0 Gauss B>0 Gauss
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**8** 产品型号构成
+
+
+KTH564A1 X-XXX
+
+
+封装简称： DZ6：DFN2020-6L
+
+
+DS6：DFN1616-6L
+
+
+温度范围后缀：E: -40℃～+85℃
+
+
+K: -40℃～+125℃
+
+
+**9** 绝对最大额定值 **(@TA=+25** ℃，除特别说明外 **)**
+
+|项目|参数说明|Col3|数值|单位|
+|---|---|---|---|---|
+|VDD|供电电压|供电电压|8|V|
+|VDD_REV|反向电源电压|反向电源电压|-0.5|V|
+|IOUTPUT|输出驱动电流|输出驱动电流|20|mA|
+|VOUTPUT|输出电压|输出电压|8|V|
+|TA|工作温度范围|“E”级|-40～+85|oC|
+|TA|工作温度范围|“K”级|-40～+125|oC|
+|TSTG|存储温度范围|存储温度范围|-65～+150|oC|
+|TJ|结点最高耐温|结点最高耐温|+150|oC|
+|PD|封装功耗|DZ6/DS6|780/500|mW|
+|TR|热变电阻|(θJA) DZ6/DS6|160/250|oC/W|
+|TR|热变电阻|(θJC) DZ6/DS6|35/50|35/50|
+
+
+
+注: 超过绝对最大额定值可能造成永久性损坏。长时间工作于绝对最大额定条件下会影响芯片的可靠性。
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**10** 电参数 **(@TA=+25** ℃， **Vcc=5.0V** 除特别说明外 **)**
+
+
+
+
+
+
+
+|KTH564A1系列|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+|项目|参数说明|工作条件|最小值**.**|典型值|最大值|单位|
+|VDD|供电电压|工作状态|2.8|—|6.0|V|
+|IDD|功耗电流|B=0 Gs|—|3.3|5.0|mA|
+|IO|输出电流|VDD>3V|1.0|1.5|—|mA|
+|VNULL|0 磁场输出电压|B=0 Gs|2.475|2.5|2.525|V|
+|VOH|输出高电平|B> Max Magnetic Gauss|—|4.9|4.99|V|
+|VOL|输出低电平|B> Min Magnetic Gauss|0.01|0.1|—|V|
+|VOS|输出电压摆幅范围|工作状态|—|4.8|—|V|
+|VON|输出噪声|C2=10nF|—|—|50|mV|
+|TP|上电时间|工作状态|—|—|150|uS|
+|TSW|输出转换时间|工作状态|—|—|150|uS|
+|FSW|输出转换频率|工作状态|3|—||kHz|
+|Magnetic<br>Range|磁场检测范围||±800|—|±1600|Gs|
+|Sensitivity|灵敏度|GS1=Low,GS2=Open|1.38|1.5|1.62|mV/Gs|
+|Sensitivity|灵敏度|GS1=Open,GS2=Open|1.84|2.0|2.16|mV/Gs|
+|Sensitivity|灵敏度|GS1=Low,GS2=Low|2.30|2.5|2.68|mV/Gs|
+|Sensitivity|灵敏度|GS1=Open,GS2=Low|2.76|3.0|3.24|mV/Gs|
+|RVON|0 磁场输出电压误差|实际工作电压/5V 工作电压|—|±1.5|—|%|
+|RSEN|灵敏度误差|实际工作电压/5V 工作电压|—|±1.5|—|%|
+|LIN|线性度|全输出电压范围|—|±1.5|—|%|
+|TCSens|灵敏度温度系数|Sens@125℃/Sens@25℃|—|±0.1|—|%/℃|
+|δVON|0 磁场输出电压随温度变化幅度||VON@125℃-VON@25℃||—|20|—|mV|
+|ESD HBM|人体模型ESD 能力|HBM|4|—|—|kV|
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**KTH564A1**
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Ratio of V NULL to V DD Typical Temperature (TA) _**VS**_ V NULL Offset
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Linearity Typical Temperature (TA) _**VS**_ Linearity
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Supply Current (I DD ) Typical Temperature (TA) _**VS**_ Supply Current (I DD )
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+Typical Supply Voltage (V DD ) _**VS**_ Sensitivity Typical Temperature (TA) _**VS**_ Sensitivity
+
+
+Typical Flux Density _**VS**_ Output Voltage Load Current _**VS**_ Output Voltage
+
+
+Range of Flux Density _**VS**_ Output Voltage Range of Flux Density _**VS**_ Output Voltage
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+Range of Flux Density _**VS**_ Output Voltage Range of Flux Density _**VS**_ Output Voltage
+
+
+Power Dissipation _**VS**_ Temperature (TA)
+
+
+**12** 功能参数描述
+
+
+（1）V DD 引脚
+
+
+该引脚为芯片供电引脚。供电电压必须大于最小要求的工作电压 2.8V。
+
+
+（2）V SS 引脚
+
+
+该引脚为芯片接地引脚，并且需要保证与供电电源的地是强连接。
+
+
+（3）Out 引脚
+
+
+KTH564A1 为推挽式输出结构，无需上拉电阻。当无外加磁场时，输出电压为 V DD /2。当向芯片施加 S 极磁场
+
+
+时，输出电压会大于 V DD /2。当向芯片施加 N 极磁场时，输出电压会小于 V DD /2。输出电压更新都会发生在 Tsw
+
+
+之后。
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+GS1 和 GS2 的输入引脚用于设置芯片灵敏度。通过改变 GS1 和 GS2 的电位，有四种灵敏度可选择，具体如
+
+
+下表所示：
+
+|GS1|GS2|灵敏度|
+|---|---|---|
+|Low|Open|1.5 mV/GS|
+|Open|Open|2.0 mV/GS|
+|Low|Low|2.5 mV/GS|
+|Open|Low|3.0 mV/GS|
+
+
+
+（5）上电时间（Power on Time）
+
+
+当向芯片施加电压时，芯片需要一定的建立时间来响应外加磁场。
+
+
+（6）零输出电压 (Null Voltage output)
+
+
+当外加磁场为 0 时，输出电压为电源电压 V DD 电压的一半。
+
+
+（7）灵敏度 (Sensitivity)
+
+
+输出电压的变化量正比于磁场强度的变化量，这种正相关性如下式：
+
+
+
+_S_ ens  _V_ _OUT_ ( _B_ )  _V_
+
+
+
+ _OUT_ ( _B_ ) 
+
+
+
+( _B_ ) _OUT_ ( _B_ )
+
+
+
+_OUT_ _B_  _OUT_ _B_
+
+
+
+ 
+
+
+
+ens 
+( _B_ )  ( _B_ )
+
+
+
+_B_   _B_
+
+
+
+  
+
+
+
+（8）线性度 (Linearity)
+
+
+芯片对于线性磁场可以提供线性输出。考虑两个磁场点，B1 和 B2，理想情况下，对于给定的供电电压和温度，
+
+
+芯片的灵敏度在两个磁场点上是相同的。对于正向磁场和负向磁场分别给出了线性度计算如下式：
+
+
+
+_Sens_
+_Lin_  
+
+
+
+  ( _B_ 2) 
+
+
+
+  ( _B_
+
+_B_  1( _Sens_
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 1(
+
+
+
+1( ) 100%
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+_Sens_
+_Lin_  
+
+
+
+-  1( ( _B_ 2) ) 
+
+
+
+  ( _B_
+
+_B_ - 1( _Sens_
+
+
+
+
+
+1( ) 100%
+
+
+
+
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+
+
+
+
+（9）比例输出误差（Ratiometry Error）
+
+
+芯片提供比例输出模式。这意味着 0 电压输出 Vnull，灵敏度 Sens，正比于供电电压 V DD 。比例值相对于 5V
+
+
+而言，如下式所示：
+
+
+
+  - Vnull V DD /Vnull
+(1
+
+
+
+  - V DD 5V
+
+on (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+_R_ _V_ on  (1- DD ) 
+
+
+
+DD
+
+
+
+  - _Sens_ V DD /
+(1
+
+
+
+_R_ Sen _s_  (1- _Sens_ V DD / _Sens_ 5V ) 
+
+
+
+  - V DD 5V
+
+Sen _s_ (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+DD
+
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+⚫ Power-On time (TPO)：
+
+
+外接电源给芯片供电开始到芯片正常工作，这之间的时间。
+
+
+⚫ Output switch time, (TSW)：
+
+
+从磁场变化开始到芯片输出响应相应的变化，这之间的时间。
+
+
+**13** 订货信息
+
+|型号|封装形式|引脚数|温度|
+|---|---|---|---|
+|KTH564A1E-DZ6|DFN2020-6L|6|-40℃～+85℃|
+|KTH564A1E-DS6|DFN1616-6L|6|-40℃～+85℃|
+|KTH564A1K-DZ6|DFN2020-6L|6|-40℃～+125℃|
+|KTH564A1K-DS6|DFN1616-6L|6|-40℃～+125℃|
+
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**DFN2020-6L**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A1|1.176|-|-|
+|A2|0.62|-|-|
+|A3|0.21|-|-|
+|A4|0.25|-|0.45|
+|A5|0.60|-|0.70|
+|A6|0.225|-|0.325|
+|A7|-|1.30|-|
+|A8|-|0.25|-|
+|B1|0.15|-|0.25|
+|B2|0.005|-|0.060|
+|B3|0.57|-|0.63|
+|C1|-|1.0|-|
+|C2|-|1.0|-|
+|C3|1.95|-|2.05|
+|C4|1.95|-|2.05|
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+**DFN1616-6L**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A1|1.25|-|1.35|
+|A2|0.65|-|0.75|
+|A3|-|0.1|-|
+|A4|0.20|-|0.30|
+|A5|0.45|0.50|0.55|
+|A6|0.15|-|0.25|
+|A7|-|1.00|-|
+|B1|-|-|0.13|
+|B2|0.00|-|0.04|
+|B3|0.35|-|0.45|
+|C1|-|0.8|-|
+|C2|1.55|-|1.65|
+|C3|-|0.8|-|
+|C4|1.55|-|1.65|
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+
+
+**DFN2020-6L**
+
+
+**DFN1616-6L**
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+# **KTH564A1 系列**
+
+## **灵敏度可调线性霍尔效应传感器**
+
+DFN2020-6L Soldering Condition
+
+
+DFN1616-6L Soldering Condition
+
+
+
+昆泰芯微电子科技有限公司 **14**
+
+
+
+
+</details>
+
+---
+
+## 相关资源
+
+### PDF文档
+- [📋 KTH564A1 Series Datasheet.pdf](/pdfs/KTH564A1 Series Datasheet.pdf)
+- [📋 KTH564A1 Series产品手册.pdf](/pdfs/KTH564A1 Series产品手册.pdf)
+
+### 其他资源
+- [产品选型指南](../technical/)
+- [应用案例](../technical/)
+- [技术支持](../technical/)
+
+---
+
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们：
+
+- 📧 邮箱: support@ktsense.com
+- 📞 技术热线: 400-xxx-xxxx
+- 🌐 在线支持: [技术论坛](../technical/)
+
+---
+
+*最后更新: 2024年*
+*版本: Enhanced v1.0*
+*包含完整PDF内容和技术图片*
+
+
+## 🔗 相关产品推荐
+
+### 霍尔开关
+
+- [KTH1601 增强版](./KTH1601.md) - 同系列产品
+- [KTH1604 增强版](./KTH1604.md) - 同系列产品
+- [KTH1702 增强版](./KTH1702.md) - 同系列产品
+### 3D霍尔传感器
+
+- [KTH31xx 增强版](./KTH31xx.md) - 推荐3D霍尔传感器
+### 磁编码器
+
+- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+### 其他传感器
+
+- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+
+---

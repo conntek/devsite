@@ -1,0 +1,253 @@
+services:
+  # 超级一体化服务 - Nginx + Node.js + Webhook + Git + VitePress
+  all-in-one:
+    image: nginx:alpine
+    container_name: all-in-one-server
+    ports:
+      - "80:80"
+      - "3001:3000"
+      - "4173:4173"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - NODE_ENV=production
+      - WEBHOOK_SECRET=KT2024_VitePress_AutoDeploy_Secure_Key_9f8e7d6c5b4a3210
+      - GIT_REPO_URL=http://nashugo:3000/hugo/conntek.git
+      - GIT_BRANCH=main
+    working_dir: /app
+    command:
+      - sh
+      - -c
+      - |
+        # 安装Node.js和其他依赖
+        apk add --no-cache nodejs npm git openssh-client curl supervisor &&
+        npm init -y &&
+        npm install express &&
+        cat > webhook-server.js << "EOF"
+        const express = require("express");
+        const { exec } = require("child_process");
+        const crypto = require("crypto");
+        const fs = require("fs");
+        
+        const app = express();
+        const PORT = 3000;
+        const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || "";
+        const GIT_REPO_URL = process.env.GIT_REPO_URL;
+        const GIT_BRANCH = process.env.GIT_BRANCH || "main";
+        const REPO_DIR = "/app/data/repo";
+        
+        app.use(express.json());
+        
+        function verifySignature(payload, signature) {
+          if (!WEBHOOK_SECRET) return true;
+          const hmac = crypto.createHmac("sha256", WEBHOOK_SECRET);
+          const digest = "sha256=" + hmac.update(payload).digest("hex");
+          return crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(digest));
+        }
+        
+        function execCommand(command, cwd = REPO_DIR) {
+          return new Promise((resolve, reject) => {
+            exec(command, { cwd }, (error, stdout, stderr) => {
+              if (error) {
+                console.error(`Error: $${error.message}`);
+                reject(error);
+                return;
+              }
+              console.log(stdout);
+              if (stderr) console.error(stderr);
+              resolve(stdout);
+            });
+          });
+        }
+        
+        async function syncRepository() {
+          try {
+            if (!fs.existsSync(REPO_DIR)) {
+              console.log("Cloning repository...");
+              await execCommand(`git clone $${GIT_REPO_URL} $${REPO_DIR}`, "/app/data");
+            } else {
+              console.log("Pulling latest changes...");
+              await execCommand(`git pull origin $${GIT_BRANCH}`);
+            }
+            return true;
+          } catch (error) {
+            console.error("Git sync failed:", error.message);
+            return false;
+          }
+        }
+        
+        async function buildProject() {
+          try {
+            if (!fs.existsSync(REPO_DIR)) {
+              console.log("Repository not found, cannot build");
+              return false;
+            }
+            
+            console.log("Installing dependencies...");
+            await execCommand("npm install");
+            
+            console.log("Building VitePress project...");
+            await execCommand("npm run docs:build");
+            
+            console.log("Starting preview server...");
+            // 启动预览服务器（非阻塞）
+            exec("npm run docs:preview -- --host 0.0.0.0 --port 4173", { cwd: REPO_DIR }, (error, stdout, stderr) => {
+              if (error) {
+                console.error("Preview server error:", error.message);
+                return;
+              }
+              console.log("Preview server started on port 4173");
+            });
+            
+            console.log("Build completed successfully!");
+            return true;
+          } catch (error) {
+            console.error("Build failed:", error.message);
+            return false;
+          }
+        }
+        
+        // 初始化时同步代码并构建
+         async function initialize() {
+           console.log("Initializing repository...");
+           const syncSuccess = await syncRepository();
+           
+           if (syncSuccess) {
+             console.log("Performing initial build...");
+             await buildProject();
+           }
+           
+           // 定期同步（每5分钟）
+           setInterval(async () => {
+             console.log("Periodic sync...");
+             await syncRepository();
+           }, 300000);
+         }
+        
+        app.post("/webhook", async (req, res) => {
+          const signature = req.headers["x-gitea-signature"] || req.headers["x-hub-signature-256"];
+          const payload = JSON.stringify(req.body);
+          
+          if (WEBHOOK_SECRET && !verifySignature(payload, signature)) {
+            return res.status(401).json({ error: "Invalid signature" });
+          }
+          
+          console.log("Webhook received, syncing repository and triggering build...");
+          
+          // 先同步代码，再触发构建
+          const syncSuccess = await syncRepository();
+          if (!syncSuccess) {
+            return res.status(500).json({ error: "Failed to sync repository" });
+          }
+          
+          const buildSuccess = await buildProject();
+           if (buildSuccess) {
+             res.json({ message: "Repository synced and build completed successfully" });
+           } else {
+             res.status(500).json({ error: "Repository synced but build failed" });
+           }
+        });
+        
+        app.post("/build", async (req, res) => {
+           console.log("Manual build triggered...");
+           const success = await buildProject();
+           if (success) {
+             res.json({ message: "Build completed successfully" });
+           } else {
+             res.status(500).json({ error: "Build failed" });
+           }
+         });
+         
+         app.get("/health", (req, res) => {
+           res.json({ status: "healthy", timestamp: new Date().toISOString() });
+         });
+        
+        app.listen(PORT, "0.0.0.0", async () => {
+          console.log(`Webhook server running on port $${PORT}`);
+          await initialize();
+        });
+        EOF
+        
+        # 创建supervisor配置
+        cat > /etc/supervisor/conf.d/supervisord.conf << "EOF"
+        [supervisord]
+        nodaemon=true
+        user=root
+        
+        [program:nginx]
+        command=nginx -g "daemon off;"
+        autostart=true
+        autorestart=true
+        stdout_logfile=/var/log/nginx.log
+        stderr_logfile=/var/log/nginx.log
+        
+        [program:webhook]
+        command=node /app/webhook-server.js
+        directory=/app
+        autostart=true
+        autorestart=true
+        stdout_logfile=/var/log/webhook.log
+        stderr_logfile=/var/log/webhook.log
+        EOF
+        
+        # 配置nginx
+        cat > /etc/nginx/nginx.conf << "EOF"
+        events {
+            worker_connections 1024;
+        }
+        http {
+            include /etc/nginx/mime.types;
+            default_type application/octet-stream;
+            
+            # API代理到webhook服务
+            upstream webhook_api {
+                server 127.0.0.1:3000;
+            }
+            
+            # VitePress预览代理
+            upstream vitepress_preview {
+                server 127.0.0.1:4173;
+            }
+            
+            server {
+                 listen 80;
+                 server_name _;
+                
+                # API路由
+                location /api/ {
+                    rewrite ^/api/(.*) /$$1 break;
+                    proxy_pass http://webhook_api;
+                    proxy_set_header Host $$host;
+                    proxy_set_header X-Real-IP $$remote_addr;
+                    proxy_set_header X-Forwarded-For $$proxy_add_x_forwarded_for;
+                    proxy_set_header X-Forwarded-Proto $$scheme;
+                }
+                
+                # 主站点路由到VitePress
+                location / {
+                    proxy_pass http://vitepress_preview;
+                    proxy_set_header Host $$host;
+                    proxy_set_header X-Real-IP $$remote_addr;
+                    proxy_set_header X-Forwarded-For $$proxy_add_x_forwarded_for;
+                    proxy_set_header X-Forwarded-Proto $$scheme;
+                }
+            }
+        }
+        EOF
+        
+        # 启动supervisor管理所有服务
+        supervisord -c /etc/supervisor/conf.d/supervisord.conf
+    restart: unless-stopped
+    networks:
+      - webhook-network
+
+networks:
+  webhook-network:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
+  logs:
+    driver: local

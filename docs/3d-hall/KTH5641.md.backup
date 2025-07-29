@@ -1,0 +1,1601 @@
+# KTH5641 - 完整技术参考
+
+[返回产品目录](../index.md) | [返回hall-switch分类](../hall-switch/index.md)
+
+
+## 🧭 页面导航
+
+- 🔙 [返回产品摘要页面](../hall-switch/KTH5641.md)
+- 📂 [返回霍尔开关分类](../hall-switch/)
+- 🏠 [返回主页](../index.md)
+- 📚 [所有增强版技术参考](./index.md)
+
+---
+
+## 产品概述
+
+**KTH5641** 完整技术参考文档，包含所有PDF数据手册的详细内容和技术图片。
+
+---
+
+## 产品图片
+
+![KTH5641 图片 1](./images/kth5641/page_1_img_2_3f698c0b.png)
+
+![KTH5641 图片 2](./images/kth5641/page_1_img_4_d2b4a381.png)
+
+![KTH5641 图片 3](./images/kth5641/page_2_img_1_4411b0a7.png)
+
+![KTH5641 图片 4](./images/kth5641/page_2_img_5_d2b4a381.png)
+
+![KTH5641 图片 5](./images/kth5641/page_3_img_2_834c8321.png)
+
+![KTH5641 图片 6](./images/kth5641/page_3_img_3_b9585232.png)
+
+![KTH5641 图片 7](./images/kth5641/page_3_img_4_d2b4a381.png)
+
+![KTH5641 图片 8](./images/kth5641/page_4_img_1_26664115.png)
+
+![KTH5641 图片 9](./images/kth5641/page_4_img_3_d2b4a381.png)
+
+![KTH5641 图片 10](./images/kth5641/page_5_img_1_d2b4a381.png)
+
+![KTH5641 图片 11](./images/kth5641/page_6_img_1_d2b4a381.png)
+
+![KTH5641 图片 12](./images/kth5641/page_6_img_2_cec97151.png)
+
+---
+
+## 📄 KTH5641 Series datasheet.pdf
+
+<details>
+<summary>点击展开 KTH5641 Series datasheet.pdf 完整内容</summary>
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+
+ Ratio-Metric Linear Hall-effect Magnetic Sensor
+
+
+ Wide Operating Voltage：2.8V~6.0V
+
+
+ [Low Power Consumption: 3.3mA@5.0V V](mailto:3.3mA@5.0V) DD
+
+ Low-Noise Output
+
+
+ Responds to either Positive or Negative Gauss
+
+
+ Sensitivity Adjustable:
+
+
+  - A1：1.5mV/Gs，±1600Gs
+
+
+  - A2：2.0mV/Gs，±1200Gs
+
+
+  - A3：2.5mV/Gs，±960Gs
+
+
+  - A4：3.0mV/Gs，±800Gs
+
+
+ High Quality Package：SOT-23-3L TO-92S
+
+
+ Operating Temperature：-40℃~125℃
+
+
+ Robust ESD Performance：HBM 4KV
+
+
+ RoHS Compliant 2011/65/EU and Halogen Free
+
+
+**2** **Applications**
+
+ Current sensing
+
+
+ Motor control
+
+
+ Position sensing
+
+
+ Vibration sensing
+
+
+ Liquid level sensing
+
+
+ Weight sensing
+
+
+ Magnetic code reading
+
+
+ Rotary encoder
+
+
+ Ferrous metal detector
+
+
+**3** **Typical Application Circuit**
+
+
+Note：C IN ： 1nF/10V
+
+
+C Out ：10nF/10V
+
+
+
+**4** **Descriptions**
+
+KTH5641 is a sensitivity adjustable of linear
+
+
+Hall-effect sensor, is composed of Hall sensor,
+
+
+linear amplifier and Totem-Pole output stage. It
+
+
+features low noise output, which use an external
+
+
+capacitance. It also can provide increased
+
+
+temperature stability and accuracy. The linear Hall
+
+
+sensor has a wide operating temperature range of
+
+
+-40℃ to +125℃, appropriate for commercial,
+
+
+consumer, and industrial environments.
+
+
+The high sensitivity of Hall-effect sensor accurately
+
+
+tracks extremely weak changes in magnetic flux
+
+
+density. The linear sourcing output voltage is set by
+
+
+the supply voltage and in proportion of vary of the
+
+
+magnetic flux density. That is proportional to the
+
+
+applied magnetics and features a null voltage
+
+
+output of half of the applied voltage.
+
+
+KTH5641 family provides a variety of package to
+
+
+customers: SOT-23-3L, TO-92S. The two package
+
+
+styles available provide magnetically optimized
+
+
+solutions for most applications.
+
+
+**SOT-23-3L**
+
+
+**TO-92S**
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+SOT-23-3L
+
+
+**TOP VIEW**
+
+
+
+|Pin Name|Pin No.|Function|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|OUTPUT|2|Output Pin|
+|GND|3|Ground Pin|
+
+
+TO-92S
+
+
+**TOP VIEW**
+
+|PIN Name|Pin No.|Function|
+|---|---|---|
+|VDD|1|Power Supply Input|
+|GND|2|Ground Pin|
+|OUTPUT|3|Output Pin|
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+**7** **Output Characteristics (TA=-40** ℃ **~105** ℃， **Vcc=2.8V~6.0V )**
+
+|Symbol|Conditions|Output（TO-92S）|Output（SOT-23-3L）|
+|---|---|---|---|
+|**South pole**|B>0 Gauss|>VNULL|>VNULL|
+|**North pole**|B<0 Gauss|<VNULL|<VNULL|
+
+
+
+As shown in the figure below, the KTH5641 senses magnetic flux perpendicular to the top of the package.
+
+
+When the south pole of the magnet is close to the top of the chip, the magnetic induction line passes through
+
+
+from the bottom of the chip to the top, and the magnetic flux density B is considered positive at this time;
+
+
+When the north pole of the magnet is close to the top of the chip, the magnetic induction line passes from the
+
+
+top of the chip to the bottom, and the magnetic flux density B is considered negative at this time.
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+**Output Switching Characteristics**
+
+
+**8** **Product Name Structure**
+
+KTH5641 XX-XXX
+
+
+Package Abbreviation ：ST3：SOT-23-3L
+
+
+TO3：TO-92S
+
+Sensitivity ：A1:1.5mV/Gs A2: 2.0mV/Gs
+
+
+A3: 2.5mV/Gs A4: 3.0mV/Gs
+
+**9** **Absolute Maximum Ratings** **(@TA=+25** ℃ **,** **unless otherwise specified** **)**
+
+|Symbol|Parameter|Col3|Value|Unit|
+|---|---|---|---|---|
+|VDD|Supply Voltage|Supply Voltage|8|V|
+|VDD_REV|Reverse Voltage|Reverse Voltage|-0.5|V|
+|IOUTPUT|Output current|Output current|20|mA|
+|VOUTPUT|Output Voltage|Output Voltage|8|V|
+|TA|Operating Temperature Range|Operating Temperature Range|-40～+125|oC|
+|TSTG|Storage temperature Range|Storage temperature Range|-65～+150|oC|
+|TJ|Maximum Junction Temp|Maximum Junction Temp|+150|oC|
+|PD|Package Power Dissipation|SOT-23-3L/TO-92S|230/606|mW|
+|ESD HBM|Human Body Model ESD Capability|Human Body Model ESD Capability|4000|V|
+
+
+
+**Note:** Exceeding the absolute maximum ratings may cause permanent damage. Exposure to
+
+
+absolute-maximum rated conditions for extended periods may affect device reliability.
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+**10 Electronics Characteristics (@TA=+25** ℃ **,V** **DD** **=5.0V,** **unless otherwise specified** **)**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|KTH5641 Series|Col2|Col3|Col4|Col5|Col6|Col7|Col8|
+|---|---|---|---|---|---|---|---|
+|**Symbol**|**Parameter**|**Conditions**|**Conditions**|**Min.**|**Typ.**|**Max.**|**Unit**|
+|VDD|Supply Voltage|Operating|Operating|2.8|—|6.0|V|
+|IDD|Supply Current|Operating，B=0 Gs|Operating，B=0 Gs|—|3.3|5.0|mA|
+|IO|Output Current|A1, VDD>4V|A1, VDD>4V|1.0|1.5|—|mA|
+|IO|Output Current|A2/A3/A4, VDD>3V|A2/A3/A4, VDD>3V|1.0|1.5|—|mA|
+|VNULL|Null Output Voltage|B=0 Gs|B=0 Gs|2.375|2.5|2.625|V|
+|VOH|High Output Voltage|B> Max Magnetic Gauss|B> Max Magnetic Gauss|—|4.9|4.99|V|
+|VOL|Low Output Voltage|B> Min Magnetic Gauss|B> Min Magnetic Gauss|0.01|0.1|—|V|
+|VOS|Output Voltage Span|Operating|Operating|—|4.8|—|V|
+|VON|Output Noise|Ta=25℃,<br>COut=10nF|A1|—|—|30|mV|
+|VON|Output Noise|Ta=25℃,<br>COut=10nF|A2|—|—|40|mV|
+|VON|Output Noise|Ta=25℃,<br>COut=10nF|A3/A4|—|—|50|mV|
+|TP|Power-On Time|Operating|Operating|—|—|150|uS|
+|TSW|Output Switch Time|Operating|Operating|—|—|150|uS|
+|FSW|Output Switch Frequency|Operating|Operating|3|—||kHz|
+|Magnetic<br>Range|Magnetic<br>Range|A1|A1|-1600|—|1600|Gs|
+|Magnetic<br>Range|Magnetic<br>Range|A2|A2|-1200|—|1200|Gs|
+|Magnetic<br>Range|Magnetic<br>Range|A3|A3|-960|—|960|Gs|
+|Magnetic<br>Range|Magnetic<br>Range|A4|A4|-800|—|800|Gs|
+|Sensitivity|Sensitivity|A1|A1|1.38|1.5|1.62|mV/Gs|
+|Sensitivity|Sensitivity|A2|A2|1.84|2.0|2.16|mV/Gs|
+|Sensitivity|Sensitivity|A3|A3|2.3|2.5|2.7|mV/Gs|
+|Sensitivity|Sensitivity|A4|A4|2.76|3.0|3.24|mV/Gs|
+|RVON|Ratiometry Null output error|Operating voltage range<br>relative to 5V|Operating voltage range<br>relative to 5V|—|±1.5|—|%|
+|RSEN|Ratiometry Sensitivity error|Operating voltage range<br>relative to 5V|Operating voltage range<br>relative to 5V|—|±1.5|—|%|
+|LIN|Linearity|% of Span|% of Span|—|±1.5|—|%|
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+
+
+
+
+
+|TC<br>Sens|Sensitivity Temperature<br>Coefficient|Sens@125℃/Sens@25℃|—|±0.1|—|%/℃|
+|---|---|---|---|---|---|---|
+|δVON|Delta null voltage||VON@125℃-VON@25℃||—|20|—|mV|
+
+
+**11 Characteristic Performance**
+
+
+**KTH5641A1/A2/A3/A4**
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Ratio of V NULL to V DD Typical Temperature (TA) _**VS**_ V NULL Offset
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Linearity Typical Temperature (TA) _**VS**_ Linearity
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Supply Current (I DD ) Typical Temperature (TA) _**VS**_ Supply Current (I DD )
+
+
+Power Dissipation _**VS**_ Temperature(TA) Load Current _**VS**_ Output Voltage
+
+
+Typical Supply Voltage(V DD ) _**VS**_ Sensitivity Typical Temperature (TA) _**[VS]**_ Sensitivity
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+Typical Flux Density _**VS**_ Output Voltage
+
+
+**12 Function Description**
+
+
+（1）V DD Pin
+
+
+This pin is Supplied power to IC as circuit operation and output transition requirements, and the
+
+
+Supplied voltage must greater than the minimum operating voltage 2.8V.
+
+
+（2）GND Pin
+
+
+This pin is the chip ground pin and needs to be strongly connected to the ground of the power supply.
+
+
+（3）Output Pin
+
+
+This Output pin is Totem-Pole type, don’t place pull-high resistance. When there is no magnetic field, the
+
+
+output voltage is half of IC’s V DD . When the magnetic field is near the marking of IC, and magnetic force
+
+
+is South pole, this pin output state will larger than half of IC’s V DD . When the magnetic field is near the
+
+
+marking of IC, and magnetic force is north pole, this pin output state will less than half of IC’s V DD . Every
+
+
+time of the output transition must be after T SW .
+
+
+（4）Power on Time
+
+
+When the applied voltage is into the device, the device output requires a response time to react to the
+
+
+ratiometry magnetic field.
+
+
+（5）Null Voltage output
+
+
+In the zero magnetic field state, the output voltage is half of the applied voltage V DD .
+
+
+（6）Sensitivity
+
+
+The amount of the output voltage is proportional to the magnetic field’s changes. This proportionality is
+
+
+specified as the below:
+
+
+
+_S_ ens  _V_ _OUT_ ( _B_ )  _V_
+
+
+
+ _OUT_ ( _B_ ) 
+
+
+
+( _B_ ) _OUT_ ( _B_ )
+
+
+
+_OUT_ _B_  _OUT_ _B_
+
+
+
+ 
+
+
+
+ens 
+( _B_ )  ( _B_ )
+
+
+
+_B_   _B_
+
+
+
+  
+
+
+
+（7）Linearity
+
+
+The device is designed to provide linear output in response to a ramping applied magnetic field.
+
+
+Consider two magnetic fields, B1 and B2. Ideally, the sensitivity of a device is the same for both fields,
+
+
+for a given applied voltage and temperature. The Linearity is calculated separately for positive and
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+
+（8）Ratiometry Error
+
+
+
+_Sens_
+_Lin_  
+
+
+
+  ( _B_ 2) 
+
+
+
+  ( _B_
+
+_B_  1( _Sens_
+
+
+
+
+
+
+ 
+
+ 1(
+
+
+
+1( ) 100%
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+
+
+
+
+_Sens_
+_Lin_  
+
+
+
+-  1( ( _B_ 2) ) 
+
+
+
+  ( _B_
+
+_B_ - 1( _Sens_
+
+
+
+
+
+1( ) 100%
+
+
+
+
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+
+
+
+
+The device provides ratiometric output. It means that Null voltage output, V NULL, and the magnetic
+
+
+sensitivity, Sens, are proportional to the applied voltage, V DD . The ratiometric amount is relative to 5V,
+
+
+and defined as the below:
+
+
+
+  - Vnull V DD /Vnull
+(1
+
+
+
+  - V DD 5V
+
+on (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+_R_ _V_ on  (1- DD ) 
+
+
+
+DD
+
+
+
+  - _Sens_ V DD /
+(1
+
+
+
+_R_ Sen _s_  (1- _Sens_ V DD / _Sens_ 5V ) 
+
+
+
+  - V DD 5V
+
+Sen _s_ (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+DD
+
+
+
+**13 Timing Waveform Diagram**
+
+
+Power on timing
+
+
+⚫ Power-On time (T PO )：
+
+
+When input voltage to V DD of IC, IC can be normal working after Power-On Time (T PO ).
+
+
+⚫ Output switch time, (T SW )：
+
+
+The time from magnetic field change to output signal begin to transit is called output switch time.
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+|Part No.|Package|Number of Pins|Sensitivity|Temperature|
+|---|---|---|---|---|
+|KTH5641A1-ST3|SOT-23-3L|3|1.5mV/Gs|-40℃~125℃|
+|KTH5641A2-ST3|SOT-23-3L|3|2.0mV/Gs|-40℃~125℃|
+|KTH5641A3-ST3|SOT-23-3L|3|2.5mV/Gs|-40℃~125℃|
+|KTH5641A4-ST3|SOT-23-3L|3|3.0mV/Gs|-40℃~125℃|
+|KTH5641A1-TO3|TO-92S|3|1.5mV/Gs|-40℃~125℃|
+|KTH5641A2-TO3|TO-92S|3|2.0mV/Gs|-40℃~125℃|
+|KTH5641A3-TO3|TO-92S|3|2.5mV/Gs|-40℃~125℃|
+|KTH5641A4-TO3|TO-92S|3|3.0mV/Gs|-40℃~125℃|
+
+
+
+**15 Hall Sensor Location**
+
+
+Top View Bottom View
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+**SOT-23-3L**
+
+
+|Col1|Col2|D|Col4|
+|---|---|---|---|
+|||b|b|
+|||||
+|||||
+|||||
+|||||
+
+
+|TOP VIEW|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+||||||||
+||||A1<br>A2|A1<br>A2|A||
+||||||||
+
+
+
+
+
+SIDE VIEW
+
+
+SIDE VIEW
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|-|-|1.25|
+|A1|0.00|-|0.1|
+|A2|1.00|1.10|1.15|
+|b|0.30|-|0.50|
+|c|0.10|-|0.20|
+|D|2.82|2.95|3.02|
+|E|2.65|2.80|2.95|
+|E1|1.50|1.65|1.70|
+|e|0.85|0.95|1.05|
+|e1|1.80|1.90|2.00|
+|L|0.30|0.45|0.60|
+|θ|0︒|-|8︒|
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+**TO-92S**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|2.90|3.00|3.10|
+|b|0.35|0.39|0.50|
+|b1|0.40|0.44|0.55|
+|C|0.36|0.38|0.45|
+|D|3.90|4.00|4.10|
+|E|1.42|1.52|1.62|
+|E1||0.75||
+|e|1.27 TYP|1.27 TYP|1.27 TYP|
+|L|13.50|14.50|15.50|
+|θ1||6°||
+|θ2||3°||
+|θ3||45°||
+|θ4||3°||
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH5641 Series**
+
+**CMOS Ratio-Metric Linear Hall Effect IC**
+
+
+SOT-23-3L Soldering Condition
+
+
+TO-92S Soldering Condition
+
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+
+
+</details>
+
+---
+
+## 📄 KTH5641 Series产品手册.pdf
+
+<details>
+<summary>点击展开 KTH5641 Series产品手册.pdf 完整内容</summary>
+
+ 比例式线性霍尔效应磁传感器
+
+
+ 宽工作电压范围：2.8V~6.0V
+
+
+ 低功耗 [3.3mA@5.0V V](mailto:3.3mA@5.0V) DD
+
+ 低噪声输出
+
+
+ Vcc/2 静态输出，可检测N极和S极磁场
+
+
+ 多灵敏度可选
+
+
+  - A1：1.5mV/Gs，±1600Gs 范围
+
+
+  - A2：2.0mV/Gs，±1200Gs 范围
+
+
+  - A3：2.5mV/Gs，±960Gs 范围
+
+
+  - A4：3.0mV/Gs，±800Gs 范围
+
+
+ 高品质封装：SOT-23-3L TO-92S
+
+
+ 工作温度范围：-40℃~125℃
+
+
+ 卓越的ESD性能：HBM 4KV
+
+
+ 符合RoHS & REACH 标准
+
+
+**2** 典型应用
+
+ 电流传感器
+
+
+ 电机控制
+
+
+ 位置检测
+
+
+ 接近开关
+
+
+ 高度找平、倾斜和重量测量
+
+
+ 角度编码
+
+
+**3** 应用电路原理图
+
+
+注 ：C IN ： 1nF/10V
+
+
+C Out ：10nF/10V
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+**4** 概述
+
+KTH5641是一款线性霍尔效应传感器，可按比例响应
+
+
+磁通量密度。KTH5641内部电路包含霍尔传感器、线
+
+
+性放大器和CMOS输出级电路。具有高速、低噪声输
+
+
+出特性，在-40℃至125℃的宽温度范围内实现线性
+
+
+性能。可用于消费类工业类各种磁场检测。
+
+
+KTH5641具有宽工作电压范围，当不存在磁场时，模
+
+
+拟输出 1/2 V CC 。输出会随施加的磁通量密度呈线性
+
+
+变化，四个灵敏度选项可根据所需的检测范围提供最
+
+
+大的输出电压摆幅。南北磁极产生唯一的电压。
+
+
+KTH5641可检测垂直于封装顶部的磁通量。由于采用
+
+
+标准的SOT-23-3L和TO-92S封装，KTH5641可提供
+
+
+不同的检测方向。
+
+
+**SOT-23-3L**
+
+
+**TO-92S**
+
+
+
+昆泰芯微电子科技有限公司 **1**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+SOT-23-3L
+
+
+引脚结构 **(** 俯视图 **)**
+
+
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|OUTPUT|2|输出端|
+|GND|3|接地端|
+
+
+TO-92S
+
+
+引脚结构 **(** 俯视图 **)**
+
+|引脚名称|引脚序号|功能描述|
+|---|---|---|
+|VDD|1|供电输入端|
+|GND|2|接地端|
+|OUTPUT|3|输出端|
+
+
+
+昆泰芯微电子科技有限公司 **2**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+**7** 输出特性 **(TA=-40** ℃ **~125** ℃， **V** **DD** **=2.8V~6.0V )**
+
+|项目|工作条件|输出（TO-92S）|输出（SOT-23-3L）|
+|---|---|---|---|
+|**South pole**|B>0 Gauss|>VNULL|>VNULL|
+|**North pole**|B<0 Gauss|<VNULL|<VNULL|
+
+
+
+如下图，KTH5641可检测垂直于封装顶部的磁通量。当磁铁南极靠近芯片顶部时，磁感线由芯片底部向顶部穿
+
+
+过，认为此时磁感应强度B为正；当磁铁北极靠近芯片顶部时，磁感线由芯片顶部向底部穿过，认为此时磁感应
+
+
+强度B为负。
+
+
+昆泰芯微电子科技有限公司 **3**
+
+
+输出特性
+
+
+**8** 产品型号构成
+
+
+KTH5641 XX-XXX
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+封装简称：ST3：SOT-23-3L
+
+
+TO3：TO-92S
+
+
+灵敏度：A1:1.5mV/Gs A2: 2.0mV/Gs
+
+
+
+A3: 2.5mV/Gs A4: 3.0mV/Gs
+
+**9** 绝对最大额定值 **(@TA=+25** ℃，除特别说明外 **)**
+
+|项目|参数说明|Col3|数值|单位|
+|---|---|---|---|---|
+|VDD|供电电压|供电电压|8|V|
+|VDD_REV|反向电源电压|反向电源电压|-0.5|V|
+|IOUTPUT|输出驱动电流|输出驱动电流|20|mA|
+|VOUTPUT|输出电压|输出电压|8|V|
+|TA|工作温度范围|工作温度范围|-40～+125|oC|
+|TSTG|存储温度范围|存储温度范围|-65～+150|oC|
+|TJ|结点最高耐温|结点最高耐温|+150|oC|
+|PD|封装功耗|SOT-23-3L/TO-92S|230/606|mW|
+|ESD HBM|人体模型ESD能力|人体模型ESD能力|4000|V|
+
+
+
+注: 超过绝对最大额定值可能造成永久性损坏。长时间工作于绝对最大额定条件下会影响芯片的可靠性。
+
+
+昆泰芯微电子科技有限公司 **4**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|KTH5641系列|Col2|Col3|Col4|Col5|Col6|Col7|Col8|
+|---|---|---|---|---|---|---|---|
+|项目|参数说明|工作条件|工作条件|最小值**.**|典型值|最大值|单位|
+|VDD|供电电压|工作状态|工作状态|2.8|—|6.0|V|
+|IDD|功耗电流|工作状态，B=0 Gs|工作状态，B=0 Gs|—|3.3|5.0|mA|
+|IO|输出电流|A1, VDD>4V|A1, VDD>4V|1.0|1.5|—|mA|
+|IO|输出电流|A2/A3/A4, VDD>3V|A2/A3/A4, VDD>3V|1.0|1.5|—|mA|
+|VNULL|0 磁场输出电压|B=0 Gs|B=0 Gs|2.375|2.5|2.625|V|
+|VOH|输出高电平|B> Max Magnetic Gauss|B> Max Magnetic Gauss|—|4.9|4.99|V|
+|VOL|输出低电平|B> Min Magnetic Gauss|B> Min Magnetic Gauss|0.01|0.1|—|V|
+|VOS|输出电压摆幅范围|工作状态|工作状态|—|4.8|—|V|
+|VON|输出噪声|Ta=25℃,<br>COut=10nF|A1|—|—|30|mV|
+|VON|输出噪声|Ta=25℃,<br>COut=10nF|A2|—|—|40|mV|
+|VON|输出噪声|Ta=25℃,<br>COut=10nF|A3/A4|—|—|50|mV|
+|TP|上电时间|工作状态|工作状态|—|—|150|uS|
+|TSW|输出转换时间|工作状态|工作状态|—|—|150|uS|
+|FSW|输出转换频率|工作状态|工作状态|3|—||kHz|
+|Magnetic<br>Range|磁场检测范围|A1|A1|-1600|—|1600|Gs|
+|Magnetic<br>Range|磁场检测范围|A2|A2|-1200|—|1200|Gs|
+|Magnetic<br>Range|磁场检测范围|A3|A3|-960|—|960|Gs|
+|Magnetic<br>Range|磁场检测范围|A4|A4|-800|—|800|Gs|
+|Sensitivity|灵敏度|A1|A1|1.38|1.5|1.62|mV/Gs|
+|Sensitivity|灵敏度|A2|A2|1.84|2.0|2.16|mV/Gs|
+|Sensitivity|灵敏度|A3|A3|2.3|2.5|2.7|mV/Gs|
+|Sensitivity|灵敏度|A4|A4|2.76|3.0|3.24|mV/Gs|
+|RVON|0 磁场输出电压误差|实际工作电压/5V 工作电压|实际工作电压/5V 工作电压|—|±1.5|—|%|
+|RSEN|灵敏度误差|实际工作电压/5V 工作电压|实际工作电压/5V 工作电压|—|±1.5|—|%|
+|LIN|线性度|全输出电压范围|全输出电压范围|—|±1.5|—|%|
+|TCSens|灵敏度温度系数|Sens@125℃/Sens@25℃|Sens@125℃/Sens@25℃|—|±0.1|—|%/℃|
+|δVON|0 磁场输出电压随温度变化幅度||VON@125℃-VON@25℃|||VON@125℃-VON@25℃||—|20|—|mV|
+
+
+昆泰芯微电子科技有限公司 **5**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+**KTH5641A1/A2/A3/A4**
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Ratio of V NULL to V DD Typical Temperature (TA) _**VS**_ V NULL Offset
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Linearity Typical Temperature (TA) _**VS**_ Linearity
+
+
+Typical Supply Voltage (V DD ) _**VS**_ Supply Current (I DD ) Typical Temperature (TA) _**VS**_ Supply Current (I DD )
+
+
+昆泰芯微电子科技有限公司 **6**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+Power Dissipation _**VS**_ Temperature(TA) Load Current _**VS**_ Output Voltage
+
+
+Typical Supply Voltage(V DD ) _**VS**_ Sensitivity Typical Temperature (TA) _**[VS]**_ Sensitivity
+
+
+Typical Flux Density _**VS**_ Output Voltage
+
+
+昆泰芯微电子科技有限公司 **7**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+（1）V DD 引脚
+
+
+该引脚为芯片供电引脚。供电电压必须大于最小要求的工作电压 2.8V。
+
+
+（2）GND 引脚
+
+
+该引脚为芯片接地引脚，并且需要保证与供电电源的地是强连接。
+
+
+（3）Output 引脚
+
+
+KTH5641 为推挽式输出结构，无需上拉电阻。当无外加磁场时，输出电压为 V DD /2。当向芯片施加 S 极磁场时，
+
+
+输出电压会大于 V DD /2。当向芯片施加 N 极磁场时，输出电压会小于 V DD /2。输出电压更新都会发生在 Tsw 之
+
+
+后。
+
+
+（4）上电时间（Power on Time）
+
+
+当向芯片施加电压时，芯片需要一定的建立时间来响应外加磁场。
+
+
+（5）零输出电压 (Null Voltage output)
+
+
+当外加磁场为 0 时，输出电压为电源电压 V DD 电压的一半。
+
+
+（6）灵敏度 (Sensitivity)
+
+
+输出电压的变化量正比于磁场强度的变化量，这种正相关性如下式：
+
+
+
+_S_ ens  _V_ _OUT_ ( _B_ )  _V_
+
+
+
+ _OUT_ ( _B_ ) 
+
+
+
+( _B_ ) _OUT_ ( _B_ )
+
+
+
+_OUT_ _B_  _OUT_ _B_
+
+
+
+ 
+
+
+
+ens 
+( _B_ )  ( _B_ )
+
+
+
+_B_   _B_
+
+
+
+  
+
+
+
+（7）线性度 (Linearity)
+
+
+芯片对于线性磁场可以提供线性输出。考虑两个磁场点，B1 和 B2，理想情况下，对于给定的供电电压和温度，
+
+
+芯片的灵敏度在两个磁场点上是相同的。对于正向磁场和负向磁场分别给出了线性度计算如下式：
+
+
+
+_Sens_
+_Lin_  
+
+
+
+  ( _B_ 2) 
+
+
+
+  ( _B_
+
+_B_  1( _Sens_
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 1(
+
+
+
+1( ) 100%
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+_Sens_
+_Lin_  
+
+
+
+-  1( ( _B_ 2) ) 
+
+
+
+  ( _B_
+
+_B_ - 1( _Sens_
+
+
+
+
+
+1( ) 100%
+
+
+
+
+
+
+
+( _B_ 1)
+
+
+
+_B_
+
+
+
+
+
+
+
+（8）比例输出误差（Ratiometry Error）
+
+
+芯片提供比例输出模式。这意味着 0 电压输出 Vnull，灵敏度 Sens，正比于供电电压 V DD 。比例值相对于 5V
+
+
+而言，如下式所示：
+
+
+
+  - Vnull V DD /Vnull
+(1
+
+
+
+  - V DD 5V
+
+on (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+_R_ _V_ on  (1- DD ) 
+
+
+
+DD
+
+
+
+  - _Sens_ V DD /
+(1
+
+
+
+_R_ Sen _s_  (1- _Sens_ V DD / _Sens_ 5V ) 
+
+
+
+  - V DD 5V
+
+Sen _s_ (1
+
+
+
+DD ) 100%
+
+V /5V
+
+
+
+DD
+
+
+
+昆泰芯微电子科技有限公司 **8**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+Power on timing
+
+
+⚫ Power-On time (TPO)：
+
+
+外接电源给芯片供电开始到芯片正常工作，这之间的时间。
+
+
+⚫ Output switch time, (TSW)：
+
+
+从磁场变化开始到芯片输出响应相应的变化，这之间的时间。
+
+
+昆泰芯微电子科技有限公司 **9**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+
+
+|型号|封装形式|引脚数|灵敏度|温度|
+|---|---|---|---|---|
+|KTH5641A1-ST3|SOT-23-3L|3|1.5mV/Gs|-40℃~125℃|
+|KTH5641A2-ST3|SOT-23-3L|3|2.0mV/Gs|-40℃~125℃|
+|KTH5641A3-ST3|SOT-23-3L|3|2.5mV/Gs|-40℃~125℃|
+|KTH5641A4-ST3|SOT-23-3L|3|3.0mV/Gs|-40℃~125℃|
+|KTH5641A1-TO3|TO-92S|3|1.5mV/Gs|-40℃~125℃|
+|KTH5641A2-TO3|TO-92S|3|2.0mV/Gs|-40℃~125℃|
+|KTH5641A3-TO3|TO-92S|3|2.5mV/Gs|-40℃~125℃|
+|KTH5641A4-TO3|TO-92S|3|3.0mV/Gs|-40℃~125℃|
+
+
+**14 Hall** 盘位置
+
+
+Top View Bottom View
+
+
+昆泰芯微电子科技有限公司 **10**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+**SOT-23-3L**
+
+
+|Col1|Col2|D|Col4|
+|---|---|---|---|
+|||b|b|
+|||||
+|||||
+|||||
+|||||
+
+
+|TOP VIEW|Col2|Col3|Col4|Col5|Col6|Col7|
+|---|---|---|---|---|---|---|
+||||||||
+||||A1<br>A2|A1<br>A2|A||
+||||||||
+
+
+
+
+
+SIDE VIEW
+
+
+SIDE VIEW
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|-|-|1.25|
+|A1|0.00|-|0.1|
+|A2|1.00|1.10|1.15|
+|b|0.30|-|0.50|
+|c|0.10|-|0.20|
+|D|2.82|2.95|3.02|
+|E|2.65|2.80|2.95|
+|E1|1.50|1.65|1.70|
+|e|0.85|0.95|1.05|
+|e1|1.80|1.90|2.00|
+|L|0.30|0.45|0.60|
+|θ|0︒|-|8︒|
+
+
+昆泰芯微电子科技有限公司 **11**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+**TO-92S**
+
+
+
+|Symbol|Dimensions in Millimeters|Col3|Col4|
+|---|---|---|---|
+|**Symbol**|**Min.**|**Typ.**|**Max.**|
+|A|2.90|3.00|3.10|
+|b|0.35|0.39|0.50|
+|b1|0.40|0.44|0.55|
+|C|0.36|0.38|0.45|
+|D|3.90|4.00|4.10|
+|E|1.42|1.52|1.62|
+|E1||0.75||
+|e|1.27 TYP|1.27 TYP|1.27 TYP|
+|L|13.50|14.50|15.50|
+|θ1||6°||
+|θ2||3°||
+|θ3||45°||
+|θ4||3°||
+
+
+昆泰芯微电子科技有限公司 **12**
+
+
+# **KTH5641 系列**
+
+## **具有模拟输出的比例式线性霍尔效应传感器**
+
+SOT-23-3L Soldering Condition
+
+
+TO-92S Soldering Condition
+
+
+
+昆泰芯微电子科技有限公司 **13**
+
+
+
+
+</details>
+
+---
+
+## 相关资源
+
+### PDF文档
+- [📋 KTH5641 Series datasheet.pdf](/pdfs/KTH5641 Series datasheet.pdf)
+- [📋 KTH5641 Series产品手册.pdf](/pdfs/KTH5641 Series产品手册.pdf)
+
+### 其他资源
+- [产品选型指南](../technical/)
+- [应用案例](../technical/)
+- [技术支持](../technical/)
+
+---
+
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们：
+
+- 📧 邮箱: support@ktsense.com
+- 📞 技术热线: 400-xxx-xxxx
+- 🌐 在线支持: [技术论坛](../technical/)
+
+---
+
+*最后更新: 2024年*
+*版本: Enhanced v1.0*
+*包含完整PDF内容和技术图片*
+
+
+## 🔗 相关产品推荐
+
+### 霍尔开关
+
+- [KTM1311 增强版](./KTM1311.md) - 同系列产品
+- [KTH1631 增强版](./KTH1631.md) - 同系列产品
+- [KTM1302R 增强版](./KTM1302R.md) - 同系列产品
+### 3D霍尔传感器
+
+- [KTH31xx 增强版](./KTH31xx.md) - 推荐3D霍尔传感器
+### 磁编码器
+
+- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+### 其他传感器
+
+- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+
+---

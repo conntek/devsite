@@ -1,0 +1,118 @@
+# KTAX333 - 传感器
+
+[返回产品目录](../index.md)
+
+## 产品概述
+
+**KTAX333**是一款高性能的传感器，采用先进的传感技术，具有优异的性能和可靠性。该产品专为各种工业和消费电子应用而设计。
+
+### 核心特性
+
+- **工作电压**: 详见规格书
+- **工作温度**: 详见规格书
+- **封装类型**: SOT-23, DFN, SOP, MSOP
+- **Wide Range|Bandwidth**: 高性能特性
+- **Rail-to-Rail**: 高性能特性
+- **Single Supply**: 高性能特性
+
+
+## 📖 查看增强版技术参考
+
+**[🔗 KTAX333 增强版技术参考](../enhanced-products/KTAX333.md)**
+
+包含完整PDF内容、高质量技术图片和详细规格的增强版页面。
+
+---
+
+---
+
+## 相关文档
+
+- [📄 KTAX333 产品手册](/pdfs/KTAx333_DATASHEET_en.pdf)
+- [📋 其他传感器系列文档](../resources/)
+- [📖 技术文档](../technical/)
+- [📊 应用指南](../technical/)
+- [🔧 评估板资料](../resources/)
+- [🛠️ 设计工具](../technical/)
+- [📞 技术支持](../resources/#技术支持)
+
+---
+
+## 详细技术信息
+
+以下是从产品规格书中提取的详细技术信息：
+
+# KTAx333 Series
+
+## Zero-Drift, Micro-Power CMOS Operational Amplifiers
+
+### Technical Support sales.global@conntek.com.cn
+
+2024- 8- 9
+
+
+Disclaimer
+
+
+The information in this document is provided by Quanzhou KTsense Microelectronics Co., Ltd. (泉州昆泰芯微电子科技有限公司)
+(hereafter referred to as ”KTsense Micro”) on an ”as is” basis for informational purposes only. KTsense Micro does not guarantee the
+accuracy of the information contained herein or the outcomes of its implementation. KTsense Micro assumes no liability for any
+errors or inaccuracies that may be present in this document. Users assume full responsibility for the application of the practices
+outlined in this document.
+
+
+KTsense Micro owns the registered trademark CONNTEK, under which the CONNTEK brand sensors are marketed.
+
+
+This document comes without any warranties, express or implied, including but not limited to warranties of merchantability, satisfactory quality, non-infringement, and fitness for a particular purpose. KTsense Micro, along with its employees, agents, and affiliates, is not liable for any losses arising from the use or reliance on this document.
+
+
+This document is subject to change without prior notice and should not be construed as a commitment by KTsense Micro. Users
+should ensure they have the latest version of the relevant information before placing orders or integrating the product into their
+systems.
+
+
+Users must evaluate the suitability of the product described in this document for their specific applications, including the required
+level of reliability and fitness for purpose.
+
+
+This document and the described product may be subject to export control regulations. Export may require prior authorization from
+the competent authorities. The product is not intended, authorized, or warranted for use in applications requiring extended temperature ranges or unusual environmental conditions. High reliability applications, such as medical life-support or aviation systems, are
+specifically excluded...
+
+> 💡 **提示**: 完整的技术规格和应用信息请参考 [产品规格书](/pdfs/KTAx333_DATASHEET_en.pdf)
+
+---
+
+
+## 🔗 相关产品推荐
+
+### 其他传感器
+
+- [KTH462N](../other-sensors/KTH462N.md) | [📖 增强版](../enhanced-products/KTH462N.md) - 同系列产品
+- [KTP112](../other-sensors/KTP112.md) | [📖 增强版](../enhanced-products/KTP112.md) - 同系列产品
+### 3D霍尔传感器
+
+- [KTH31xx](../3d-hall/KTH31xx.md) | [📖 增强版](../enhanced-products/KTH31xx.md) - 推荐3D霍尔传感器
+### 磁编码器
+
+- [KTH7801](../magnetic-encoder/KTH7801.md) | [📖 增强版](../enhanced-products/KTH7801.md) - 推荐磁编码器
+### 霍尔开关
+
+- [KTH1201](../hall-switch/KTH1201.md) | [📖 增强版](../enhanced-products/KTH1201.md) - 推荐霍尔开关
+
+---
+## 技术支持
+
+如需技术支持、样品申请或定制化服务，请联系我们
+
+### 支持服务
+- 技术咨询和选型指导
+- 样品申请和评估
+- 定制化解决方案
+- 应用电路设计支持
+- 批量供货服务
+
+---
+
+*最后更新: 2024年*

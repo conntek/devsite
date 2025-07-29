@@ -1,0 +1,18 @@
+.VPNavBarTitle .VPImage {
+  width: auto !important;
+  height: 48px !important; /* 默认是24px，放大一倍到48px */
+  max-height: 48px !important;
+}
+
+/* 确保logo在不同屏幕尺寸下都能正确显示 */
+@media (max-width: 768px) {
+  .VPNavBarTitle .VPImage {
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPNavBarTitle .VPImage {
+    height: 36px !important;
+  }
+}
