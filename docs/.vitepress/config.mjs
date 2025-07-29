@@ -4,7 +4,7 @@ import mathjax3 from 'markdown-it-mathjax3'
 export default defineConfig({
   title: '昆泰芯微电子 技术文档',
   description: '昆泰芯微电子 - 智能感知世界，传递美好生活',
-  base: '/',
+  base: '/devsite/',
   ignoreDeadLinks: true,
   
   markdown: {
