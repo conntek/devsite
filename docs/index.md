@@ -34,10 +34,6 @@ features:
     title: 超高速磁性电流传感器
     details: 世界领先的超高速磁性电流传感器ASIC，适用于新能源及智能汽车，支持多种应用场景
     link: /other-sensors/
-  - icon: 📖
-    title: 完整技术参考
-    details: 包含所有产品完整PDF内容和高质量技术图片的详细参考文档，提供最全面的技术信息
-    link: /enhanced-products/
 
 ---
 
