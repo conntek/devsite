@@ -1,6 +1,19 @@
 import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
 
+// 自定义插件处理 mcreference 标签
+function mcreferencePlugin(md) {
+  // 在渲染之前处理原始文本
+  md.core.ruler.before('normalize', 'mcreference', function(state) {
+    const src = state.src
+    const newSrc = src.replace(
+      /<mcreference\s+link="([^"]+)"\s+index="([^"]+)">([^<]+)<\/mcreference>/g,
+      '<sup><a href="$1" target="_blank" rel="noopener noreferrer" class="reference-link">[$2]</a></sup>'
+    )
+    state.src = newSrc
+  })
+}
+
 export default defineConfig({
   title: '昆泰芯微电子 技术文档',
   description: '昆泰芯微电子 - 智能感知世界，传递美好生活',
@@ -10,6 +23,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(mathjax3)
+      md.use(mcreferencePlugin)
     }
   },
   
@@ -22,7 +36,6 @@ export default defineConfig({
     
     nav: [
       { text: '首页', link: '/' },
-      { text: '产品中心', link: '/products/' },
       { 
         text: '产品系列', 
         items: [
@@ -40,17 +53,25 @@ export default defineConfig({
           { text: 'KTP112', link: '/products/KTP112/' }
         ]
       },
-      { text: '技术支持', link: '/technical/' },
-      { text: '资源下载', link: '/resources/' }
+      { text: '应用中心', link: '/applications/' },
+      { text: '技术百科', link: '/knowledge/' },
+      { 
+        text: '技术支持', 
+        items: [
+          { text: '技术文档', link: '/technical/' },
+          { text: '资源下载', link: '/resources/' }
+        ]
+      }
     ],
     
     sidebar: {
       '/': [
         {
-          text: '产品导航',
+          text: '导航',
           items: [
             { text: '首页', link: '/' },
-            { text: '产品中心', link: '/products/' }
+            { text: '应用中心', link: '/applications/' },
+            { text: '技术百科', link: '/knowledge/' }
           ]
         },
         {
@@ -71,7 +92,7 @@ export default defineConfig({
           ]
         },
         {
-          text: '技术资料',
+          text: '技术支持',
           collapsed: true,
           items: [
             { text: '技术文档', link: '/technical/' },
@@ -283,6 +304,32 @@ export default defineConfig({
           text: '资源下载',
           items: [
             { text: '资源中心', link: '/resources/' }
+          ]
+        }
+      ],
+      '/applications/': [
+        {
+          text: '应用中心',
+          items: [
+            { text: '应用概览', link: '/applications/' },
+            { text: '工业自动化', link: '/applications/industrial-automation' },
+            { text: '汽车电子', link: '/applications/automotive' },
+            { text: '消费电子', link: '/applications/consumer-electronics' },
+            { text: '新能源', link: '/applications/renewable-energy' }
+          ]
+        }
+      ],
+      '/knowledge/': [
+        {
+          text: '技术百科',
+          items: [
+            { text: '百科首页', link: '/knowledge/' },
+            { text: '传感器基础', link: '/knowledge/sensor-basics' },
+            { text: '电子技术', link: '/knowledge/electronics' },
+            { text: '应用技术', link: '/knowledge/applications' },
+            { text: '设计指南', link: '/knowledge/design-guide' },
+            { text: '测试验证', link: '/knowledge/testing' },
+            { text: '标准规范', link: '/knowledge/standards' }
           ]
         }
       ]

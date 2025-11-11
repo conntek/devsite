@@ -12,26 +12,26 @@
 
 | 产品型号 | 中文版 | 英文版 |
 |---------|--------|--------|
-| KTH5761AQ3 | [数据手册 (中文)](/pdfs/KTH5761AQ3_Datasheet_DS_CN.pdf) | - |
-| KTH5762AQ3 | [数据手册 (中文)](/pdfs/KTH5762AQ3_Datasheet_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5762AQ3_Datasheet_DS_EN.pdf) |
-| KTH5763AQ3 | [数据手册 (中文)](/pdfs/KTH5763AQ3_Datasheet_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5763AQ3_Datasheet_DS_EN.pdf) |
+| KTH5761AQ3 | [数据手册 (中文)](./01-3D%20Hall%2057系列/手表/KTH5761AQ3_Datasheet_DS_CN.pdf) | - |
+| KTH5762AQ3 | [数据手册 (中文)](./01-3D%20Hall%2057系列/手表/KTH5762AQ3_Datasheet_DS_CN.pdf) | [数据手册 (英文)](./01-3D%20Hall%2057系列/手表/KTH5762AQ3_Datasheet_DS_EN.pdf) |
+| KTH5763AQ3 | [数据手册 (中文)](./01-3D%20Hall%2057系列/手表/KTH5763AQ3_Datasheet_DS_CN.pdf) | [数据手册 (英文)](./01-3D%20Hall%2057系列/手表/KTH5763AQ3_Datasheet_DS_EN.pdf) |
 
 ### 🚗 汽车应用
 
 | 产品型号 | 中文版 | 英文版 |
 |---------|--------|--------|
-| KTH5701AQ1 | [数据手册 (中文)](/pdfs/KTH5701AQ1_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5701AQ1_DS_EN.pdf) |
-| KTH5702AQ1 | [数据手册 (中文)](/pdfs/KTH5702AQ1_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5702AQ1_DS_EN.pdf) |
+| KTH5701AQ1 | [数据手册 (中文)](./01-3D%20Hall%2057系列/汽车类/KTH5701AQ1_DS_CN.pdf) | [数据手册 (英文)](./01-3D%20Hall%2057系列/汽车类/KTH5701AQ1_DS_EN.pdf) |
+| KTH5702AQ1 | [数据手册 (中文)](./01-3D%20Hall%2057系列/汽车类/KTH5702AQ1_DS_CN.pdf) | [数据手册 (英文)](./01-3D%20Hall%2057系列/汽车类/KTH5702AQ1_DS_EN.pdf) |
 
 ### 🏭 消费&工业应用
 
 | 产品型号 | 中文版 | 英文版 |
 |---------|--------|--------|
-| KTH5701AQ2AQ3 | [数据手册 (中文)](/pdfs/KTH5701AQ2AQ3_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5701AQ2AQ3_DS_EN.pdf) |
-| KTH5702AQ2AQ3 | [数据手册 (中文)](/pdfs/KTH5702AQ2AQ3_DS_CN.pdf) | [数据手册 (英文)](/pdfs/KTH5702AQ2AQ3_DS_EN.pdf) |
-| KTH5772 | [产品说明书](/pdfs/KTH5772产品说明书V1.0.pdf) | - |
-| KTH5774 | [产品说明书](/pdfs/KTH5774产品说明书V1.3.pdf) | - |
-| KTH5791AQ3QNS | [产品说明书](/pdfs/KTH5791AQ3QNS产品说明书.pdf) | - |
+| KTH5701AQ2AQ3 | [数据手册 (中文)](./01-3D%20Hall%2057系列/消费&工业类/KTH5701AQ2AQ3_DS_CN.pdf) | [数据手册 (英文)](./01-3D%20Hall%2057系列/消费&工业类/KTH5701AQ2AQ3_DS_EN.pdf) |
+| KTH5702AQ2AQ3 | [数据手册 (中文)](./01-3D%20Hall%2057系列/消费&工业类/KTH5702AQ2AQ3_DS_CN.pdf) | [数据手册 (英文)](./01-3D%20Hall%2057系列/消费&工业类/KTH5702AQ2AQ3_DS_EN.pdf) |
+| KTH5772 | [产品说明书](./01-3D%20Hall%2057系列/消费&工业类/KTH5772产品说明书V1.0.pdf) | - |
+| KTH5774 | [产品说明书](./01-3D%20Hall%2057系列/消费&工业类/KTH5774产品说明书V1.3.pdf) | - |
+| KTH5791AQ3QNS | [产品说明书](./01-3D%20Hall%2057系列/消费&工业类/KTH5791AQ3QNS产品说明书.pdf) | - |
 
 ---
 
@@ -39,10 +39,10 @@
 
 ### 📄 可用文档
 
-- KTH31xx Series 数据手册
-- KTH31xx Series 产品手册
-
-*注：该系列文档正在整理中，如需获取请联系技术支持。*
+| 文档名称 | 语言 | 下载链接 |
+|---------|------|---------|
+| KTH31xx Series 数据手册 | 中文 | [下载](./02-线性Hall（3XXX系列）/KTH31xx%20Series产品手册.pdf) |
+| KTH31xx Series Datasheet | 英文 | [下载](./02-线性Hall（3XXX系列）/KTH31xx%20Series%20datasheet.pdf) |
 
 ---
 
@@ -62,4 +62,4 @@
 
 ---
 
-*最后更新: 2024年7月*
+*最后更新: 2024年7月5日*
