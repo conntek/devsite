@@ -38,3 +38,19 @@ sup {
   vertical-align: baseline;
   top: -0.5em;
 }
+
+.VPHero .image-container {
+  width: min(100%, 760px) !important;
+}
+
+.VPHero .image {
+  width: 100% !important;
+}
+
+.VPHero .image-src {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+}

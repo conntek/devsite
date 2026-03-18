@@ -14,6 +14,66 @@ function mcreferencePlugin(md) {
   })
 }
 
+function rewriteLinksPlugin(md) {
+  md.core.ruler.before('normalize', 'rewrite-links', function(state) {
+    const rel = String(state.env?.relativePath || state.env?.path || '')
+    let src = state.src
+
+    const replacePairs = [
+      [/\]\(\.\.\/selection-guide\.md\)/g, '](/products/)'],
+      [/\]\(\.\.\/hall-switch\/index\.md\)/g, '](/products/KTH16xx/)'],
+      [/\]\(\.\.\/hall-switch\/\)/g, '](/products/KTH16xx/)'],
+      [/\]\(\.\.\/magnetic-encoder\/\)/g, '](/products/KTH78xx/)'],
+      [/\]\(\.\.\/3d-hall\/\)/g, '](/products/KTH57xx/)'],
+      [/\]\(\.\.\/other-sensors\/index\.md\)/g, '](/products/)'],
+      [/\]\(\.\.\/other-sensors\/\)/g, '](/products/)'],
+      [/\]\(\.\.\/technical\/\)/g, '](/technical/)'],
+      [/\]\(\.\.\/application-notes\/\)/g, '](/technical/)'],
+      [/\]\(\.\.\/evaluation-boards\/\)/g, '](/resources/)'],
+      [/\]\(\.\.\/software-tools\/\)/g, '](/resources/)'],
+
+      [/\]\(\/magnetic-encoder\/\)/g, '](/products/KTH78xx/)'],
+      [/\]\(\/hall-switch\/\)/g, '](/products/KTH16xx/)'],
+      [/\]\(\/other-sensors\/\)/g, '](/products/)'],
+
+      [/\]\(\/knowledge\/magnetic-encoder\.md\)/g, '](/products/KTH78xx/)'],
+      [/\]\(\/knowledge\/esd\.md\)/g, '](/knowledge/aec-q100.md)'],
+      [/\]\(\/knowledge\/iso26262\.md\)/g, '](/knowledge/aec-q100.md)'],
+      [/\]\(\/knowledge\/pcb-design\.md\)/g, '](/knowledge/emc.md)'],
+      [/\]\(\/knowledge\/filter-design\.md\)/g, '](/knowledge/emc.md)'],
+      [/\]\(\/knowledge\/iatf16949\.md\)/g, '](/knowledge/ppap.md)'],
+      [/\]\(\/knowledge\/apqp\.md\)/g, '](/knowledge/ppap.md)'],
+      [/\]\(\/knowledge\/fmea\.md\)/g, '](/knowledge/ppap.md)'],
+      [/\]\(\/knowledge\/spc\.md\)/g, '](/knowledge/ppap.md)'],
+      [/\]\(\/knowledge\/msa\.md\)/g, '](/knowledge/ppap.md)'],
+      [/\]\(\/knowledge\/i2c-bus\.md\)/g, '](/knowledge/)']
+    ]
+
+    if (rel.startsWith('products/KTH4603/') || rel.startsWith('products/KTH4603XX/')) {
+      replacePairs.unshift([/\]\(\.\.\/hall-switch\/[^\)]*\)/g, '](/products/KTH46xx/)'])
+      replacePairs.unshift([/\]\(\.\.\/hall-switch\/\)/g, '](/products/KTH46xx/)'])
+    }
+
+    for (const [from, to] of replacePairs) {
+      src = src.replace(from, to)
+    }
+
+    src = src
+      .replace(/\]\(\/pdfs\/KTH1605P产品手册\.pdf\)/g, '](/pdfs/KTH1605P%20Series产品手册.pdf)')
+      .replace(/\]\(\/pdfs\/KTH1611产品手册\.pdf\)/g, '](/pdfs/KTH1611%20Series产品手册.pdf)')
+      .replace(/\]\(\/pdfs\/KTH1621产品手册\.pdf\)/g, '](/pdfs/KTH1621%20Series产品手册.pdf)')
+      .replace(/\]\(\/pdfs\/KTH1631产品手册\.pdf\)/g, '](/pdfs/KTH1631%20Series%20产品手册.pdf)')
+      .replace(/\]\(\/pdfs\/KTH5763AQ3产品手册\.pdf\)/g, '](/pdfs/KTH5763AQ3_Datasheet_DS_CN.pdf)')
+
+    src = src.replace(/\]\(\/pdfs\/([^)]+?)\)/g, (m, p1) => {
+      if (!/\s/.test(p1)) return m
+      return `](/pdfs/${p1.replace(/\s/g, '%20')})`
+    })
+
+    state.src = src
+  })
+}
+
 export default defineConfig({
   title: '昆泰芯微电子 技术文档',
   description: '昆泰芯微电子 - 智能感知世界，传递美好生活',
@@ -24,11 +84,12 @@ export default defineConfig({
     config: (md) => {
       md.use(mathjax3)
       md.use(mcreferencePlugin)
+      md.use(rewriteLinksPlugin)
     }
   },
   
   themeConfig: {
-    logo: '/logo.jpg',
+    logo: '/logo.fw.png',
     siteTitle: false,
     
     // 启用浅色主题（默认）
@@ -88,7 +149,7 @@ export default defineConfig({
             { text: 'KTH78xx系列', link: '/products/KTH78xx/' },
             { text: 'KTM13xx系列', link: '/products/KTM13xx/' },
             { text: 'KTM58xx系列', link: '/products/KTM58xx/' },
-            { text: '其他传感器', link: '/products/other-sensors/' }
+            { text: '其他传感器', link: '/products/' }
           ]
         },
         {

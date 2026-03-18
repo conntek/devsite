@@ -1,13 +1,13 @@
 # KTH4603XX - 完整技术参考
 
-[返回产品目录](../index.md) | [返回hall-switch分类](../hall-switch/index.md)
+[返回产品目录](/products/) | [返回KTH46xx系列](/products/KTH46xx/)
 
 
 ## 🧭 页面导航
 
-- 🔙 [返回产品摘要页面](../hall-switch/KTH4603XX.md)
-- 📂 [返回霍尔开关分类](../hall-switch/)
-- 🏠 [返回主页](../index.md)
+- 🔙 [返回产品摘要页面](/products/KTH46xx/KTH4603XX)
+- 📂 [返回KTH46xx系列](/products/KTH46xx/)
+- 🏠 [返回主页](/)
 - 📚 [所有增强版技术参考](./index.md)
 
 ---
@@ -550,17 +550,17 @@ KTH4603XX-ST6 典型应用
 
 ### 霍尔开关
 
-- [KTH1722 增强版](./KTH1722.md) - 同系列产品
-- [KTM1301 增强版](./KTM1301.md) - 同系列产品
-- [KTH2502 增强版](./KTH2502.md) - 同系列产品
+- [KTH1722](/products/KTH17xx/KTH1722) - 同系列产品
+- [KTM1301](/products/KTM13xx/KTM1301) - 同系列产品
+- [KTH2502](/products/KTH25xx/KTH2502) - 同系列产品
 ### 3D霍尔传感器
 
-- [KTH31xx 增强版](./KTH31xx.md) - 推荐3D霍尔传感器
+- [KTH31xx](/products/KTH31xx/KTH31XX) - 推荐3D霍尔传感器
 ### 磁编码器
 
-- [KTH7801 增强版](./KTH7801.md) - 推荐磁编码器
+- [KTH7801](/products/KTH78xx/KTH7801) - 推荐磁编码器
 ### 其他传感器
 
-- [KTAX333 增强版](./KTAX333.md) - 推荐其他传感器
+- [KTAX333](/products/KTAX333/) - 推荐其他传感器
 
 ---

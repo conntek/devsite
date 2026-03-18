@@ -7,7 +7,7 @@ hero:
   text: 世界领先的磁传感器技术
   tagline: 以技术创新驱动智能感知未来
   image:
-    src: /slogan.png
+    src: /main.fw.png
     alt: 昆泰芯微电子
   actions:
     - theme: brand
@@ -106,7 +106,7 @@ features:
 
 #### [KTM58xx系列](/products/KTM58xx/) - 新一代磁编码器
 **技术特点**：超高分辨率，极高精度，智能校准，自适应算法  
-**产品型号**：[KTM5800](/products/KTM58xx/KTM5800) | [KTM5900](/products/KTM58xx/KTM5900) | [KTM5910](/products/KTM58xx/KTM5910)
+**产品型号**：[KTM5800](/products/KTM58xx/KTM5800) | [KTM5900](/pdfs/KTM5900_24bit绝对角度磁性编码器_1.6.pdf) | [KTM5910](/pdfs/KTM5910_24bit绝对角度磁性编码器_1.6.pdf)
 
 ### 专用传感器与信号调理
 

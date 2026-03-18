@@ -1,13 +1,13 @@
 # KTH4603 - 完整技术参考
 
-[返回产品目录](../index.md) | [返回hall-switch分类](../hall-switch/index.md)
+[返回产品目录](/products/) | [返回KTH46xx系列](/products/KTH46xx/)
 
 
 ## 🧭 页面导航
 
-- 🔙 [返回产品摘要页面](../hall-switch/KTH4603.md)
-- 📂 [返回霍尔开关分类](../hall-switch/)
-- 🏠 [返回主页](../index.md)
+- 🔙 [返回产品摘要页面](/products/KTH46xx/KTH4603)
+- 📂 [返回KTH46xx系列](/products/KTH46xx/)
+- 🏠 [返回主页](/)
 - 📚 [所有增强版技术参考](./index.md)
 
 ---
