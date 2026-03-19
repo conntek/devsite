@@ -396,10 +396,6 @@ export default defineConfig({
       ]
     },
     
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/conntek/devsite' }
-    ],
-    
     editLink: {
       pattern: 'https://github.com/conntek/devsite/blob/main/docs/:path',
       text: '在 GitHub 查看此页 Markdown'

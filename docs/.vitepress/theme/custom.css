@@ -54,3 +54,23 @@ sup {
   object-fit: contain !important;
   aspect-ratio: auto !important;
 }
+
+.current-md-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--vp-c-text-2);
+  transition: color 0.25s;
+}
+
+.current-md-github:hover {
+  color: var(--vp-c-text-1);
+}
+
+.current-md-github svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
