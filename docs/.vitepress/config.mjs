@@ -77,7 +77,7 @@ function rewriteLinksPlugin(md) {
 export default defineConfig({
   title: '昆泰芯微电子 技术文档',
   description: '昆泰芯微电子 - 智能感知世界，传递美好生活',
-  base: '/devsite/',
+  base: '/',
   ignoreDeadLinks: true,
   
   markdown: {
@@ -397,7 +397,7 @@ export default defineConfig({
     },
     
     editLink: {
-      pattern: 'https://github.com/conntek/devsite/blob/main/docs/:path',
+      pattern: 'https://github.com/conntek/conntek.github.io/blob/main/docs/:path',
       text: '在 GitHub 查看此页 Markdown'
     },
     
