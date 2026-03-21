@@ -122,7 +122,8 @@ export default defineConfig({
           { text: '技术文档', link: '/technical/' },
           { text: '资源下载', link: '/resources/' }
         ]
-      }
+      },
+      { text: '博客', link: '/blog/' }
     ],
     
     sidebar: {
