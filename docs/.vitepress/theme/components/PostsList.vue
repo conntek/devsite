@@ -1,11 +1,11 @@
 <script setup>
 import { computed } from 'vue'
-const modules = import.meta.glob('../../posts/*.md', { eager: true })
+const modules = import.meta.glob('../../blog/*.md', { eager: true })
 const posts = computed(() =>
   Object.entries(modules)
     .map(([path, mod]) => {
       const fm = mod.frontmatter || {}
-      const href = path.replace('../../', '/').replace(/\.md$/, '')
+      const href = path.replace('../../blog/', '/blog/').replace(/\.md$/, '')
       return { title: fm.title, date: fm.date, tags: fm.tags || [], href }
     })
     .filter(p => p.title && p.date)
